@@ -1,0 +1,12 @@
+---
+layout: post
+title: "ブログつくりました"
+date: 2014-02-08 14:44:09 +0900
+comments: false
+categories: misc
+---
+
+エンジニアっぽくGithub + Octopressでつくってみました。
+<br/>
+
+技術的なことを気ままに書いていこうと思います。

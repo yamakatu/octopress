@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ml-stats | Yamakatu as a Service]]></title>
+  <link href="http://yamakatu.github.io/blog/categories/ml-stats/atom.xml" rel="self"/>
+  <link href="http://yamakatu.github.io/"/>
+  <updated>2014-04-25T23:42:01+09:00</updated>
+  <id>http://yamakatu.github.io/</id>
+  <author>
+    <name><![CDATA[yamakatu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[第14回はじめてのパターン認識読書会でLTしてきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/03/19/hajipata14lt/"/>
+    <updated>2014-03-19T09:54:15+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/03/19/hajipata14lt</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p>はじパタ第14回でLTしてきました。</p>
+
+<br/>
+
+
+<p>Spark + MLlib 使うと、普通にHadoop使うより機械学習速くできるよ、って話。</p>
+
+<br/>
+
+
+<p>多少滑ったけど、花粉症による頭痛のせいだと信じている。</p>
+
+<br/>
+
+
+<p>はじパタなみなさん、おつかれさまでした。</p>
+
+<br/>
+
+
+
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/32442430" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第13回はじめてのパターン認識読書会で発表してきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/03/05/hajipata10/"/>
+    <updated>2014-03-05T00:43:09+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/03/05/hajipata10</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p>発表しました。</p>
+
+<p>担当は10章クラスタリングの前半部分（10.1〜10.3）</p>
+
+<br/>
+
+
+<p>内容よりスケジュール重視で担当を希望したので、それなりに理解できている章の担当になってしまった。</p>
+
+<p>（そのスケジュールも当初の日程からずれてしまったので意味なくなったけど）</p>
+
+<br/>
+
+
+<p>勉強会は自分が発表することで学習する場、ってじっちゃんが言ってたので、どうせなら勉強不足の章をやるべきだったなー、と反省。</p>
+
+<br/>
+
+
+
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/31886423" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/hajipata10" title="はじパタ 10章 クラスタリング 前半" target="_blank">はじパタ 10章 クラスタリング 前半</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+]]></content>
+  </entry>
+  
+</feed>

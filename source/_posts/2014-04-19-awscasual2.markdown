@@ -1,0 +1,33 @@
+---
+layout: post
+title: "AWS Casual Talks#2でLTしてきました"
+date: 2014-04-19 20:52:52 +0900
+comments: false
+categories: spark
+---
+<!-- more -->
+<br/>
+<a href="http://www.zusaar.com/event/3817003">AWS Casual Talks#2</a>でSpark (+MLlib) についてLTしてきました。
+<br/>
+
+今回はエンジニアクラスタだったので、HadoopとSparkのアーキテクチャの違いについて、前回のはじパタでのLTよりもう少し深く言及してみました。
+
+Spark + MLlibについては機械学習クラスタだと実装に寄り過ぎで、エンジニアクラスタだと機械学習がピンとこないので、どこに行ってもあまり食いつかれないのが悲しい。
+<br/>
+
+反省点は持ち時間5分のところをCasualに15分も使ってしまったこと。。。ごめんなさい。
+
+発表も下手だったのでさらに反省。
+
+資料を発表直前まで作成していたので、他の方の発表を聞く余裕がなかったのも残念。
+
+次に活かしたい。
+<br/>
+
+・<a href="http://togetter.com/li/656484">togetter</a>
+
+・<a href="http://dev.classmethod.jp/cloud/aws/aws-casual-talks-number-2/">クラスメソッドさんブログ</a>
+<br/>
+
+スライド
+<iframe src="http://www.slideshare.net/slideshow/embed_code/33681347?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/aws-casual-talks2lt" title="Spot Instance + Spark + MLlibで実現する簡単低コスト機械学習" target="_blank">Spot Instance + Spark + MLlibで実現する簡単低コスト機械学習</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>

@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Yamakatu as a Service]]></title>
+  <link href="http://yamakatu.github.io/atom.xml" rel="self"/>
+  <link href="http://yamakatu.github.io/"/>
+  <updated>2014-04-25T23:42:01+09:00</updated>
+  <id>http://yamakatu.github.io/</id>
+  <author>
+    <name><![CDATA[yamakatu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[elasticsearch-hadoopをもうちょい調べて遅い理由が少しわかった]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/04/25/eshadoop/"/>
+    <updated>2014-04-25T17:20:45+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/04/25/eshadoop</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<h2>■これまでの話</h2>
+
+<p>第4回Elasticsearch勉強会でElasticsearch-hadoopについて発表させて頂きましたが、その際、評価としてHiveの実行速度をHDFSをストレージとして利用した場合と比較してお見せしました。</p>
+
+<br/>
+
+
+<p>ここらへんです。</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/33755795?startSlide=18" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/elasticsearchhadoop" title="elasticsearch-hadoopをつかってごにょごにょしてみる" target="_blank">elasticsearch-hadoopをつかってごにょごにょしてみる</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+
+<br/>
+
+
+<p>で、ちょっといくらなんでも遅すぎるな、と思って調べていたらわかったことがあったのでメモ。</p>
+
+<h2>■わかったこと</h2>
+
+<p>結論から言うと、elasticsearch-hadoopはPrimaryなShardの数しかMapタスクを生成しない。</p>
+
+<br/>
+
+
+<p><img src="http://yamakatu.github.io/images/majide.jpg"  ></p>
+
+<br/>
+
+
+<p>これはelasticsearch-hadoopのここら辺のソースを読んでもわかります。</p>
+
+<p>・EsInputFormat.java getSplitsメソッド</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'>    <span class="n">ShardInputSplit</span><span class="o">[]</span> <span class="n">splits</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ShardInputSplit</span><span class="o">[</span><span class="n">targetShards</span><span class="o">.</span><span class="na">size</span><span class="o">()];</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="o">(</span><span class="n">Entry</span><span class="o">&lt;</span><span class="n">Shard</span><span class="o">,</span> <span class="n">Node</span><span class="o">&gt;</span> <span class="n">entry</span> <span class="o">:</span> <span class="n">targetShards</span><span class="o">.</span><span class="na">entrySet</span><span class="o">())</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Shard</span> <span class="n">shard</span> <span class="o">=</span> <span class="n">entry</span><span class="o">.</span><span class="na">getKey</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="n">entry</span><span class="o">.</span><span class="na">getValue</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">splits</span><span class="o">[</span><span class="n">index</span><span class="o">++]</span> <span class="o">=</span>
+</span><span class='line'>                    <span class="k">new</span> <span class="nf">ShardInputSplit</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getIpAddress</span><span class="o">(),</span> <span class="n">node</span><span class="o">.</span><span class="na">getHttpPort</span><span class="o">(),</span> <span class="n">node</span><span class="o">.</span><span class="na">getId</span><span class="o">(),</span> <span class="n">node</span><span class="o">.</span><span class="na">getName</span><span class="o">(),</span> <span class="n">shard</span><span class="o">.</span><span class="na">getName</span><span class="o">(),</span> <span class="n">savedMapping</span><span class="o">,</span> <span class="n">savedSettings</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">log</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="n">String</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="s">&quot;Created [%d] shard-splits&quot;</span><span class="o">,</span> <span class="n">splits</span><span class="o">.</span><span class="na">length</span><span class="o">));</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">splits</span><span class="o">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Hadoopは利用するInputFormatのgetSplitsメソッドの返り値の長さで、Mapタスク数を決定します。</p>
+
+<p>このソースを見るとわかるように、Shardのsizeで配列を生成してますね。。</p>
+
+<p>#Hive利用時に実際に利用するInputFormatはEsHiveInputFormatなのですが、EsHiveInputFormatのgetSplitsが内部で上記を呼び出しています。</p>
+
+<br/>
+
+
+<p>しかし、そもそもちゃんと公式ホームページ見てみると、<a href="http://www.elasticsearch.org/overview/hadoop/">elasticsearch-hadoopのトップページ</a>に書いてありましたw</p>
+
+<h2>■じゃあ、どうすればいいのか</h2>
+
+<p>とりあえずは、インデックス生成の際にShardの数を多くすれば解決します。</p>
+
+<p>しかし、ElasticsearchはShardの数をインデックス生成後は変更できない（はず）なので、微妙な感が否めませんが。。。</p>
+
+<p>もっといい方法はないだろうか。。。</p>
+
+<p>次回のElasticearch勉強会でMapRの<a href="https://twitter.com/nagix">@nagix</a>さんから聞けたりするといいな。</p>
+
+<h2>■追試</h2>
+
+<p>前回の評価では、シャード数が6なので、6つのMapタスクしか生成されてないことになります。
+実際、ログを確認したところ、生成されたMapタスク数は6でした。</p>
+
+<p>一方、HDFSを利用した場合はMapタスクは12個生成されていました。</p>
+
+<br/>
+
+
+<p>TaskTrackerは3台ともmapred.tasktracker.map.tasks.maximumを4に設定しているので、最大で12Mapを並列実行可能です。</p>
+
+<p>また、サーバは4コアマシンですので、CPU的にも3台合わせて12Mapを並列実行できる計算になります。</p>
+
+<p>#実際にはElasticseachとかのプロセスがCPUリソースを消費しますが</p>
+
+<br/>
+
+
+<p>よって、HDFS利用時は12コアを使用し、elasticsearch-hadoop利用時は6コアしか使用されていないことになります。</p>
+
+<p>Oh,,,ということで再度評価を行いました。</p>
+
+<p>TaskTrackerとElasticsearchが同居したサーバを3台用意し(上記スライドの3番目の評価環境と同じ）、シャード数を12、レプリカ数を2でインデックスを生成して実行しました。</p>
+
+<br/>
+
+
+<p>結果は520ms ➡ 280ms前後にまで短縮できました。</p>
+
+<p>HDFS利用時の速度とはまだまだ差はありますが、少しはマシになりました。。</p>
+
+<br/>
+
+
+<p>#そもそも1分でも十分遅いので、1分も5分もそんなに大して変わらないとかなんとか</p>
+
+<h2>■お詫びと訂正</h2>
+
+<p>スライドの10ページ目で「ドキュメント1件で1Mapタスク」とありますが、正しくはMapReduceでreadする場合もHive同様、生成されるMapタスクの数はPrimary Shardの数でした。</p>
+
+<p>お詫びして訂正します。</p>
+
+<p>#一番最初にドキュメント数を極小で試したのですが、その時のドキュメント数とシャード数が同じだったようです。。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第4回Elasticsearch勉強会で発表してきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/04/24/es04/"/>
+    <updated>2014-04-24T02:00:10+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/04/24/es04</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p><a href="http://elasticsearch.doorkeeper.jp/events/8865">第4回Elasticsearch勉強会</a>で発表してきました。</p>
+
+<br/>
+
+
+<p>Kibanaなんかと比較し、これまであまり注目されることのなかったelasticsearch-hadoopが不憫すぎたので、elasticsearch-hadoopについて話してきました。</p>
+
+<br/>
+
+
+<p>当日の夕方ぐらいから下痢が始まって、自分の前の <a href="https://twitter.com/johtani">@johtani</a> さんの発表中にもトイレに駆け込んだんですが、なんとか発表中は中身を出さずにすみました。</p>
+
+<p>100人を超える参加者だったので、緊張するかなーとおもっていましたが、下痢でそれどこではなかったので、力が抜けていいかんじに発表できました。</p>
+
+<p>ちなみにこれを下痢駆動発表と呼ぶらしいです。</p>
+
+<blockquote class="twitter-tweet" lang="ja"><p>下痢かつさんの下痢駆動発表</p>&mdash; ノートハエ・ノーライフ (@tohae) <a href="https://twitter.com/tohae/statuses/458516157683601408">2014, 4月 22</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+<p>みなさんも一度、試してみてはいかがでしょうか。</p>
+
+<br/>
+
+
+<p>・<a href="http://dev.classmethod.jp/server-side/4th-elasticsearchjp/">クラスメソッドさんまとめ</a></p>
+
+<p>・<a href="http://blog.johtani.info/blog/2014/04/21/hold-on-4th-elasticsearch-jp/">大谷さんまとめ</a></p>
+
+<br/>
+
+
+
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/33755795" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/elasticsearchhadoop" title="elasticsearch-hadoopをつかってごにょごにょしてみる" target="_blank">elasticsearch-hadoopをつかってごにょごにょしてみる</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[AWS Casual Talks#2でLTしてきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/04/19/awscasual2/"/>
+    <updated>2014-04-19T20:52:52+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/04/19/awscasual2</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p><a href="http://www.zusaar.com/event/3817003">AWS Casual Talks#2</a>でSpark (+MLlib) についてLTしてきました。</p>
+
+<br/>
+
+
+<p>今回はエンジニアクラスタだったので、HadoopとSparkのアーキテクチャの違いについて、前回のはじパタでのLTよりもう少し深く言及してみました。</p>
+
+<p>Spark + MLlibについては機械学習クラスタだと実装に寄り過ぎで、エンジニアクラスタだと機械学習がピンとこないので、どこに行ってもあまり食いつかれないのが悲しい。</p>
+
+<br/>
+
+
+<p>反省点は持ち時間5分のところをCasualに15分も使ってしまったこと。。。ごめんなさい。</p>
+
+<p>発表も下手だったのでさらに反省。</p>
+
+<p>資料を発表直前まで作成していたので、他の方の発表を聞く余裕がなかったのも残念。</p>
+
+<p>次に活かしたい。</p>
+
+<br/>
+
+
+<p>・<a href="http://togetter.com/li/656484">togetter</a></p>
+
+<p>・<a href="http://dev.classmethod.jp/cloud/aws/aws-casual-talks-number-2/">クラスメソッドさんブログ</a></p>
+
+<br/>
+
+
+<p>スライド</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/33681347?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/aws-casual-talks2lt" title="Spot Instance + Spark + MLlibで実現する簡単低コスト機械学習" target="_blank">Spot Instance + Spark + MLlibで実現する簡単低コスト機械学習</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第14回はじめてのパターン認識読書会でLTしてきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/03/19/hajipata14lt/"/>
+    <updated>2014-03-19T09:54:15+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/03/19/hajipata14lt</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p>はじパタ第14回でLTしてきました。</p>
+
+<br/>
+
+
+<p>Spark + MLlib 使うと、普通にHadoop使うより機械学習速くできるよ、って話。</p>
+
+<br/>
+
+
+<p>多少滑ったけど、花粉症による頭痛のせいだと信じている。</p>
+
+<br/>
+
+
+<p>はじパタなみなさん、おつかれさまでした。</p>
+
+<br/>
+
+
+
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/32442430" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第13回はじめてのパターン認識読書会で発表してきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/03/05/hajipata10/"/>
+    <updated>2014-03-05T00:43:09+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/03/05/hajipata10</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p>発表しました。</p>
+
+<p>担当は10章クラスタリングの前半部分（10.1〜10.3）</p>
+
+<br/>
+
+
+<p>内容よりスケジュール重視で担当を希望したので、それなりに理解できている章の担当になってしまった。</p>
+
+<p>（そのスケジュールも当初の日程からずれてしまったので意味なくなったけど）</p>
+
+<br/>
+
+
+<p>勉強会は自分が発表することで学習する場、ってじっちゃんが言ってたので、どうせなら勉強不足の章をやるべきだったなー、と反省。</p>
+
+<br/>
+
+
+
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/31886423" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/hajipata10" title="はじパタ 10章 クラスタリング 前半" target="_blank">はじパタ 10章 クラスタリング 前半</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ClouderaManager の管理コンソールをとりあえず HTTPS 化する方法（EC2 を使うときは特に使おうね）]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/02/17/clouderamanagertls/"/>
+    <updated>2014-02-17T02:06:25+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/02/17/clouderamanagertls</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<h1>■環境</h1>
+
+<p>ClouderaManager 4.8.1 インストール済み（他のバージョンでもそんなに対して変わらないはず）</p>
+
+<br/>
+
+
+<h1>■何があったか</h1>
+
+<p>Hadoop Advent Calendar 2013で<a href="http://qiita.com/yamakatu/items/495246f98044398ad3d3">こんな記事</a>書いたら、<a href="http://twitter.com/shiumachi">@shiumachi</a>さんに</p>
+
+<h3>そのやり方だとブラウザと管理コンソール間が暗号化されてないから、AWSの鍵をアップロードする際に盗聴されちゃうじゃん。m9ぷぎゃー（かなり意訳</h3>
+
+<br/>
+
+
+<p>と、ご指摘を頂きました。</p>
+
+<p>薄々気づいてたんだけど面倒かったので手を抜いた。今では反省している。</p>
+
+<br/>
+
+
+<h1>■もうちょっとkwsk</h1>
+
+<p>EC2でClouderaManagerを使うと、指定したインスタンスタイプと台数でHadoopクラスタを自動で作成してくれます。すげー便利。</p>
+
+<p>この時ClouderaManagerはAWSのAPIを当然たたくんだけど、この際にはAWSの鍵が必要になります。</p>
+
+<p>そして、この鍵はブラウザでClouderaManagerの管理コンソールからPostしてあげる必要があります。</p>
+
+<p>この時、ClouderaManagerの管理コンソールはデフォだとhttpsに対応しておらず、httpでアクセスすることになるので、ブラウザとClouderaManagerが稼働するサーバ間の経路は暗号化されません。</p>
+
+<p>よって、AWSの鍵が盗聴されちゃうだろ。m9ぷぎゃー。となりました。</p>
+
+<br/>
+
+
+<h1>■どうする？</h1>
+
+<p>ClouderaManagerの管理コンソールをhttps化する方法を書いときます。</p>
+
+<p>今回のようなEC2を使う場面でなくても有用だと思います。たぶん。</p>
+
+<p>設定方法は本家の<a href="http://www.cloudera.com/content/cloudera-content/cloudera-docs/CM4Ent/latest/Cloudera-Manager-Administration-Guide/cmag_config_tls_security.html">ココ</a>に書いてあるんだけど、英語がアレな人もいらっしゃると思いますので、意味があると信じている。</p>
+
+<p>本家サイトにはいくつか方法が記載されていますが、今回はとりあえずhttps化ということで、一番手軽な方法(<a href="http://www.cloudera.com/content/cloudera-content/cloudera-docs/CM4Ent/latest/Cloudera-Manager-Administration-Guide/cmag_config_tls_encr.html?scroll=topic_2__title_4_unique_8">コレ</a>)にしてます。</p>
+
+<br/>
+
+
+<h1>■手順</h1>
+
+<h3>手順1 鍵作成&amp;配置</h3>
+
+<p>まず鍵を作成します。（※注 この鍵はHTTPSで利用する鍵で、AWSの鍵ではありません）</p>
+
+<p>この鍵の作成にはJavaのkeytoolを使います。</p>
+
+<br/>
+
+
+<p>そのため、鍵を作成するマシンにはJavaがインストールされている必要がありますが、ClouderaManagerがインストールされていれば、自ずとJavaがインストールされています。</p>
+
+<p>作成した鍵はいずれにせよClouderaManaerが動作するサーバに設置する必要があるので、ClouderaManagerがインストールされたサーバで鍵を作成するのが一番手っ取り早いです。</p>
+
+<p>よって、<b>今回はClouderaManagerが稼働するサーバ上で鍵を作成します。</b></p>
+
+<br/>
+
+
+<p>以下のコマンドで作成します。名前やら組織はめんどいので入力してませんが、適宜入力しましょう。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ubuntu@ip-10-133-198-199:~$ keytool -validity 180 -keystore cm.key -alias jetty -genkeypair -keyalg RSA
+</span><span class='line'>Enter keystore password:
+</span><span class='line'>Re-enter new password:
+</span><span class='line'>What is your first and last name?
+</span><span class='line'>  [Unknown]:
+</span><span class='line'>What is the name of your organizational unit?
+</span><span class='line'>  [Unknown]:
+</span><span class='line'>What is the name of your organization?
+</span><span class='line'>  [Unknown]:
+</span><span class='line'>What is the name of your City or Locality?
+</span><span class='line'>  [Unknown]:
+</span><span class='line'>What is the name of your State or Province?
+</span><span class='line'>  [Unknown]:
+</span><span class='line'>What is the two-letter country code for this unit?
+</span><span class='line'>  [Unknown]:
+</span><span class='line'>Is CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown correct?
+</span><span class='line'>  [no]:  yes
+</span><span class='line'>
+</span><span class='line'>Enter key password for &lt;jetty&gt;
+</span><span class='line'>  (RETURN if same as keystore password):
+</span><span class='line'>Re-enter new password:</span></code></pre></td></tr></table></div></figure>
+
+
+<p>このままだとClouderaManagerのサーバプロセスがアクセスできないので、権限変えつつ、移動します。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ubuntu@ip-10-133-198-199:~$ sudo mv cm.key /etc/cloudera-scm-server/
+</span><span class='line'>ubuntu@ip-10-133-198-199:~$ sudo chown cloudera-scm:cloudera-scm /etc/cloudera-scm-server/cm.key
+</span><span class='line'>ubuntu@ip-10-133-198-199:~$ sudo chmod 600 /etc/cloudera-scm-server/cm.key</span></code></pre></td></tr></table></div></figure>
+
+
+<p>mv先は上記ディレクトリでなくても、サーバプロセスの起動ユーザ（今回はcloudera-scm）がアクセスできれば問題ないと思います。今回は解りやすそうなところに置いてみました。</p>
+
+<br/>
+
+
+<h3>手順2 ClouderaManager設定</h3>
+
+<p>ClouderaManagerの新規インストール時の場合を例にとります。</p>
+
+<p>クラスタ構築済みの場合でも設定箇所は変わらないので、適宜読み飛ばしてください。</p>
+
+<br/>
+
+
+<p>まず、ブラウザからClouderaManagerにアクセスし、ログインします。（初期状態だとポートは7180、IDとパスワードはadmin/admin）</p>
+
+<br/>
+
+
+<p>ログイン後、以下のように右上のadminからパスワード変更を選択</p>
+
+<p><img src="http://yamakatu.github.io/images/cm-1.png"  ></p>
+
+<br/>
+
+
+<br/>
+
+
+<p>パスワード変更のフォームが出るが無視して、上部メニューの「管理」から「設定」を選択</p>
+
+<p><img src="http://yamakatu.github.io/images/cm-2.png"  ></p>
+
+<br/>
+
+
+<br/>
+
+
+<p>左メニューからセキュリティを選択</p>
+
+<p><img src="http://yamakatu.github.io/images/cm-3.png"  ></p>
+
+<br/>
+
+
+<br/>
+
+
+<p>以下を設定する</p>
+
+<p>「管理コンソールで TLS 暗号化を使用する」にチェック</p>
+
+<p>「TLS Keystore ファイルのパス」に鍵の配置先を指定。上記の例であれば/etc/cloudera-scm-server/cm.key</p>
+
+<p>「Keystore パスワード」に作成時に指定したパスワードを入力</p>
+
+<p><img src="http://yamakatu.github.io/images/cm-4.png"  ></p>
+
+<br/>
+
+
+<p>「変更の保存」ボタンを押す</p>
+
+<br/>
+
+
+<h3>手順3 ClouderaManager再起動</h3>
+
+<p>以下みたいな感じでClouderaManagerを再起動します。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ubuntu@ip-10-133-198-199:~$ sudo /etc/init.d/cloudera-scm-server restart</span></code></pre></td></tr></table></div></figure>
+
+
+<p>httpsでアクセスして確認します。</p>
+
+<h3>httpsの場合のポートは7183です。</h3>
+
+<br/>
+
+
+<p>ただ再起動後すぐにアクセスしても多分無理。ちょっと待つ。</p>
+
+<p>アクセスできればおk。</p>
+
+<p>しらばく待ってもアクセスできなければ、iptablesとかEC2ならセキュリティグループの設定あたりを疑うのが吉かも。</p>
+
+<h1>■まとめ</h1>
+
+<p>・ClouderaManagerはデフォではhttpsが利用できない</p>
+
+<p>・この状況だと何かとまずい（EC2の場合は特に）</p>
+
+<p>・こんな手順でさくっといけるよ</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【Kibana】Histgramで欠損値に0が自動補完されるのがアレだったので、OFFにする機能を実装してプルリクしてマージしてもらったお話]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/02/09/kibana-pull-req/"/>
+    <updated>2014-02-09T15:40:59+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/02/09/kibana-pull-req</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<h1>■前提</h1>
+
+<p>Kibana &lt;= kibana-3.0.0 milestone4</p>
+
+<br/>
+
+
+<h1>■何が起きたか</h1>
+
+<p>去年の12月ぐらいに、「Elasticsearch + Kibana って、ログの可視化に超便利ジャーン！」という感じでKibanaを利用していたところ、Histgramの描画でちょっと微妙な現象に遭遇。</p>
+
+<br/>
+
+
+<p>例えば、</p>
+
+<br/>
+
+
+<table border=1><tr align="center"><td width="200">Time</td><td width="100">value</td></tr><tr align="center"><td>2014/11/08T09:00:00</td><td>10</td></tr><tr align="center"><td>2014/11/08T09:30:00</td><td>30</td></tr><tr align="center"><td>2014/11/08T10:00:00</td><td>20</td></tr></table>
+
+
+<br/>
+
+
+<p>な感じのデータでHistgramを描画した時、自分はこう描画して欲しかった。</p>
+
+<br/>
+
+
+<p><img src="http://yamakatu.github.io/images/kibana-ok.png"  ></p>
+
+<br/>
+
+
+<p>が、描画されるのは以下のようなグラフ。</p>
+
+<br/>
+
+
+<p><img src="http://yamakatu.github.io/images/kibana-ng.png"  ></p>
+
+<br/>
+
+
+<h1>■どういうことなのか</h1>
+
+<p>この二つのグラフはご覧の通り、Intervalの値が異なる。前者のグラフは30分、後者のグラフは10分。</p>
+
+<p>んで、KibanaはIntervalごとに値を表示しようとする。</p>
+
+<p>しかし、10分ごとの場合、9:10、9:20などには値が欠損している。</p>
+
+<h3>この時Kibanaは勝手に0を補完する。</h3>
+
+<br/>
+
+
+<p>いやー気が利くねー（白目</p>
+
+<br/>
+
+
+<h1>■どう思った？</h1>
+
+<p>確かに0を補完して描画して欲しい場合もあるだろうから、間違ってはいない。</p>
+
+<p>しかし、今回の自分のように、余計なことすんじゃねーよ、という場合も普通にある。</p>
+
+<p>なので、選べるようにした方がよくねー？</p>
+
+<br/>
+
+
+<p>あと前者のグラフのように、データが一定間隔でかつ欠損がなく、Intervalの値をその間隔に設定できる場合、この事象は発生しない。</p>
+
+<p>だけど、こういう場合であろうとなかろうと、発生しないでほしい。。。</p>
+
+<br/>
+
+
+<h1>■それでどうしたのか</h1>
+
+<p>Githubでソース読んでたら、実は既にグラフ描画の仕方が選択できるように実装されてた。<a href="https://github.com/elasticsearch/kibana/blob/master/src/app/panels/histogram/timeSeries.js#L103">ここらへん</a></p>
+
+<p>(ちなみにこの描画方式はコード上ではstrategyと呼ばれているので、以下strategy）</p>
+
+<p>なんだけど、今回のような「値のない時間に0を補完しない」というstrategyは当時はなかった。</p>
+
+<br/>
+
+
+<p>というわけで、実装して、issue作って、プルリク送っときました。<a href="https://github.com/elasticsearch/kibana/pull/742">#742</a></p>
+
+<p>そしたら忘れた頃にマージしてもらえました。</p>
+
+<p><a href="https://github.com/elasticsearch/kibana/blob/master/src/app/panels/histogram/timeSeries.js#L103">上記コード</a>にある_getNoZeroFlotPairsがソレです。</p>
+
+<p>この実装ではIntervalがどんな値だろうが、欠損値に0を補完しなくなります。</p>
+
+<br/>
+
+
+<p>次のリリースでは乗っかると思われます。</p>
+
+<p>ただ、以前コードを見た時は、そもそもstrategyを選択するUIがなかったので、画面からはまだ使えないかもしれん。。。</p>
+
+<br/>
+
+
+<h1>■すぐ使いたければどうすればいいのか</h1>
+
+<p>リリースまで待てない人は上記ソースを参考にして改修すると良いと思います。</p>
+
+<br/>
+
+
+<p>もしくは、とりあえず今すぐちょっと試したい方なんかは、乱暴だけど、</p>
+
+<p>app/panels/histogram/timeSeries.js</p>
+
+<p>の</p>
+
+<p>ts.ZeroFilled.prototype._getMinFlotPairs</p>
+
+<p>を以下のように改修するのが一番手っ取り早いです。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'>  <span class="nx">ts</span><span class="p">.</span><span class="nx">ZeroFilled</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_getMinFlotPairs</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="nx">time</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">times</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_data</span><span class="p">[</span><span class="nx">time</span><span class="p">]){</span>
+</span><span class='line'>      <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span> <span class="nx">time</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">_data</span><span class="p">[</span><span class="nx">time</span><span class="p">]]);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>#人によっては改修後にブラウザのキャッシュクリアが必要かもしれん</p>
+
+<p>ちなみにコードをいじる場合は、公式サイトからDLしたkibanaだと改修が大変なので、<a href="https://github.com/elasticsearch/kibana/releases">Github内のリリース</a>から落としたコードを利用すると幸せになれると思います。</p>
+
+<br/>
+
+
+<h1>■まとめ</h1>
+
+<ul>
+<li>今のKibanaのHistgramは欠損値に勝手に0を入れる</li>
+<li>それをOFFにするオプションを実装して、プルリク送って、マージされた</li>
+<li>自分でがんばって書き換えればすぐに使えるよ</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ブログつくりました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/02/08/first/"/>
+    <updated>2014-02-08T14:44:09+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/02/08/first</id>
+    <content type="html"><![CDATA[<p>エンジニアっぽくGithub + Octopressでつくってみました。</p>
+
+<br/>
+
+
+<p>技術的なことを気ままに書いていこうと思います。</p>
+]]></content>
+  </entry>
+  
+</feed>

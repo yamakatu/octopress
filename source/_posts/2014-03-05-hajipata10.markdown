@@ -1,0 +1,26 @@
+---
+layout: post
+title: "第13回はじめてのパターン認識読書会で発表してきました"
+date: 2014-03-05 00:43:09 +0900
+comments: false
+categories: ml-stats
+---
+
+<!-- more -->
+<br/>
+
+発表しました。
+
+担当は10章クラスタリングの前半部分（10.1〜10.3）
+<br/>
+
+内容よりスケジュール重視で担当を希望したので、それなりに理解できている章の担当になってしまった。
+
+（そのスケジュールも当初の日程からずれてしまったので意味なくなったけど）
+<br/>
+
+勉強会は自分が発表することで学習する場、ってじっちゃんが言ってたので、どうせなら勉強不足の章をやるべきだったなー、と反省。
+<br/>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/31886423" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/hajipata10" title="はじパタ 10章 クラスタリング 前半" target="_blank">はじパタ 10章 クラスタリング 前半</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>
+

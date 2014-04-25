@@ -1,0 +1,101 @@
+---
+layout: post
+title: "elasticsearch-hadoopをもうちょい調べて遅い理由が少しわかった"
+date: 2014-04-25 17:20:45 +0900
+comments: false
+categories: es-kibana
+---
+<!-- more -->
+##■これまでの話
+
+第4回Elasticsearch勉強会でElasticsearch-hadoopについて発表させて頂きましたが、その際、評価としてHiveの実行速度をHDFSをストレージとして利用した場合と比較してお見せしました。
+<br/>
+
+ここらへんです。
+<iframe src="http://www.slideshare.net/slideshow/embed_code/33755795?startSlide=18" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/elasticsearchhadoop" title="elasticsearch-hadoopをつかってごにょごにょしてみる" target="_blank">elasticsearch-hadoopをつかってごにょごにょしてみる</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>
+<br/>
+
+で、ちょっといくらなんでも遅すぎるな、と思って調べていたらわかったことがあったのでメモ。
+
+##■わかったこと
+
+結論から言うと、elasticsearch-hadoopはPrimaryなShardの数しかMapタスクを生成しない。
+<br/>
+
+{% img /images/majide.jpg '' '' %}
+<br/>
+
+これはelasticsearch-hadoopのここら辺のソースを読んでもわかります。
+
+・EsInputFormat.java getSplitsメソッド
+
+```java
+        ShardInputSplit[] splits = new ShardInputSplit[targetShards.size()];
+
+        int index = 0;
+        for (Entry<Shard, Node> entry : targetShards.entrySet()) {
+            Shard shard = entry.getKey();
+            Node node = entry.getValue();
+            splits[index++] =
+                        new ShardInputSplit(node.getIpAddress(), node.getHttpPort(), node.getId(), node.getName(), shard.getName(), savedMapping, savedSettings);
+        }
+
+        log.info(String.format("Created [%d] shard-splits", splits.length));
+        return splits;
+```
+
+Hadoopは利用するInputFormatのgetSplitsメソッドの返り値の長さで、Mapタスク数を決定します。
+
+このソースを見るとわかるように、Shardのsizeで配列を生成してますね。。
+
+\#Hive利用時に実際に利用するInputFormatはEsHiveInputFormatなのですが、EsHiveInputFormatのgetSplitsが内部で上記を呼び出しています。
+<br/>
+
+しかし、そもそもちゃんと公式ホームページ見てみると、<a href="http://www.elasticsearch.org/overview/hadoop/">elasticsearch-hadoopのトップページ</a>に書いてありましたw
+
+##■じゃあ、どうすればいいのか
+
+とりあえずは、インデックス生成の際にShardの数を多くすれば解決します。
+
+しかし、ElasticsearchはShardの数をインデックス生成後は変更できない（はず）なので、微妙な感が否めませんが。。。
+
+もっといい方法はないだろうか。。。
+
+次回のElasticearch勉強会でMapRの<a href="https://twitter.com/nagix">@nagix</a>さんから聞けたりするといいな。
+
+##■追試
+
+前回の評価では、シャード数が6なので、6つのMapタスクしか生成されてないことになります。
+実際、ログを確認したところ、生成されたMapタスク数は6でした。
+
+一方、HDFSを利用した場合はMapタスクは12個生成されていました。
+<br/>
+
+TaskTrackerは3台ともmapred.tasktracker.map.tasks.maximumを4に設定しているので、最大で12Mapを並列実行可能です。
+
+また、サーバは4コアマシンですので、CPU的にも3台合わせて12Mapを並列実行できる計算になります。
+
+\#実際にはElasticseachとかのプロセスがCPUリソースを消費しますが
+<br/>
+
+よって、HDFS利用時は12コアを使用し、elasticsearch-hadoop利用時は6コアしか使用されていないことになります。
+
+Oh,,,ということで再度評価を行いました。
+
+TaskTrackerとElasticsearchが同居したサーバを3台用意し(上記スライドの3番目の評価環境と同じ）、シャード数を12、レプリカ数を2でインデックスを生成して実行しました。
+<br/>
+
+結果は520ms ➡ 280ms前後にまで短縮できました。
+
+HDFS利用時の速度とはまだまだ差はありますが、少しはマシになりました。。
+<br/>
+
+\#そもそも1分でも十分遅いので、1分も5分もそんなに大して変わらないとかなんとか
+
+##■お詫びと訂正
+
+スライドの10ページ目で「ドキュメント1件で1Mapタスク」とありますが、正しくはMapReduceでreadする場合もHive同様、生成されるMapタスクの数はPrimary Shardの数でした。
+
+お詫びして訂正します。
+
+\#一番最初にドキュメント数を極小で試したのですが、その時のドキュメント数とシャード数が同じだったようです。。

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: misc | Yamakatu as a Service]]></title>
+  <link href="http://yamakatu.github.io/blog/categories/misc/atom.xml" rel="self"/>
+  <link href="http://yamakatu.github.io/"/>
+  <updated>2014-04-25T23:42:01+09:00</updated>
+  <id>http://yamakatu.github.io/</id>
+  <author>
+    <name><![CDATA[yamakatu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ブログつくりました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/02/08/first/"/>
+    <updated>2014-02-08T14:44:09+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/02/08/first</id>
+    <content type="html"><![CDATA[<p>エンジニアっぽくGithub + Octopressでつくってみました。</p>
+
+<br/>
+
+
+<p>技術的なことを気ままに書いていこうと思います。</p>
+]]></content>
+  </entry>
+  
+</feed>

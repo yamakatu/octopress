@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: spark | Yamakatu as a Service]]></title>
+  <link href="http://yamakatu.github.io/blog/categories/spark/atom.xml" rel="self"/>
+  <link href="http://yamakatu.github.io/"/>
+  <updated>2014-04-25T23:42:01+09:00</updated>
+  <id>http://yamakatu.github.io/</id>
+  <author>
+    <name><![CDATA[yamakatu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[AWS Casual Talks#2でLTしてきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/04/19/awscasual2/"/>
+    <updated>2014-04-19T20:52:52+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/04/19/awscasual2</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p><a href="http://www.zusaar.com/event/3817003">AWS Casual Talks#2</a>でSpark (+MLlib) についてLTしてきました。</p>
+
+<br/>
+
+
+<p>今回はエンジニアクラスタだったので、HadoopとSparkのアーキテクチャの違いについて、前回のはじパタでのLTよりもう少し深く言及してみました。</p>
+
+<p>Spark + MLlibについては機械学習クラスタだと実装に寄り過ぎで、エンジニアクラスタだと機械学習がピンとこないので、どこに行ってもあまり食いつかれないのが悲しい。</p>
+
+<br/>
+
+
+<p>反省点は持ち時間5分のところをCasualに15分も使ってしまったこと。。。ごめんなさい。</p>
+
+<p>発表も下手だったのでさらに反省。</p>
+
+<p>資料を発表直前まで作成していたので、他の方の発表を聞く余裕がなかったのも残念。</p>
+
+<p>次に活かしたい。</p>
+
+<br/>
+
+
+<p>・<a href="http://togetter.com/li/656484">togetter</a></p>
+
+<p>・<a href="http://dev.classmethod.jp/cloud/aws/aws-casual-talks-number-2/">クラスメソッドさんブログ</a></p>
+
+<br/>
+
+
+<p>スライド</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/33681347?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/aws-casual-talks2lt" title="Spot Instance + Spark + MLlibで実現する簡単低コスト機械学習" target="_blank">Spot Instance + Spark + MLlibで実現する簡単低コスト機械学習</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+]]></content>
+  </entry>
+  
+</feed>

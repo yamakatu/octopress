@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: hadoop | Yamakatu as a Service]]></title>
+  <link href="http://yamakatu.github.io/blog/categories/hadoop/atom.xml" rel="self"/>
+  <link href="http://yamakatu.github.io/"/>
+  <updated>2014-04-25T23:42:01+09:00</updated>
+  <id>http://yamakatu.github.io/</id>
+  <author>
+    <name><![CDATA[yamakatu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ClouderaManager の管理コンソールをとりあえず HTTPS 化する方法（EC2 を使うときは特に使おうね）]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/02/17/clouderamanagertls/"/>
+    <updated>2014-02-17T02:06:25+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/02/17/clouderamanagertls</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<h1>■環境</h1>
+
+<p>ClouderaManager 4.8.1 インストール済み（他のバージョンでもそんなに対して変わらないはず）</p>
+
+<br/>
+
+
+<h1>■何があったか</h1>
+
+<p>Hadoop Advent Calendar 2013で<a href="http://qiita.com/yamakatu/items/495246f98044398ad3d3">こんな記事</a>書いたら、<a href="http://twitter.com/shiumachi">@shiumachi</a>さんに</p>
+
+<h3>そのやり方だとブラウザと管理コンソール間が暗号化されてないから、AWSの鍵をアップロードする際に盗聴されちゃうじゃん。m9ぷぎゃー（かなり意訳</h3>
+
+<br/>
+
+
+<p>と、ご指摘を頂きました。</p>
+
+<p>薄々気づいてたんだけど面倒かったので手を抜いた。今では反省している。</p>
+
+<br/>
+
+
+<h1>■もうちょっとkwsk</h1>
+
+<p>EC2でClouderaManagerを使うと、指定したインスタンスタイプと台数でHadoopクラスタを自動で作成してくれます。すげー便利。</p>
+
+<p>この時ClouderaManagerはAWSのAPIを当然たたくんだけど、この際にはAWSの鍵が必要になります。</p>
+
+<p>そして、この鍵はブラウザでClouderaManagerの管理コンソールからPostしてあげる必要があります。</p>
+
+<p>この時、ClouderaManagerの管理コンソールはデフォだとhttpsに対応しておらず、httpでアクセスすることになるので、ブラウザとClouderaManagerが稼働するサーバ間の経路は暗号化されません。</p>
+
+<p>よって、AWSの鍵が盗聴されちゃうだろ。m9ぷぎゃー。となりました。</p>
+
+<br/>
+
+
+<h1>■どうする？</h1>
+
+<p>ClouderaManagerの管理コンソールをhttps化する方法を書いときます。</p>
+
+<p>今回のようなEC2を使う場面でなくても有用だと思います。たぶん。</p>
+
+<p>設定方法は本家の<a href="http://www.cloudera.com/content/cloudera-content/cloudera-docs/CM4Ent/latest/Cloudera-Manager-Administration-Guide/cmag_config_tls_security.html">ココ</a>に書いてあるんだけど、英語がアレな人もいらっしゃると思いますので、意味があると信じている。</p>
+
+<p>本家サイトにはいくつか方法が記載されていますが、今回はとりあえずhttps化ということで、一番手軽な方法(<a href="http://www.cloudera.com/content/cloudera-content/cloudera-docs/CM4Ent/latest/Cloudera-Manager-Administration-Guide/cmag_config_tls_encr.html?scroll=topic_2__title_4_unique_8">コレ</a>)にしてます。</p>
+
+<br/>
+
+
+<h1>■手順</h1>
+
+<h3>手順1 鍵作成&amp;配置</h3>
+
+<p>まず鍵を作成します。（※注 この鍵はHTTPSで利用する鍵で、AWSの鍵ではありません）</p>
+
+<p>この鍵の作成にはJavaのkeytoolを使います。</p>
+
+<br/>
+
+
+<p>そのため、鍵を作成するマシンにはJavaがインストールされている必要がありますが、ClouderaManagerがインストールされていれば、自ずとJavaがインストールされています。</p>
+
+<p>作成した鍵はいずれにせよClouderaManaerが動作するサーバに設置する必要があるので、ClouderaManagerがインストールされたサーバで鍵を作成するのが一番手っ取り早いです。</p>
+
+<p>よって、<b>今回はClouderaManagerが稼働するサーバ上で鍵を作成します。</b></p>
+
+<br/>
+
+
+<p>以下のコマンドで作成します。名前やら組織はめんどいので入力してませんが、適宜入力しましょう。</p>
+
+<p>```
+ubuntu@ip-10-133-198-199:~$ keytool -validity 180 -keystore cm.key -alias jetty -genkeypair -keyalg RSA
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+What is the name of your organizational unit?
+What is the name of your organization?
+What is the name of your City or Locality?
+What is the name of your State or Province?
+What is the two-letter country code for this unit?
+Is CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown correct?
+Enter key password for <jetty></p>
+
+<pre><code>(RETURN if same as keystore password):
+</code></pre>
+
+<p>Re-enter new password:
+```</p>
+
+<p>このままだとClouderaManagerのサーバプロセスがアクセスできないので、権限変えつつ、移動します。</p>
+
+<p><code>
+ubuntu@ip-10-133-198-199:~$ sudo mv cm.key /etc/cloudera-scm-server/
+ubuntu@ip-10-133-198-199:~$ sudo chown cloudera-scm:cloudera-scm /etc/cloudera-scm-server/cm.key
+ubuntu@ip-10-133-198-199:~$ sudo chmod 600 /etc/cloudera-scm-server/cm.key
+</code></p>
+
+<p>mv先は上記ディレクトリでなくても、サーバプロセスの起動ユーザ（今回はcloudera-scm）がアクセスできれば問題ないと思います。今回は解りやすそうなところに置いてみました。</p>
+
+<br/>
+
+
+<h3>手順2 ClouderaManager設定</h3>
+
+<p>ClouderaManagerの新規インストール時の場合を例にとります。</p>
+
+<p>クラスタ構築済みの場合でも設定箇所は変わらないので、適宜読み飛ばしてください。</p>
+
+<br/>
+
+
+<p>まず、ブラウザからClouderaManagerにアクセスし、ログインします。（初期状態だとポートは7180、IDとパスワードはadmin/admin）</p>
+
+<br/>
+
+
+<p>ログイン後、以下のように右上のadminからパスワード変更を選択</p>
+
+<p><img src="/images/cm-1.png" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<br/>
+
+
+<p>パスワード変更のフォームが出るが無視して、上部メニューの「管理」から「設定」を選択</p>
+
+<p><img src="/images/cm-2.png" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<br/>
+
+
+<p>左メニューからセキュリティを選択</p>
+
+<p><img src="/images/cm-3.png" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<br/>
+
+
+<p>以下を設定する</p>
+
+<p>「管理コンソールで TLS 暗号化を使用する」にチェック</p>
+
+<p>「TLS Keystore ファイルのパス」に鍵の配置先を指定。上記の例であれば/etc/cloudera-scm-server/cm.key</p>
+
+<p>「Keystore パスワード」に作成時に指定したパスワードを入力</p>
+
+<p><img src="/images/cm-4.png" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<p>「変更の保存」ボタンを押す</p>
+
+<br/>
+
+
+<h3>手順3 ClouderaManager再起動</h3>
+
+<p>以下みたいな感じでClouderaManagerを再起動します。</p>
+
+<p><code>
+ubuntu@ip-10-133-198-199:~$ sudo /etc/init.d/cloudera-scm-server restart
+</code></p>
+
+<p>httpsでアクセスして確認します。</p>
+
+<h3>httpsの場合のポートは7183です。</h3>
+
+<br/>
+
+
+<p>ただ再起動後すぐにアクセスしても多分無理。ちょっと待つ。</p>
+
+<p>アクセスできればおk。</p>
+
+<p>しらばく待ってもアクセスできなければ、iptablesとかEC2ならセキュリティグループの設定あたりを疑うのが吉かも。</p>
+
+<h1>■まとめ</h1>
+
+<p>・ClouderaManagerはデフォではhttpsが利用できない</p>
+
+<p>・この状況だと何かとまずい（EC2の場合は特に）</p>
+
+<p>・こんな手順でさくっといけるよ</p>
+]]></content>
+  </entry>
+  
+</feed>

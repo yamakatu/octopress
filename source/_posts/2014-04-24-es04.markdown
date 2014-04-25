@@ -1,0 +1,35 @@
+---
+layout: post
+title: "第4回Elasticsearch勉強会で発表してきました"
+date: 2014-04-24 02:00:10 +0900
+comments: false
+categories: es-kibana
+---
+<!-- more -->
+<br/>
+
+<a href="http://elasticsearch.doorkeeper.jp/events/8865">第4回Elasticsearch勉強会</a>で発表してきました。
+<br/>
+
+Kibanaなんかと比較し、これまであまり注目されることのなかったelasticsearch-hadoopが不憫すぎたので、elasticsearch-hadoopについて話してきました。
+<br/>
+
+当日の夕方ぐらいから下痢が始まって、自分の前の <a href="https://twitter.com/johtani">@johtani</a> さんの発表中にもトイレに駆け込んだんですが、なんとか発表中は中身を出さずにすみました。
+
+100人を超える参加者だったので、緊張するかなーとおもっていましたが、下痢でそれどこではなかったので、力が抜けていいかんじに発表できました。
+
+ちなみにこれを下痢駆動発表と呼ぶらしいです。
+
+<blockquote class="twitter-tweet" lang="ja"><p>下痢かつさんの下痢駆動発表</p>&mdash; ノートハエ・ノーライフ (@tohae) <a href="https://twitter.com/tohae/statuses/458516157683601408">2014, 4月 22</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br/>
+
+みなさんも一度、試してみてはいかがでしょうか。
+<br/>
+
+・<a href="http://dev.classmethod.jp/server-side/4th-elasticsearchjp/">クラスメソッドさんまとめ</a>
+
+・<a href="http://blog.johtani.info/blog/2014/04/21/hold-on-4th-elasticsearch-jp/">大谷さんまとめ</a>
+<br/>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/33755795" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/elasticsearchhadoop" title="elasticsearch-hadoopをつかってごにょごにょしてみる" target="_blank">elasticsearch-hadoopをつかってごにょごにょしてみる</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>

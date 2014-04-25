@@ -1,0 +1,24 @@
+---
+layout: post
+title: "第14回はじめてのパターン認識読書会でLTしてきました"
+date: 2014-03-19 09:54:15 +0900
+comments: false
+categories: ml-stats
+---
+
+<!-- more -->
+<br/>
+
+はじパタ第14回でLTしてきました。
+<br/>
+
+Spark + MLlib 使うと、普通にHadoop使うより機械学習速くできるよ、って話。
+<br/>
+
+多少滑ったけど、花粉症による頭痛のせいだと信じている。
+<br/>
+
+はじパタなみなさん、おつかれさまでした。
+<br/>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/32442430" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
