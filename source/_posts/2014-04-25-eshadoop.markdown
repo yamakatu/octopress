@@ -19,7 +19,7 @@ categories: es-kibana
 
 ##■わかったこと
 
-結論から言うと、elasticsearch-hadoopはPrimaryなShardの数しかMapタスクを生成しない。
+結論から言うと、elasticsearch-hadoopはRead時はPrimary Shardの数しかMapタスクを生成しない。
 <br/>
 
 {% img /images/majide.jpg '' '' %}

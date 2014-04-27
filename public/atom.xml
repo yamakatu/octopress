@@ -4,7 +4,7 @@
   <title><![CDATA[Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-04-25T23:42:01+09:00</updated>
+  <updated>2014-04-27T20:07:04+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -42,7 +42,7 @@
 
 <h2>■わかったこと</h2>
 
-<p>結論から言うと、elasticsearch-hadoopはPrimaryなShardの数しかMapタスクを生成しない。</p>
+<p>結論から言うと、elasticsearch-hadoopはRead時はPrimary Shardの数しかMapタスクを生成しない。</p>
 
 <br/>
 
