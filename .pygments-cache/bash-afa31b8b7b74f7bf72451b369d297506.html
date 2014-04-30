@@ -1,0 +1,15 @@
+<div class="highlight"><pre>curl -XPUT localhost:9200/river/my_csv_river/meta -d ’ <span class="o">{</span>
+  <span class="s2">&quot;type&quot;</span> : <span class="s2">&quot;csv&quot;</span>,
+  <span class="s2">&quot;csv_file&quot;</span> : <span class="o">{</span>
+    <span class="s2">&quot;first_line_is_header&quot;</span>:<span class="s2">&quot;true&quot;</span>,
+    <span class="s2">&quot;folder&quot;</span> : <span class="s2">&quot;/tmp&quot;</span>,
+    <span class="s2">&quot;filename_pattern&quot;</span> : <span class="s2">&quot;.*\\.csv$&quot;</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;index&quot;</span> : <span class="o">{</span>
+    <span class="s2">&quot;index&quot;</span> : <span class="s2">&quot;index_name&quot;</span>,
+    <span class="s2">&quot;type&quot;</span> : <span class="s2">&quot;type+name&quot;</span>,
+    <span class="s2">&quot;bulk_size&quot;</span> : 1000,
+    <span class="s2">&quot;bulk_threshold&quot;</span> : 10
+  <span class="o">}</span>
+<span class="o">}</span>’
+</pre></div>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: es-kibana | Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/blog/categories/es-kibana/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-04-27T20:07:04+09:00</updated>
+  <updated>2014-04-30T16:59:45+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -12,6 +12,113 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ElasticsearchでCSVからインデクシングする]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/04/30/escsvriver/"/>
+    <updated>2014-04-30T16:28:37+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/04/30/escsvriver</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p>インデクシングしたいデータがCSVだった場合、CSVからjsonへの変換は意外と面倒だったりしませんか。</p>
+
+<p>そんな場合、CSV River Pluginを使ってCSVから直接インデクシングがオススメです。</p>
+
+<p><a href="https://github.com/AgileWorksOrg/elasticsearch-river-csv">CSV River Plugin</a></p>
+
+<h3>インストール</h3>
+
+<p>(ver 2.0.1の場合。ESとのバージョン対応は上記Githubで要確認)</p>
+
+<p><code>bash
+bin/plugin -install river-csv -url https://github.com/AgileWorksOrg/elasticsearch-river-csv/releases/download/2.0.1/elasticsearch-river-csv-2.0.1.zip
+</code></p>
+
+<h3>登録</h3>
+
+<p>こんな感じ。他のオプションは上記ページで要確認</p>
+
+<p>```bash
+curl -XPUT localhost:9200/river/my_csv_river/meta -d ’ {
+  &ldquo;type&rdquo; : &ldquo;csv&rdquo;,
+  &ldquo;csv_file&rdquo; : {</p>
+
+<pre><code>"first_line_is_header":"true",
+"folder" : "/tmp",
+"filename_pattern" : ".*\\.csv$"
+</code></pre>
+
+<p>  },
+  &ldquo;index&rdquo; : {</p>
+
+<pre><code>"index" : "index_name",
+"type" : "type+name",
+"bulk_size" : 1000,
+"bulk_threshold" : 10
+</code></pre>
+
+<p>  }
+}’
+```</p>
+
+<h3>罠</h3>
+
+<p>しかし罠がありました。</p>
+
+<br/>
+
+
+<p>GithubのREADME.mdには一言も書いてませんが、処理されたCSVファイルは以下の命名規則でRenameされます。</p>
+
+<br/>
+
+
+<p>（hoge.csvの場合）</p>
+
+<ul>
+<li>読み込み中：hoge.csv.processing</li>
+<li>読み込み済：hoge.csv.processing.imported</li>
+</ul>
+
+
+<br/>
+
+
+<p>登録のjsonを見れば雰囲気でわかりますが、folder以下のfilename_patternで指定したファイルが対象になります。</p>
+
+<p>そのため、</p>
+
+<p><code>sh
+“filename_pattern” : “.*”
+</code></p>
+
+<p>みたいな正規表現で設定すると、読み込み済みのCSVファイルが、次回polling時に読み込み対象になります。</p>
+
+<p>pollingはデフォルト60minなので（変更可）、1時間ごとにすべてのファイルが再インデクシングされます。</p>
+
+<p>（しかも倍々でw）</p>
+
+<p>デフォルト値が上記正規表現なので、通常であればこのままにしとくのが吉です。</p>
+
+<br/>
+
+
+<p>変更する場合、登録する正規表現は</p>
+
+<p>.csv$</p>
+
+<p>で終わるようにしましょう。</p>
+
+<br/>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[elasticsearch-hadoopをもうちょい調べて遅い理由が少しわかった]]></title>
