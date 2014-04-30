@@ -4,7 +4,7 @@
   <title><![CDATA[Category: es-kibana | Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/blog/categories/es-kibana/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-04-30T16:59:45+09:00</updated>
+  <updated>2014-04-30T21:25:10+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -99,8 +99,6 @@ curl -XPUT localhost:9200/river/my_csv_river/meta -d ’ {
 <p>みたいな正規表現で設定すると、読み込み済みのCSVファイルが、次回polling時に読み込み対象になります。</p>
 
 <p>pollingはデフォルト60minなので（変更可）、1時間ごとにすべてのファイルが再インデクシングされます。</p>
-
-<p>（しかも倍々でw）</p>
 
 <p>デフォルト値が上記正規表現なので、通常であればこのままにしとくのが吉です。</p>
 
