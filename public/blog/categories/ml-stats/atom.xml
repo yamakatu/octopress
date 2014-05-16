@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ml-stats | Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/blog/categories/ml-stats/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-04-30T21:25:10+09:00</updated>
+  <updated>2014-05-16T15:38:19+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -12,6 +12,153 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[第1回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/05/16/midoribon01/"/>
+    <updated>2014-05-16T02:07:26+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/05/16/midoribon01</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p><a href="http://connpass.com/event/5972/">第1回「データ解析のための統計モデリング入門」読書会</a>を開催しました。</p>
+
+<p>今回は<a href="http://www.iij.ad.jp/company/development/external/study/">IIJ様</a>に会場を提供して頂きました。</p>
+
+<p><img src="/images/kansya.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<p>この勉強会は「はじめてのパターン認識読書会（略してはじパタ）」の流れを引き継ぐ形ではじまりました。</p>
+
+<p>当初は、</p>
+
+<p>はじパタメンバ + α = 30人程度？</p>
+
+<p>という認識でしたが、募集を開始してみたところ、あれよあれよという間に100人を超える方に参加申し込みを頂けました。</p>
+
+<p>当日は雨も降ったりで80名程度の参加者となりましたが、ここまで人が集まったのは、やはり選んだ本が良かったのかなと思います。
+#正確な人数は数え忘れました&hellip;</p>
+
+<p>参加してくださった皆さん、お疲れさまでした。</p>
+
+<br/>
+
+
+<p>そして初回開催後、2章から6章までの発表者を調整さんで募集を行い、11名の方から立候補頂きました。</p>
+
+<p>その後調整して9名の方にお願いすることとなりました。</p>
+
+<p>立候補者がイマイチ集まらなかったのは、前半部分はみんなには簡単過ぎてやる気がしないからなのだろうか。。。</p>
+
+<h2>発表内容</h2>
+
+<h3>オープニング by @yamakatu</h3>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/34639901" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/midoribon-opening" title="第1回「データ解析のための統計モデリング入門」読書会 オープニング" target="_blank">第1回「データ解析のための統計モデリング入門」読書会 オープニング</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+
+<p>しゃべった。特記することは特になし。強いて言うならすべった。</p>
+
+<h3>1章 by @yamakatu</h3>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/34640742" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/1-34640742" title="みどりぼん 1章「データを理解するために統計モデルを作る」" target="_blank">みどりぼん 1章「データを理解するために統計モデルを作る」</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+
+<br/>
+
+
+<p>しゃべった。</p>
+
+<p>発表後に指摘をくださった方がいたのだけれど（お名前聞くの忘れた）、1.2章はもう少し突っ込んでも良かったかもしれない。</p>
+
+<p>この場にいる人は統計モデルの重要性を十分わかっているから来ている、と思ってあんま触れませんでした。</p>
+
+<p>確かに大事なことだから、もっと触れてもよかったな。</p>
+
+<h3>LTその1 「アジャイルデータサイエンス」1章 by @who_you_me</h3>
+
+<p><a href="http://slide.who-you-me.com/chap01.html#/"><a href="http://slide.who-you-me.com/chap01.html#/">http://slide.who-you-me.com/chap01.html#/</a></a></p>
+
+<p>最近話題の本、「アジャイルデータサイエンス」の1章。</p>
+
+<p>今回は1章で、今後も継続してLTしてくださるとのこと。</p>
+
+<br/>
+
+
+<p>「(開発)メンバーはクリエイティブワーカーであり、オフィスワーカーではない」</p>
+
+<p>ほんとその通りだと思う。</p>
+
+<br/>
+
+
+<p>一冊でたくさんのミドルウェアやサービスを取り上げてるので、それぞれについては内容薄そうだなーって思ってたけど、本が想像以上に薄かったので尚更薄そう。。。</p>
+
+<h3>LTその2 がうす・まるこふの定理 とかそのへん by @tanimocchi</h3>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/34533316" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/mocchi_/lt-gauss-markovtheorem" title="がうす・まるこふ の定理とかそのへん" target="_blank">がうす・まるこふ の定理とかそのへん</a> </strong> from <strong><a href="http://www.slideshare.net/mocchi_" target="_blank">Tadaaki Tanimoto</a></strong> </div></p>
+
+<br/>
+
+
+<p>久保本は一般化線形モデルからはじまって線形モデルの話はないから、そこらへん抑えましょう、ということでLTしてくださいました。</p>
+
+<p>相変わらずの数学力。。。</p>
+
+<h3>飛び込みLT</h3>
+
+<p>メモし忘れた。。。</p>
+
+<h2>次回</h2>
+
+<p>5/27 ドワンゴ様に会場をお借りして開催</p>
+
+<p><a href="http://connpass.com/event/6392/">第2回「データ解析のための統計モデリング入門」読書会</a></p>
+
+<h2>以下、個人的まとめ</h2>
+
+<h3>決定事項</h3>
+
+<ul>
+<li>毎週開催か隔週開催か？ ➡ 参加者の皆さんで多数決を行い、隔週開催に決定。</li>
+</ul>
+
+
+<h3>反省点</h3>
+
+<ul>
+<li>何曜開催にするか、皆さんの意見を聞いて決定するのを忘れた</li>
+<li>正確な参加人数をカウントし忘れた</li>
+<li>1章はボリュームも少なく、時間も余ってしまったので、最初に自分が2章までやった方が良かった</li>
+<li>懇親会でご一緒した方全員ご挨拶できなかった(懇親会に来なかった方でもご挨拶したい方いたけどできず</li>
+<li>すべった</li>
+</ul>
+
+
+<p>大杉。。</p>
+
+<h3>次回メモ</h3>
+
+<ul>
+<li>何曜開催にするか、次回オープニングで参加者のみなさんの意見を聞きつつ決定する</li>
+<li>オープニングですべらない</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[第14回はじめてのパターン認識読書会でLTしてきました]]></title>
