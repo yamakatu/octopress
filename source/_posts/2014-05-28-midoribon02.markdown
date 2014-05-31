@@ -1,0 +1,122 @@
+---
+layout: post
+title: "第2回「データ解析のための統計モデリング入門」読書会を開催しました"
+date: 2014-05-28 10:08:12 +0900
+comments: false
+categories: ml-stats
+---
+<!-- more -->
+<br/>
+
+<a href="http://connpass.com/event/6392/">第2回「データ解析のための統計モデリング入門」読書会</a>を開催しました。
+
+今回はドワンゴ様に会場を提供して頂きました。
+
+{% img /images/arigatou2.jpg '' '' %}
+<br/>
+
+###オープニングトーク by @yamakatu
+
+1回目と同じく静寂の中で始まったアウェー感満載のオープニングトーク。毎回心が鍛えられます。
+
+以下、話したこと要約
+
+・9/16に久保先生に参加していただくよ
+
+・前半発表者決まったよ
+
+・開催曜日は考えたけど、やっぱこのまま火曜開催でやります
+
+開催曜日については、とりあえず発表者の皆さんのご都合を聞いてみましたが、全員合わせてみたら月曜から金曜まで全部無理だったというドリフ的展開になったので、引き続き火曜開催となりました。
+
+ちなみに次回はこの静寂の空気を打ち壊す秘策を用意しておりますまる
+<br/>
+
+##発表内容
+
+###第2章「確率分布と統計モデルの最尤推定」 by @kos59125
+
+<iframe src='https://onedrive.live.com/embed?cid=FD448A567D4BC37E&resid=FD448A567D4BC37E%214702&authkey=&em=2&wdAr=1.7777777777777777' width='700px' height='440px' frameborder='0'>これは、<a target='_blank' href='http://office.com/webapps'>Office Online</a> の機能を利用した、<a target='_blank' href='http://office.com'>Microsoft Office</a> の埋め込み型のプレゼンテーションです。</iframe>
+<br/>
+<br/>
+
+最近ごみ箱アイコンをリニューアルしたごみ箱さんによる2章の発表。
+
+脱線として発表してくださったポアソン分布まわりの証明が個人的には特にナイスで、さすがはごみ箱さん！という感じでした。
+
+今回の証明のように、自分で一度手を動かして計算してみるのは、理解を深めるために大事ですよね。
+
+質疑もなかなか盛り上がって良い感じでした。みんなもっと発言して双方向で深い議論をしたいですね。
+<br/>
+
+あとどうでもいいですが、OneDriveにこんなスライド埋め込み機能あったんですね。さすがF#勢のごみ箱さんです。。
+
+\#けどスライド表示の操作感がイマイチ。。
+<br/>
+
+###LT アジャイルデータサイエンス 第2章「データ」 by @who_you_me
+
+<a href="http://slide.who-you-me.com/greenbook/chap02.html#/">http://slide.who-you-me.com/greenbook/chap02.html#/</a>
+
+前回の1章に引き続き、2章。
+
+半構造や非構造データはSQLよりも、スキーマに柔軟性を持たせられるNoSQLがいいよね的な。
+<br/>
+
+###LT AwkでEffective前処理 by @aki_n1wa
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35162771" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shinyaakiba/awkeffective-35162771" title="Awkでeffective前処理" target="_blank">Awkでeffective前処理</a> </strong> from <strong><a href="http://www.slideshare.net/shinyaakiba" target="_blank">Shinya Akiba</a></strong> </div>
+<br/>
+
+分析力をコアとする某企業でバイトしてらっしゃるという秋庭さん。
+
+実際の分析業務では前処理は超重要、、、ですが超面倒でもあるので、ここを効率化できると幸せですよね。
+<br/>
+
+##飛び込みLT
+
+ごみ箱さんの2章の発表は1時間とっていたのですが、30分で終わるというトラブルもあって飛び込みLTを募集させて頂きました。
+
+以下2件発表して頂けましたー
+
+###飛び込みLTその1 IT系エンジニアのための統計学 by @piroyoung
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/34535247" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/it-34535247" title="IT系エンジニアのための統計学入門 ver1" target="_blank">IT系エンジニアのための統計学入門 ver1</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div>
+<br/>
+
+内容的には、確率変数、期待値、ベルヌーイ分布、二項分布、一様分布あたりから、今回出てきた最尤推定まで統計の基本をお話して頂けました。
+
+ごみ箱さんの発表の後だったので、内容的に前後してる感じもちょっとしましたが、良い確認になりましたね。
+
+やはり統計の基本を抑えるには赤本ですよねー
+<br/>
+
+###飛び込みLTその2 最尤推定をPHPで書いてみた by @y__uti
+<br/>
+
+2章で取り上げられている最尤推定をPHPで書いてみましたー、というお話。
+
+先ほどの「一度自分で計算してみる」と似た話ですが、アルゴリズムも一度自分で実装すると理解が深まるのでいいですよね。
+<br/>
+
+###まとめ
+
+1回目と同じく静寂の中ではじまったので少し不安でしたが、実際にやってみると質疑もなかなか盛り上がって良かったかなと思っています。
+
+2章の内容はまだ初歩的ですが、今後難易度が上がってきた時には十分な理解を得るためにも、もっと皆で議論したいですね。
+
+そのための仕掛けも主催者の仕事だと思って頑張ります。。。
+<br/>
+
+###次回
+
+<a href="http://connpass.com/event/6652/">次回の募集</a>、早速開始しています。既に募集枠埋まりそうですが。。。
+
+場所は同じくドワンゴさんです。ありがたやー
+
+そろそろ難易度も徐々に上がってきますが、がんばっていきましょー
+
+
+
+
+

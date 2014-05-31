@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "第1回「データ解析のための統計モデリング入門」読書会を開催しました"
-date: 2014-05-16 02:07:26 +0900
+date: 2014-05-14 23:07:26 +0900
 comments: false
 categories: ml-stats
 ---
@@ -30,11 +30,11 @@ categories: ml-stats
 参加してくださった皆さん、お疲れさまでした。
 <br/>
 
-そして初回開催後、2章から6章までの発表者を調整さんで募集を行い、11名の方から立候補頂きました。
+そして初回開催後、2章から6章までの発表者を調整さんで募集し、11名の方から立候補頂きました。
 
-その後調整して9名の方にお願いすることとなりました。
+その後調整して9名の方にお願いすることに。
 
-立候補者がイマイチ集まらなかったのは、前半部分はみんなには簡単過ぎてやる気がしないからなのだろうか。。。
+立候補者がイマイチ集まらなかったのは、前半部分はみんなには簡単過ぎて、やる気がしないからなのでしょうか。。。
 
 ##発表内容
 
@@ -42,19 +42,21 @@ categories: ml-stats
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/34639901" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/midoribon-opening" title="第1回「データ解析のための統計モデリング入門」読書会 オープニング" target="_blank">第1回「データ解析のための統計モデリング入門」読書会 オープニング</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>
 
-しゃべった。特記することは特になし。強いて言うならすべった。
+べしゃりました。特に書くようなことはないです。強いて言うなら、すべりました。
+
+ちなみにタイトルは「冷やし中華はじめました」を意識しました。
 
 ###1章 by @yamakatu
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/34640742" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/1-34640742" title="みどりぼん 1章「データを理解するために統計モデルを作る」" target="_blank">みどりぼん 1章「データを理解するために統計モデルを作る」</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>
 <br/>
-しゃべった。
+しゃべりました。
 
-発表後に指摘をくださった方がいたのだけれど（お名前聞くの忘れた）、1.2章はもう少し突っ込んでも良かったかもしれない。
+発表後に指摘をくださった方がいたのですが（お名前聞くの忘れた）、1.2章はもう少し突っ込んでも良かったかもしれません。
 
 この場にいる人は統計モデルの重要性を十分わかっているから来ている、と思ってあんま触れませんでした。
 
-確かに大事なことだから、もっと触れてもよかったな。
+確かに大事なことだから、もっと触れてもよかったかな。
 
 ###LTその1 「アジャイルデータサイエンス」1章 by @who_you_me
 
@@ -70,7 +72,7 @@ categories: ml-stats
 ほんとその通りだと思う。
 <br/>
 
-一冊でたくさんのミドルウェアやサービスを取り上げてるので、それぞれについては内容薄そうだなーって思ってたけど、本が想像以上に薄かったので尚更薄そう。。。
+一冊でたくさんのミドルウェアやサービスを取り上げてるので、それぞれについては内容薄そうだなーって思ってたけど、本が想像以上に薄かったので尚更薄そうな。。。
 
 ###LTその2 がうす・まるこふの定理 とかそのへん by @tanimocchi
 
@@ -79,11 +81,13 @@ categories: ml-stats
 
 久保本は一般化線形モデルからはじまって線形モデルの話はないから、そこらへん抑えましょう、ということでLTしてくださいました。
 
-相変わらずの数学力。。。
+相変わらずさすがの数学力。。。
 
 ###飛び込みLT
 
-メモし忘れた。。。
+時間が余ったので飛び込みLTを募集したところ、1名の方が飛び込みでLTしてくださいました。
+
+すいません、内容はメモし忘れました。。。
 
 ##次回
 

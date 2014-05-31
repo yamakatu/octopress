@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ml-stats | Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/blog/categories/ml-stats/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-05-16T15:38:19+09:00</updated>
+  <updated>2014-05-28T16:52:40+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -14,10 +14,166 @@
 
   
   <entry>
+    <title type="html"><![CDATA[第2回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/05/28/midoribon02/"/>
+    <updated>2014-05-28T10:08:12+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/05/28/midoribon02</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<br/>
+
+
+<p><a href="http://connpass.com/event/6392/">第2回「データ解析のための統計モデリング入門」読書会</a>を開催しました。</p>
+
+<p>今回はドワンゴ様に会場を提供して頂きました。</p>
+
+<p><img src="/images/arigatou2.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<h3>オープニングトーク by @yamakatu</h3>
+
+<p>1回目と同じく静寂の中で始まったアウェー感満載のオープニングトーク。毎回心が鍛えられます。</p>
+
+<p>以下、話したこと要約</p>
+
+<p>・9/16に久保先生に参加していただくよ</p>
+
+<p>・前半発表者決まったよ</p>
+
+<p>・開催曜日は考えたけど、やっぱこのまま火曜開催でやります</p>
+
+<p>開催曜日については、とりあえず発表者の皆さんのご都合を聞いてみましたが、全員合わせてみたら月曜から金曜まで全部無理だったというドリフ的展開になったので、引き続き火曜開催となりました。</p>
+
+<p>ちなみに次回はこの静寂の空気を打ち壊す秘策を用意しておりますまる</p>
+
+<br/>
+
+
+<h2>発表内容</h2>
+
+<h3>第2章「確率分布と統計モデルの最尤推定」 by @kos59125</h3>
+
+<iframe src='https://onedrive.live.com/embed?cid=FD448A567D4BC37E&resid=FD448A567D4BC37E%214702&authkey=&em=2&wdAr=1.7777777777777777' width='700px' height='440px' frameborder='0'>これは、<a target='_blank' href='http://office.com/webapps'>Office Online</a> の機能を利用した、<a target='_blank' href='http://office.com'>Microsoft Office</a> の埋め込み型のプレゼンテーションです。</iframe>
+
+
+<br/>
+
+
+<br/>
+
+
+<p>最近ごみ箱アイコンをリニューアルしたごみ箱さんによる2章の発表。</p>
+
+<p>脱線として発表してくださったポアソン分布まわりの証明が個人的には特にナイスで、さすがはごみ箱さん！という感じでした。</p>
+
+<p>今回の証明のように、自分で一度手を動かして計算してみるのは、理解を深めるために大事ですよね。</p>
+
+<p>質疑もなかなか盛り上がって良い感じでした。みんなもっと発言して双方向で深い議論をしたいですね。</p>
+
+<br/>
+
+
+<p>あとどうでもいいですが、OneDriveにこんなスライド埋め込み機能あったんですね。さすがF#勢のごみ箱さんです。。</p>
+
+<p>#けどスライド表示の操作感がイマイチ。。</p>
+
+<br/>
+
+
+<h3>LT アジャイルデータサイエンス 第2章「データ」 by @who_you_me</h3>
+
+<p><a href="http://slide.who-you-me.com/greenbook/chap02.html#/"><a href="http://slide.who-you-me.com/greenbook/chap02.html#/">http://slide.who-you-me.com/greenbook/chap02.html#/</a></a></p>
+
+<p>前回の1章に引き続き、2章。</p>
+
+<p>半構造や非構造データはSQLよりも、スキーマに柔軟性を持たせられるNoSQLがいいよね的な。</p>
+
+<br/>
+
+
+<h3>LT AwkでEffective前処理 by @aki_n1wa</h3>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35162771" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shinyaakiba/awkeffective-35162771" title="Awkでeffective前処理" target="_blank">Awkでeffective前処理</a> </strong> from <strong><a href="http://www.slideshare.net/shinyaakiba" target="_blank">Shinya Akiba</a></strong> </div></p>
+
+<br/>
+
+
+<p>分析力をコアとする某企業でバイトしてらっしゃるという秋庭さん。</p>
+
+<p>実際の分析業務では前処理は超重要、、、ですが超面倒でもあるので、ここを効率化できると幸せですよね。</p>
+
+<br/>
+
+
+<h2>飛び込みLT</h2>
+
+<p>ごみ箱さんの2章の発表は1時間とっていたのですが、30分で終わるというトラブルもあって飛び込みLTを募集させて頂きました。</p>
+
+<p>以下2件発表して頂けましたー</p>
+
+<h3>飛び込みLTその1 IT系エンジニアのための統計学 by @piroyoung</h3>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/34535247" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/it-34535247" title="IT系エンジニアのための統計学入門 ver1" target="_blank">IT系エンジニアのための統計学入門 ver1</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div></p>
+
+<br/>
+
+
+<p>内容的には、確率変数、期待値、ベルヌーイ分布、二項分布、一様分布あたりから、今回出てきた最尤推定まで統計の基本をお話して頂けました。</p>
+
+<p>ごみ箱さんの発表の後だったので、内容的に前後してる感じもちょっとしましたが、良い確認になりましたね。</p>
+
+<p>やはり統計の基本を抑えるには赤本ですよねー</p>
+
+<br/>
+
+
+<h3>飛び込みLTその2 最尤推定をPHPで書いてみた by @y__uti</h3>
+
+<br/>
+
+
+<p>2章で取り上げられている最尤推定をPHPで書いてみましたー、というお話。</p>
+
+<p>先ほどの「一度自分で計算してみる」と似た話ですが、アルゴリズムも一度自分で実装すると理解が深まるのでいいですよね。</p>
+
+<br/>
+
+
+<h3>まとめ</h3>
+
+<p>1回目と同じく静寂の中ではじまったので少し不安でしたが、実際にやってみると質疑もなかなか盛り上がって良かったかなと思っています。</p>
+
+<p>2章の内容はまだ初歩的ですが、今後難易度が上がってきた時には十分な理解を得るためにも、もっと皆で議論したいですね。</p>
+
+<p>そのための仕掛けも主催者の仕事だと思って頑張ります。。。</p>
+
+<br/>
+
+
+<h3>次回</h3>
+
+<p><a href="http://connpass.com/event/6652/">次回の募集</a>、早速開始しています。既に募集枠埋まりそうですが。。。</p>
+
+<p>場所は同じくドワンゴさんです。ありがたやー</p>
+
+<p>そろそろ難易度も徐々に上がってきますが、がんばっていきましょー</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[第1回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/05/16/midoribon01/"/>
-    <updated>2014-05-16T02:07:26+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/05/16/midoribon01</id>
+    <link href="http://yamakatu.github.io/blog/2014/05/14/midoribon01/"/>
+    <updated>2014-05-14T23:07:26+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/05/14/midoribon01</id>
     <content type="html"><![CDATA[<!-- more -->
 
 
@@ -49,11 +205,11 @@
 <br/>
 
 
-<p>そして初回開催後、2章から6章までの発表者を調整さんで募集を行い、11名の方から立候補頂きました。</p>
+<p>そして初回開催後、2章から6章までの発表者を調整さんで募集し、11名の方から立候補頂きました。</p>
 
-<p>その後調整して9名の方にお願いすることとなりました。</p>
+<p>その後調整して9名の方にお願いすることに。</p>
 
-<p>立候補者がイマイチ集まらなかったのは、前半部分はみんなには簡単過ぎてやる気がしないからなのだろうか。。。</p>
+<p>立候補者がイマイチ集まらなかったのは、前半部分はみんなには簡単過ぎて、やる気がしないからなのでしょうか。。。</p>
 
 <h2>発表内容</h2>
 
@@ -64,7 +220,9 @@
 
 <p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/midoribon-opening" title="第1回「データ解析のための統計モデリング入門」読書会 オープニング" target="_blank">第1回「データ解析のための統計モデリング入門」読書会 オープニング</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
 
-<p>しゃべった。特記することは特になし。強いて言うならすべった。</p>
+<p>べしゃりました。特に書くようなことはないです。強いて言うなら、すべりました。</p>
+
+<p>ちなみにタイトルは「冷やし中華はじめました」を意識しました。</p>
 
 <h3>1章 by @yamakatu</h3>
 
@@ -76,13 +234,13 @@
 <br/>
 
 
-<p>しゃべった。</p>
+<p>しゃべりました。</p>
 
-<p>発表後に指摘をくださった方がいたのだけれど（お名前聞くの忘れた）、1.2章はもう少し突っ込んでも良かったかもしれない。</p>
+<p>発表後に指摘をくださった方がいたのですが（お名前聞くの忘れた）、1.2章はもう少し突っ込んでも良かったかもしれません。</p>
 
 <p>この場にいる人は統計モデルの重要性を十分わかっているから来ている、と思ってあんま触れませんでした。</p>
 
-<p>確かに大事なことだから、もっと触れてもよかったな。</p>
+<p>確かに大事なことだから、もっと触れてもよかったかな。</p>
 
 <h3>LTその1 「アジャイルデータサイエンス」1章 by @who_you_me</h3>
 
@@ -102,7 +260,7 @@
 <br/>
 
 
-<p>一冊でたくさんのミドルウェアやサービスを取り上げてるので、それぞれについては内容薄そうだなーって思ってたけど、本が想像以上に薄かったので尚更薄そう。。。</p>
+<p>一冊でたくさんのミドルウェアやサービスを取り上げてるので、それぞれについては内容薄そうだなーって思ってたけど、本が想像以上に薄かったので尚更薄そうな。。。</p>
 
 <h3>LTその2 がうす・まるこふの定理 とかそのへん by @tanimocchi</h3>
 
@@ -116,11 +274,13 @@
 
 <p>久保本は一般化線形モデルからはじまって線形モデルの話はないから、そこらへん抑えましょう、ということでLTしてくださいました。</p>
 
-<p>相変わらずの数学力。。。</p>
+<p>相変わらずさすがの数学力。。。</p>
 
 <h3>飛び込みLT</h3>
 
-<p>メモし忘れた。。。</p>
+<p>時間が余ったので飛び込みLTを募集したところ、1名の方が飛び込みでLTしてくださいました。</p>
+
+<p>すいません、内容はメモし忘れました。。。</p>
 
 <h2>次回</h2>
 
