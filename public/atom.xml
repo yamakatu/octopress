@@ -4,7 +4,7 @@
   <title><![CDATA[Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-05-28T16:52:40+09:00</updated>
+  <updated>2014-06-13T03:59:53+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -12,6 +12,163 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[第3回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/06/13/midoribon03/"/>
+    <updated>2014-06-13T02:53:23+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/06/13/midoribon03</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p>第3回「データ解析のための統計モデリング入門」読書会を開催しました。</p>
+
+<p>今回も前回に引き続きドワンゴ様に会場を提供して頂きました。感謝！</p>
+
+<!-- more -->
+
+
+<p><img src="http://yamakatu.github.io/images/arigatou-golgo.jpeg"  ></p>
+
+<br/>
+
+
+<p>今回は3章で、これまでよりも少し踏み込んだ内容ということもあり、前回よりもさらに質疑で盛り上がったかなと思います。</p>
+
+<p>#個人的には本を忘れてしまって、質疑に入り辛かったのが残念…</p>
+
+<p>ですが、まだまだですね…もうちょっと仕掛けを考えないといけません。</p>
+
+<p>ということで次回は勉強会終了後に、そのまま会場で懇親会を行います。</p>
+
+<p>これでもう少し議論が盛んになることを期待。</p>
+
+<br/>
+
+
+<p>次回は他にも、UStreamもしくはニコニコ生放送での中継を予定しています。</p>
+
+<p>これで遠方の方も見れるね１１！</p>
+
+<p>わざわざ会場に足を運ばなくても見れるね１１！</p>
+
+<br/>
+
+
+<h3>■オープニングトーク by @yamakatu</h3>
+
+<p>次回は勉強会後に懇親会を予定。</p>
+
+<p>勉強会後に会場でピザ＆アルコール。</p>
+
+<ul>
+<li>社会人：2000円</li>
+<li>学生：500円</li>
+</ul>
+
+
+<br/>
+
+
+<h3>■3章前半 by @siero5335</h3>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35689851" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/eguchiakifumi/3-35689851" title="みどりぼん3章前半" target="_blank">みどりぼん3章前半</a> </strong> from <strong><a href="http://www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div></p>
+
+<br/>
+
+
+<h3>■3章後半 by @aki_n1wa</h3>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35720854" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shinyaakiba/3-35720854" title="データ解析のための統計モデリング入門3章後半" target="_blank">データ解析のための統計モデリング入門3章後半</a> </strong> from <strong><a href="http://www.slideshare.net/shinyaakiba" target="_blank">Shinya Akiba</a></strong> </div></p>
+
+<br/>
+
+
+<h3>■LT 猫に教えてもらうルベーグ可測 by @shuyo</h3>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35785798" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shuyo/ss-35785798" title="猫に教えてもらうルベーグ可測" target="_blank">猫に教えてもらうルベーグ可測</a> </strong> from <strong><a href="http://www.slideshare.net/shuyo" target="_blank">Shuyo Nakatani</a></strong> </div></p>
+
+<br/>
+
+
+<h3>■おまけ</h3>
+
+<p>勉強会後の懇親会では、この日がみんな大好き @tetsuroito さんの誕生日ということで、皆で誕生日を祝いました。</p>
+
+<p>写真は和民のチーズケーキで祝われるテツローさん</p>
+
+<p><img src="http://yamakatu.github.io/images/tetsuro.jpeg"  ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Machine Learning Casual Talks #1 でLTしてきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/06/07/mlct01/"/>
+    <updated>2014-06-07T18:51:52+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/06/07/mlct01</id>
+    <content type="html"><![CDATA[<p>Machine Learning Casual Talks #1 でLTしてきました。</p>
+
+<br/>
+
+
+<!-- more -->
+
+
+<p>・<a href="http://connpass.com/event/6275/">Machine Learning Casual Talks</a></p>
+
+<p>・<a href="http://togetter.com/li/676930">まとめ</a></p>
+
+<br/>
+
+
+<p>これまでの経験上、Casualと名のついた勉強会がCasualであった試しは一度もないのですが、今回もCasualという名のガチ勉強会でした。</p>
+
+<p>自分は遅刻＆資料をせこせこ作っていてたので、他のかたの発表はあまり聞けませんでしたが（白目</p>
+
+<p>発表者はいずれもガチ勢だったので結構盛り上がったような気がします。</p>
+
+<p>特にJubatusの開発に関する話を聞く機会は、なかなかないんじゃないかなーと思うので、そこら辺は熱かったです。</p>
+
+<p>噂によると第二回もあるようなので楽しみですねー</p>
+
+<br/>
+
+
+<p>自分の発表スライドはこちら</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35566045" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/mlct01-lt" title="MLCT #1 LT PythonでカジュアルにDeepLearning！" target="_blank">MLCT #1 LT PythonでカジュアルにDeepLearning！</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+
+<br/>
+
+
+<p>日本ではH2Oの情報はあまり見当たらないのでちょっと紹介してみました。</p>
+
+<p>アルゴリズムを自前で実装するのは、アルゴリズムの理解にはとても有意義ですが、開発工数やメンテナンスを考えると、実務ではやはりありものを使いたいところです。</p>
+
+<p>そして今はやりのDeepLearningが使えるぜー、ということで紹介。詳しくはスライドを見てください。（といってもそんな大したことかいてないですが</p>
+
+<p>DeepLearningの処理系として見ると、GPU使えないのがイマイチなところですが、将来的に対応予定のようなので要注目です。</p>
+
+<p>Spark + MLlibもいいけどH2Oもみんな使ってみようZE！</p>
+
+<br/>
+
+
+<p>余談ですが、勉強会前、最中、そして終わった後、多くの方に「ごちそうさまです」と言われたのが本当に不思議でしたまる</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[第2回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>

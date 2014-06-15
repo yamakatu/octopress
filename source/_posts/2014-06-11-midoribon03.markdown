@@ -1,0 +1,70 @@
+---
+layout: post
+title: "第3回「データ解析のための統計モデリング入門」読書会を開催しました"
+date: 2014-06-13 02:53:23 +0900
+comments: false
+categories: ml-stats
+---
+<br/>
+
+第3回「データ解析のための統計モデリング入門」読書会を開催しました。
+
+今回も前回に引き続きドワンゴ様に会場を提供して頂きました。感謝！
+
+<!-- more -->
+
+{% img /images/arigatou-golgo.jpeg '' '' %}
+<br/>
+
+今回は3章で、これまでよりも少し踏み込んだ内容ということもあり、前回よりもさらに質疑で盛り上がったかなと思います。
+
+\#個人的には本を忘れてしまって、質疑に入り辛かったのが残念…
+
+ですが、まだまだですね…もうちょっと仕掛けを考えないといけません。
+
+ということで次回は勉強会終了後に、そのまま会場で懇親会を行います。
+
+これでもう少し議論が盛んになることを期待。
+<br/>
+
+次回は他にも、UStreamもしくはニコニコ生放送での中継を予定しています。
+
+これで遠方の方も見れるね１１！
+
+わざわざ会場に足を運ばなくても見れるね１１！
+<br/>
+
+###■オープニングトーク by @yamakatu
+
+次回は勉強会後に懇親会を予定。
+
+勉強会後に会場でピザ＆アルコール。
+
+- 社会人：2000円
+- 学生：500円
+<br/>
+
+###■3章前半 by @siero5335
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35689851" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/eguchiakifumi/3-35689851" title="みどりぼん3章前半" target="_blank">みどりぼん3章前半</a> </strong> from <strong><a href="http://www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div>
+<br/>
+
+###■3章後半 by @aki_n1wa
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35720854" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shinyaakiba/3-35720854" title="データ解析のための統計モデリング入門3章後半" target="_blank">データ解析のための統計モデリング入門3章後半</a> </strong> from <strong><a href="http://www.slideshare.net/shinyaakiba" target="_blank">Shinya Akiba</a></strong> </div>
+<br/>
+
+###■LT 猫に教えてもらうルベーグ可測 by @shuyo
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35785798" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shuyo/ss-35785798" title="猫に教えてもらうルベーグ可測" target="_blank">猫に教えてもらうルベーグ可測</a> </strong> from <strong><a href="http://www.slideshare.net/shuyo" target="_blank">Shuyo Nakatani</a></strong> </div>
+<br/>
+
+###■おまけ
+
+勉強会後の懇親会では、この日がみんな大好き @tetsuroito さんの誕生日ということで、皆で誕生日を祝いました。
+
+写真は和民のチーズケーキで祝われるテツローさん
+
+{% img /images/tetsuro.jpeg '' '' %}
+
+

@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Machine Learning Casual Talks #1 でLTしてきました"
+date: 2014-06-07 18:51:52 +0900
+comments: false
+categories: ml-stats
+---
+
+Machine Learning Casual Talks #1 でLTしてきました。
+<br/>
+<!-- more -->
+
+・<a href="http://connpass.com/event/6275/">Machine Learning Casual Talks</a>
+
+・<a href="http://togetter.com/li/676930">まとめ</a>
+<br/>
+
+これまでの経験上、Casualと名のついた勉強会がCasualであった試しは一度もないのですが、今回もCasualという名のガチ勉強会でした。
+
+自分は遅刻＆資料をせこせこ作っていてたので、他のかたの発表はあまり聞けませんでしたが（白目
+
+発表者はいずれもガチ勢だったので結構盛り上がったような気がします。
+
+特にJubatusの開発に関する話を聞く機会は、なかなかないんじゃないかなーと思うので、そこら辺は熱かったです。
+
+噂によると第二回もあるようなので楽しみですねー
+<br/>
+
+自分の発表スライドはこちら
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/35566045" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/mlct01-lt" title="MLCT #1 LT PythonでカジュアルにDeepLearning！" target="_blank">MLCT #1 LT PythonでカジュアルにDeepLearning！</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>
+<br/>
+
+日本ではH2Oの情報はあまり見当たらないのでちょっと紹介してみました。
+
+アルゴリズムを自前で実装するのは、アルゴリズムの理解にはとても有意義ですが、開発工数やメンテナンスを考えると、実務ではやはりありものを使いたいところです。
+
+そして今はやりのDeepLearningが使えるぜー、ということで紹介。詳しくはスライドを見てください。（といってもそんな大したことかいてないですが
+
+DeepLearningの処理系として見ると、GPU使えないのがイマイチなところですが、将来的に対応予定のようなので要注目です。
+
+Spark + MLlibもいいけどH2Oもみんな使ってみようZE！
+<br/>
+
+余談ですが、勉強会前、最中、そして終わった後、多くの方に「ごちそうさまです」と言われたのが本当に不思議でしたまる
+
