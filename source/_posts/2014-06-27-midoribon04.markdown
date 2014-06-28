@@ -1,0 +1,56 @@
+---
+layout: post
+title: "第4回「データ解析のための統計モデリング入門」読書会を開催しました"
+date: 2014-06-27 23:50:14 +0900
+comments: false
+categories: ml-stats
+---
+<br/>
+
+今回も前々回、前回に引き続きドワンゴ様に会場を提供して頂きました。
+
+また、今回から仕事等で参加できない方や、遠方の方でも閲覧できるように、ニコニコ生放送による中継を行いましたが、こちらに関しても放送枠の用意、機材の手配、配信の担当まで、なにもかもやってくださいました。感謝すぐる！
+
+<!-- more -->
+
+{% img /images/kansya2.jpg '' '' %}
+<br/>
+
+
+### ■4章「GLMのモデル選択」 by @mtknnktm
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/36246351" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/MasanoriTakano1/4-36246351" title="みどりぼん読書会 第4章" target="_blank">みどりぼん読書会 第4章</a> </strong> from <strong><a href="http://www.slideshare.net/MasanoriTakano1" target="_blank">m tkn</a></strong> </div>
+<br/>
+
+本来はもう一人の方と、4章を半分ずつ担当して頂く予定でしたが、もう一人の方が仕事で参加できないということになってしまい…どうする！？と焦りましたが、快くお一人ですべて対応して頂きました…
+
+{% img /images/sasugadio.jpg '' '' %}
+<br/>
+
+発表の方は、自分は懇親会のピザの注文で手一杯であまり聞けませんでした（白目
+<br/>
+
+### ■懇親会
+
+ここ最近の懸念であった、「イマイチ質疑が盛り上がらない」という点を解消すべく、今回は懇親会を開催。
+
+個人的にはまあまあ盛り上がれたかな、と思ってます。
+
+30人近く参加して頂けましたが、そのうち3〜4割ぐらいの方はこれまでの懇親会に参加されてなかった方で、かつ一度もお話したこともない方だったので、そういう方とお話できたのは個人的に特に良かったです。
+
+周囲からもなかなか好評でしたので、次回もやります。
+
+まあ個人的には、勉強会は懇親会がメインだと思っています（おい
+
+しかし、最後に濱田さんに写真を撮ってもらうのを忘れたのが残念だ！
+<br/>
+
+### ■次回
+
+次回は7/8に同じくドワンゴ様に会場を提供して頂く予定です。ただ、諸事情により20時開始です。
+
+次回もニコニコ生放送による中継を行います。
+
+懇親会もやります。
+
+募集はそのうちかけまする〜
