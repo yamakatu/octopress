@@ -4,7 +4,7 @@
   <title><![CDATA[Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-06-28T00:43:26+09:00</updated>
+  <updated>2014-07-06T01:22:07+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -12,6 +12,153 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AWSでGPUインスタンス起動まで]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/07/05/gpgpu/"/>
+    <updated>2014-07-05T18:20:02+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/07/05/gpgpu</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p>Twitterで @berobero さん、 @teramonagi さんあたりと、AWSでGPGPUなMCMCについて話をしていた。</p>
+
+<p>そして気がついたら第3回肉ソンが開催されたので、EC2慣れてない人向けに、GPUがつかえるインスタンスの起動（クラスタ組まずに1台構成）まで持って行く方法を、肉を食いながらまとめてみた。</p>
+
+<!-- more -->
+
+
+<h2>前提</h2>
+
+<p>・AWSのアカウントがある</p>
+
+<p>・起動したいRegionでKeyPairを作成している。初めての方は<a href="http://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair">ここら辺</a>を参考に</p>
+
+<h2>インスタンスタイプについて</h2>
+
+<p>AWSにはGPGPU用のインスタンスとして、g2.2xlargeとcg1.4xlargeがある。昔はもう一つあった気がするがどっか行った。</p>
+
+<p>cg1.4xlargeは前世代で、今では使えるリージョンも限られててTokyo Regionで利用できないので、今回はg2.2xlargeを利用する。</p>
+
+<p>g2.2xlargeのGPUは<font size="14">1536コア</font>。ちょっぱやである。</p>
+
+<p>ちなみにg2.2xlargeはTokyo Regionで$0.650 / 1時間なので実際に利用はお財布と相談してください。スポットインスタンスを使うともっと安くなるけど、今回は説明するのがアレなので普通にオンデマンドインスタンスを使う。</p>
+
+<h2>AMIについて</h2>
+
+<p>NVIDIAが提供しているAMIを使うと既にドライバが入っていて楽チンなので、今回はこれを利用することにする。</p>
+
+<p>NVIDIAのGPUインスタンス用AMIは現時点ではWindows ServerとAmazonLinux(CentOSベース)がある。好きな方を選ぶ。</p>
+
+<br/>
+
+
+<p>俺はubuntuがいいんじゃボケが、とかいう人は他のAMIを使う。ただし、g2.2xlargeもcg1.4xlargeも仮想化方式がHVMなので、AMIはHVM対応のものを選ぶ必要があるので注意。</p>
+
+<h2>インスタンス起動</h2>
+
+<p>まず、<a href="https://aws.amazon.com/marketplace/ref=srh_navhdr_header">AWS Marketplace</a>へ行く。ログインしてなかったらする。</p>
+
+<p>検索窓に「NVIDIA GRID GPU Driver」あたりをぶっ込む。検索結果のうち、NVIDIAのアイコンなAMIがそれ。</p>
+
+<p>ちなみにNVIDIA以外のAMIを使いたい場合は左メニューの検索条件のインスタンスタイプでg2.2xlargeを選択して絞ると探し易い。</p>
+
+<p>このうち、使いたいOSのAMIを選択する &amp; continueをクリッククリック。</p>
+
+<br/>
+
+
+<p>起動方法は2種類ある。スポットインスタンスも使いたいとか、ストレージの設定をいじりたい人は「Manual Launch」で起動する。とりあえず起動したいなら、「1-Click Launch」から起動する。</p>
+
+<p>今回は説明がアレなので「1-Click Launch」前提で話を進める。</p>
+
+<br/>
+
+
+<p>「Region」でインスタンスを起動させたいRegionを選択。EC2はリージョン毎に料金が異なる。Oregonあたりが安いけど、RTT高くなって操作がアレになる。Tokyoは逆。</p>
+
+<p>VPC Settingの説明もアレなので、とりあえずそのまま。</p>
+
+<p>Security Groupはとりあえずログインして使うだけならこのままで大丈夫。後でも変えれる。</p>
+
+<p>Key Pairは作っておいたものを指定する。</p>
+
+<p>右側にあるAccept Termsなんちゃらをクリックして起動。</p>
+
+<h2>インスタンスログイン</h2>
+
+<p>「1-Click Launch」で、かつAmazon Linuxを利用する場合、インスタンス起動後の画面にAWSのManagement ConsoleのEC2ページへのリンクがあるのでこれで遷移する。もしくは<a href="https://console.aws.amazon.com/ec2/v2/home">自力で遷移</a>する。</p>
+
+<p>Windows Serverを選んだ場合はこのリンクがないような気がするので、AWSのManagement ConsoleのEC2ページへ<a href="https://console.aws.amazon.com/ec2/v2/home">自力で遷移</a>する。</p>
+
+<p>自力で遷移する場合、起動時に指定したリージョンと画面のリージョンを合わせることを忘れずに。</p>
+
+<br/>
+
+
+<p>インスタンスの一覧画面に遷移できたら、ここから先程起動したインスタンスを選択する。</p>
+
+<p>インスタンスを選択すると、下に詳細情報が表示される。この中からグローバルIP(Public IPってやつ)を特定する。</p>
+
+<p>インスタンスのInstance StateとStatus Checksが大丈夫になるまで待つ。Windows Serverの場合、インスタンスのlaunchにAmazon Linuxよりも時間がかかる気がする。ちなみにこのページのオートリロードは信用ならないので、手動でブラウザリロードするのがおぬぬめ。</p>
+
+<p>ステータスがOKになったら下記手順でログイン。</p>
+
+<br/>
+
+
+<h3>Amazon Linuxの場合</h3>
+
+<p>さきほど特定したIPに対して、起動時に指定したKeyPairを利用してSSHでログインできる。ちなみにAmazon Linuxはログインユーザにec2-userを使う。ログイン後にsudo -iでrootになれる。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ssh</span> -i .ssh/指定したKeyPairファイル ec2-user@上で特定したPublicIP
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<br/>
+
+
+<h3>Windows Serverの場合</h3>
+
+<p>リモートデスクトップでAdministratorユーザで接続する。</p>
+
+<p>ここで利用するパスワードは、Management ConsoleのEC2ページで該当インスタンスを右クリック、「Get Windows Password」を選択して、インスタンス起動時に指定したKey Pairをぶっこむ。そうするとパスワードが表示されるはず。</p>
+
+<br/>
+
+
+<p>以上でログイン完了。</p>
+
+<h1>最後に必ず確認すること</h1>
+
+<p>EC2は時間課金なので、<font size="12">インスタンスの停止を忘れると破産します。</font></p>
+
+<p>特にGPU系のインスタンスは比較的高価なので、終わったらインスタンスは忘れずに停止させる。</p>
+
+<p>あとめんどくさかったので書かなかったけど、ストレージ料金、ストレージへのI/O、アウトバウンドなトラフィック、固定IPでもインスタンス料金ほどではないけど課金されるので注意する。</p>
+
+<p>なのでインスタンスを落としても、</p>
+
+<p>EBSを削除せずに残していたり(デフォルトではインスタンス削除時に削除されるので今回の手順であれば大丈夫なはず)、</p>
+
+<p>固定IPをリリースせずにいたりすると（デフォルトでは固定IPじゃないので今回の手順だと大丈夫なはず）、</p>
+
+<p>ストレージ料金や固定IP費はかかり続けるので注意。</p>
+
+<h3>個人的意見</h3>
+
+<p>開発->テスト->修正->テストというルーチンをまわす作業は時間が食いがちなので、企業ならともかく個人利用の場合、時間課金であるEC2は開発環境とかにはあまり向かないと思います。</p>
+
+<p>個人的には手元にGPGPUが使える手頃なマシンを用意して、そこで開発。そして、いざ計算！という段階でEC2の高性能なGPUを振り回す、というアプローチが個人的にはいい気がします。</p>
+
+<p>気が向いたら、MCMCとかDeepLearning動かす話をいつか書きます。</p>
+
+<p><font size="14">Have a nice GPGPU !!!</font></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[第4回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
