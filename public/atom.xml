@@ -4,7 +4,7 @@
   <title><![CDATA[Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-07-06T17:45:06+09:00</updated>
+  <updated>2014-07-10T15:51:17+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -12,6 +12,79 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[midoribon05]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/07/10/midoribon05/"/>
+    <updated>2014-07-10T15:51:16+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/07/10/midoribon05</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hadoop Conference Japan 2014でSparkとMLlibについてLTしてきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/07/09/hcj2014/"/>
+    <updated>2014-07-09T17:50:45+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/07/09/hcj2014</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p>昨日行われた Hadoop Conferenece Japan 2014 でLTさせて頂きました。</p>
+
+<!-- more -->
+
+
+<p>持ち時間は5分と聞いていたので、先日別の場のLTで18分も喋ってしまった資料を、徹夜で5分に削って参加。</p>
+
+<p>前日に余裕ぶっこいて飲み会に参加していた自分をグーで殴りたい。</p>
+
+<br/>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>今回の飲み会 <a href="https://twitter.com/chezou">@chezou</a> さんが <a href="https://twitter.com/tokoroten">@tokoroten</a> さんに「お前本当にやれんのか？」と煽っていたことと， <a href="https://twitter.com/yamakatu">@yamakatu</a> さんが「明日の <a href="https://twitter.com/hashtag/HCJ2014?src=hash">#HCJ2014</a> は全員笑い殺してやるわ！」と息巻いてたことしか記憶にない</p>&mdash; Mr. Fiber (@repeatedly) <a href="https://twitter.com/repeatedly/statuses/486162395656491008">2014, 7月 7</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+<br/>
+
+
+<p>発表直前に持ち時間が5分ではなく8分と判明し、がんばって削ったスライドを泣きそうになりつつ戻して発表。なにやってんだ…</p>
+
+<p>自分の前のClouderaの嶋内さんのLT時に、聴いてくださってる方たちを軽く数えると300人ぐらいいたので、自分の時もそれくらい聞いてくれていたのかな。</p>
+
+<p>発表はそこそこ笑いがとれたかなー、と思ってます。それだけでボクは満足です。</p>
+
+<p>PyCon JPでも発表するという噂があるので、そのときはもっと笑いを取りたい。</p>
+
+<br/>
+
+
+<p>「良かったら会社名書いてください☆」って言われたので、自分の名前を書いて撤収。</p>
+
+<p><img src="http://yamakatu.github.io/images/hcj-whiteboard.JPG"  ></p>
+
+<br/>
+
+
+<p>スライドはこちら。</p>
+
+<br/>
+
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/36737860?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/hcj2014-lt-sparkml" title="SparkとMLlibで実現するかんたん高速機械学習" target="_blank">SparkとMLlibで実現するかんたん高速機械学習</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[AWSでGPUインスタンス起動まで]]></title>
@@ -1544,6 +1617,94 @@
 
 
 <p>技術的なことを気ままに書いていこうと思います。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CROSS 2014 機械学習CROSS セッションレポート(裏)]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/02/04/cross/"/>
+    <updated>2014-02-04T01:33:54+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/02/04/cross</id>
+    <content type="html"><![CDATA[<p>先日行われたCROSS 2014のセッションレポートをgihyo.jpさんで書かせていただきました。</p>
+
+<h3>（コレ）</h3>
+
+<br/>
+
+
+<p>そっちの記事は、マジメか、と自分でツッコミたくなるぐらいマジメに書きました。</p>
+
+<p>あとちょっと書きづらいこともありました。</p>
+
+<p>なので、その反動でこっちにゆるふわに書いてみます。</p>
+
+<br/>
+
+
+<h3>もう少し登壇者とCROSSしたかった</h3>
+
+<br/>
+
+
+<p>そう、まじわりたかったんです。ぼくは。登壇者の皆様方と。ぐへへ。</p>
+
+<br/>
+
+
+<p>今回の機械学習CROSSでは、発表が粛々と行われていきました。</p>
+
+<br/>
+
+
+<p>しかし、ぼくはもっとまじわりたかった。</p>
+
+<br/>
+
+
+<p>例えば、この後の時間帯で行われたデータマイニングCROSSでは、発表が終わるごとにTwitterから都度質問を拾ってその場で回答してました。</p>
+
+<br/>
+
+
+<p>もちろん今回の機械学習CROSSのやり方が間違ってる訳では全然ないのだけれど、こんな感じで登壇者とオーディエンスがCROSSしながら進める方が、CROSSっていうイベントの意義にマッチしてるんジャマイカなーと思いました。</p>
+
+<br/>
+
+
+<p>なので、最後の質疑はせめて時間をもっと欲しかったけど、発表に押されて一人のみになってしまった。</p>
+
+<p>その貴重な一枠もクッソみたいな質問でつぶされたので実質ゼロだった。悲しい。</p>
+
+<br/>
+
+
+<p>発表に押されて質疑の時間が減るより、質疑の時間を優先して発表の時間を削る方が有意義であることが経験的に多い気がする。</p>
+
+<p>発表者がべしゃる内容は発表者の主観で選ばれるので、極論で言うと、聞き手がまったくそれを求めていない事もあり得ちゃったりする。</p>
+
+<p>一方、質問者は少なくてもその個人にとっては知りたい価値のある情報で、</p>
+
+<p>さらに経験的に言うと、結構な確率で多くの人に価値のある質問だったりする。</p>
+
+<p>もちろん質問のクオリティが高い保証はないし、質問に対する咄嗟の回答がクオリティ低かったりすることも多々あるんだが。</p>
+
+<br/>
+
+
+<p>まあ、後の懇親会で勝手にやろうと思えばできるんだけど、発表者さんが懇親会に出るとは限らないですし、</p>
+
+<p>その場で質問した方がみんな聞けるとかあるから、やっぱその場でやる方がいいよね。</p>
+
+<br/>
+
+
+<h3>もう少し最後の質問で笑いをとりたかった</h3>
+
+<p>先ほど、</p>
+
+<p>と申しましたが、何を隠そう、その質問をしたのはこの私だ。</p>
+
+<p>全体的にこのセッションは笑いが少なかった（ていうか無かった）ので、ムシャクシャしてやった。今では反省している。</p>
 ]]></content>
   </entry>
   
