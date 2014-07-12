@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ml-stats | Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/blog/categories/ml-stats/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-07-10T15:51:17+09:00</updated>
+  <updated>2014-07-12T20:58:50+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -12,6 +12,99 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[第5回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/07/10/midoribon05/"/>
+    <updated>2014-07-10T15:51:16+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/07/10/midoribon05</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p>今回もまたもやドワンゴ様に会場を提供して頂き、ニコニコ生放送の配信まで行って頂けました。感謝！</p>
+
+<!-- more -->
+
+
+<p><img src="/images/tanomoshii.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<p>この日は<a href="http://yamakatu.github.io/blog/2014/07/09/hcj2014/">他のエントリ</a>に書いたHadoop Conference Japanの日だったため、発表準備のために完徹で、眠すぎてあまり記憶がありません。</p>
+
+<p>よって書けることはあまりない。</p>
+
+<p>覚えているといったらこれぐらい。</p>
+
+<br/>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>みどりぼんの懇親会がピザだからオリーブオイル買おうと思ってたのをギリギリで思い出して、お店なんとか探して買えたんだけど、買ったの忘れて全く使わなかったのが本日のハイライト</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486514247422062592">2014, 7月 8</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>そして、てつろーさんに「俺たち、最近ちょっと一緒にいすぎだな…ちょっと距離を置こうか…」っ言われたのが次点</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486514896956170240">2014, 7月 8</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>あとゲプロくんに「やまかつさん、太りましたよね」って言われて、「お、おう…」ってなったのが3位。</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486516294808649728">2014, 7月 8</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+<h3>■5章「GLMの尤度比検定と検定の非対称性」前半 by @tanimocchi</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/36728742?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/mocchi_/5glm" title="第5章glmの尤度比検定と検定の非対称性 前編" target="_blank">第5章glmの尤度比検定と検定の非対称性 前編</a> </strong> from <strong><a href="http://www.slideshare.net/mocchi_" target="_blank">Tadaaki Tanimoto</a></strong> </div></p>
+
+<br/>
+
+
+<h3>■5章「GLMの尤度比検定と検定の非対称性」後半 by @k66mk2</h3>
+
+<script async class="speakerdeck-embed" data-id="97429920e89e01315640028221fe0025" data-ratio="1.33333333333333" src="http://yamakatu.github.io//speakerdeck.com/assets/embed.js"></script>
+
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>ピザ食った。</p>
+
+<p>次回は寿司がいい、という意見があったので寿司にする予定。</p>
+
+<br/>
+
+
+<h3>■次回</h3>
+
+<p>大人の事情でいつもより1週間多く間を開けて、3週間後の7/29です。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hadoop Conference Japan 2014でSparkとMLlibについてLTしてきました]]></title>
@@ -386,66 +479,6 @@ $ssh -i .ssh/指定したKeyPairファイル ec2-user@上で特定したPublicIP
 <p>写真は和民のチーズケーキで祝われるテツローさん</p>
 
 <p><img src="/images/tetsuro.jpeg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Machine Learning Casual Talks #1 でLTしてきました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/06/07/mlct01/"/>
-    <updated>2014-06-07T18:51:52+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/06/07/mlct01</id>
-    <content type="html"><![CDATA[<p>Machine Learning Casual Talks #1 でLTしてきました。</p>
-
-<br/>
-
-
-<!-- more -->
-
-
-<p>・<a href="http://connpass.com/event/6275/">Machine Learning Casual Talks</a></p>
-
-<p>・<a href="http://togetter.com/li/676930">まとめ</a></p>
-
-<br/>
-
-
-<p>これまでの経験上、Casualと名のついた勉強会がCasualであった試しは一度もないのですが、今回もCasualという名のガチ勉強会でした。</p>
-
-<p>自分は遅刻＆資料をせこせこ作っていてたので、他のかたの発表はあまり聞けませんでしたが（白目</p>
-
-<p>発表者はいずれもガチ勢だったので結構盛り上がったような気がします。</p>
-
-<p>特にJubatusの開発に関する話を聞く機会は、なかなかないんじゃないかなーと思うので、そこら辺は熱かったです。</p>
-
-<p>噂によると第二回もあるようなので楽しみですねー</p>
-
-<br/>
-
-
-<p>自分の発表スライドはこちら</p>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/35566045" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/mlct01-lt" title="MLCT #1 LT PythonでカジュアルにDeepLearning！" target="_blank">MLCT #1 LT PythonでカジュアルにDeepLearning！</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
-
-<br/>
-
-
-<p>日本ではH2Oの情報はあまり見当たらないのでちょっと紹介してみました。</p>
-
-<p>アルゴリズムを自前で実装するのは、アルゴリズムの理解にはとても有意義ですが、開発工数やメンテナンスを考えると、実務ではやはりありものを使いたいところです。</p>
-
-<p>そして今はやりのDeepLearningが使えるぜー、ということで紹介。詳しくはスライドを見てください。（といってもそんな大したことかいてないですが</p>
-
-<p>DeepLearningの処理系として見ると、GPU使えないのがイマイチなところですが、将来的に対応予定のようなので要注目です。</p>
-
-<p>Spark + MLlibもいいけどH2Oもみんな使ってみようZE！</p>
-
-<br/>
-
-
-<p>余談ですが、勉強会前、最中、そして終わった後、多くの方に「ごちそうさまです」と言われたのが本当に不思議でしたまる</p>
 ]]></content>
   </entry>
   

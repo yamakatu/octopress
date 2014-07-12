@@ -1,7 +1,54 @@
 ---
 layout: post
-title: "midoribon05"
+title: "第5回「データ解析のための統計モデリング入門」読書会を開催しました"
 date: 2014-07-10 15:51:16 +0900
-comments: true
-categories: 
+comments: false
+categories: ml-stats
 ---
+<br/>
+今回もまたもやドワンゴ様に会場を提供して頂き、ニコニコ生放送の配信まで行って頂けました。感謝！
+
+<!-- more -->
+
+{% img /images/tanomoshii.jpg '' '' %}
+<br/>
+
+この日は<a href="http://yamakatu.github.io/blog/2014/07/09/hcj2014/">他のエントリ</a>に書いたHadoop Conference Japanの日だったため、発表準備のために完徹で、眠すぎてあまり記憶がありません。
+
+よって書けることはあまりない。
+
+覚えているといったらこれぐらい。
+<br/>
+
+<blockquote class="twitter-tweet" lang="ja"><p>みどりぼんの懇親会がピザだからオリーブオイル買おうと思ってたのをギリギリで思い出して、お店なんとか探して買えたんだけど、買ったの忘れて全く使わなかったのが本日のハイライト</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486514247422062592">2014, 7月 8</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br/>
+
+<blockquote class="twitter-tweet" lang="ja"><p>そして、てつろーさんに「俺たち、最近ちょっと一緒にいすぎだな…ちょっと距離を置こうか…」っ言われたのが次点</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486514896956170240">2014, 7月 8</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br/>
+
+<blockquote class="twitter-tweet" lang="ja"><p>あとゲプロくんに「やまかつさん、太りましたよね」って言われて、「お、おう…」ってなったのが3位。</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486516294808649728">2014, 7月 8</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br/>
+
+### ■5章「GLMの尤度比検定と検定の非対称性」前半 by @tanimocchi
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/36728742?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/mocchi_/5glm" title="第5章glmの尤度比検定と検定の非対称性 前編" target="_blank">第5章glmの尤度比検定と検定の非対称性 前編</a> </strong> from <strong><a href="http://www.slideshare.net/mocchi_" target="_blank">Tadaaki Tanimoto</a></strong> </div>
+<br/>
+
+### ■5章「GLMの尤度比検定と検定の非対称性」後半 by @k66mk2
+
+<script async class="speakerdeck-embed" data-id="97429920e89e01315640028221fe0025" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<br/>
+
+### ■懇親会
+
+ピザ食った。
+
+次回は寿司がいい、という意見があったので寿司にする予定。
+<br/>
+
+### ■次回
+
+大人の事情でいつもより1週間多く間を開けて、3週間後の7/29です。
