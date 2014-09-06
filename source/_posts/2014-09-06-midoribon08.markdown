@@ -1,0 +1,84 @@
+---
+layout: post
+title: "第8回「データ解析のための統計モデリング入門」読書会を開催しました"
+date: 2014-09-06 16:44:43 +0900
+comments: false
+categories: ml-stats
+---
+
+<br/>
+
+<a href="http://connpass.com/event/8180/">今回も＠ドワンゴ様にて開催しました。</a>
+<!-- more -->
+
+今回のニコ生では中継用の機材にドワンゴ様の新機材が投入されたとのことで、いつもより画質が鮮明だった気がします。
+
+この勉強会は基本的に毎回スライドに数式が出て来ますが、添字とかがどうしても小さくなりがちで、ニコ生だと認識できないだろうなーということが多かったですが、今回は自分が見た限りだとかなり奇麗に映っていた気がします。マジ助かるー
+
+{% img /images/1HF.jpg '' '' %}
+<br/>
+
+###■第8章「マルコフ連鎖モンテカルロ(MCMC)法とベイズ統計モデル」 by @piroyoung
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/38302887" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/8-38302887" title="データ解析のための統計モデリング 読書会 第8章" target="_blank">データ解析のための統計モデリング 読書会 第8章</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div>
+<br/>
+
+今回はお一人で1章まるっと担当してくださいました。
+
+数式多めで発表して頂けたので、数式苦手な方にはちょっときびしかったかもですね…
+
+次回のLTでもMCMCの解説がありますので、今回で理解がイマイチな方は是非次回のLTもごらんくだしあー
+
+今回は質疑も盛り上がって良かったです。勉強会は議論が盛り上がってなんぼですからね。
+
+しかし、質疑でぴろやんさんの眼鏡に関する質問が出なかったのが不思議でならない。
+
+\#発表に利用されたニコ生対応版のスライドは<a href="http://www.slideshare.net/piroyoung/8-38333857">こちら</a>。embedできなかった…
+<br/>
+
+###■LT 「ベイズ入門の入門」 by @shuyo
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/15098006" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shuyo/ss-15098006" title="ノンパラベイズ入門の入門" target="_blank">ノンパラベイズ入門の入門</a> </strong> from <strong><a href="http://www.slideshare.net/shuyo" target="_blank">Shuyo Nakatani</a></strong> </div>
+<br/>
+
+前回、前々回に味をしめて今回も過去の発表資料で発表してもらうシリーズです。
+
+今回は本勉強会の内容に合わせて、12ページまでの発表でしたが、その後に続くLDAの話もわかりやすいのでおすすめです。
+
+そして @shuyo さんからは同人誌として出されている「PRMLガール」を、この後のじゃんけん大会用に献本までして頂きました。あざす！
+<br/>
+
+###■「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」争奪じゃんけん大会 by @tetsuroito
+
+TJOこと尾崎 隆さん著、技術評論社発行の「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」を勉強会に献本頂きましたので、争奪しました！
+
+{% img /images/tjo.jpg '' '' %}
+<br/>
+
+見事ゲットされたのは @Gin_ito04 さんでしたー。ぱちぱち
+
+<blockquote class="twitter-tweet" lang="ja"><p>じゃんけん大会で『ビジネスに活かすデータマイニング』頂いちゃいました！&#10;ありがとうございます！&#10;最近Rも使っていないし、勉強する。&#10;帰りの電車で３章まで読んだ。 <a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼん</a></p>&mdash; 銀_Ito.E (@Gin_ito04) <a href="https://twitter.com/Gin_ito04/status/504263537015795712">2014, 8月 26</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+自分もこの本を購入しましたが（自腹）、わかりやすくてオススメな一冊です。興味のある方は本屋で立ち読みとかされてみてはいかがでしょーか。
+<br/>
+
+###■懇親会
+
+またピザを頼みすぎた。
+
+そして怒られた。
+
+そしてこんなやり取り。
+
+<blockquote class="twitter-tweet" lang="ja"><p>最適化が必要なのはピザの発注量ではなくて、お前らの食べる努力だという話をした。</p>&mdash; やまかつ（ピザ発注量最適化厨） (@yamakatu) <a href="https://twitter.com/yamakatu/status/504263761578827776">2014, 8月 26</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br/>
+
+###■次回
+
+<a href="http://connpass.com/event/8324/">次回</a>はまた別の本を献本して頂ける予定です。
+
+また争奪します！
+
+

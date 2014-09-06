@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ml-stats | Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/blog/categories/ml-stats/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-07-12T20:58:50+09:00</updated>
+  <updated>2014-09-06T17:57:55+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -14,10 +14,291 @@
 
   
   <entry>
+    <title type="html"><![CDATA[第8回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/09/06/midoribon08/"/>
+    <updated>2014-09-06T16:44:43+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/09/06/midoribon08</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p><a href="http://connpass.com/event/8180/">今回も＠ドワンゴ様にて開催しました。</a></p>
+
+<!-- more -->
+
+
+<p>今回のニコ生では中継用の機材にドワンゴ様の新機材が投入されたとのことで、いつもより画質が鮮明だった気がします。</p>
+
+<p>この勉強会は基本的に毎回スライドに数式が出て来ますが、添字とかがどうしても小さくなりがちで、ニコ生だと認識できないだろうなーということが多かったですが、今回は自分が見た限りだとかなり奇麗に映っていた気がします。マジ助かるー</p>
+
+<p><img src="/images/1HF.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<h3>■第8章「マルコフ連鎖モンテカルロ(MCMC)法とベイズ統計モデル」 by @piroyoung</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/38302887" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/8-38302887" title="データ解析のための統計モデリング 読書会 第8章" target="_blank">データ解析のための統計モデリング 読書会 第8章</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div></p>
+
+<br/>
+
+
+<p>今回はお一人で1章まるっと担当してくださいました。</p>
+
+<p>数式多めで発表して頂けたので、数式苦手な方にはちょっときびしかったかもですね…</p>
+
+<p>次回のLTでもMCMCの解説がありますので、今回で理解がイマイチな方は是非次回のLTもごらんくだしあー</p>
+
+<p>今回は質疑も盛り上がって良かったです。勉強会は議論が盛り上がってなんぼですからね。</p>
+
+<p>しかし、質疑でぴろやんさんの眼鏡に関する質問が出なかったのが不思議でならない。</p>
+
+<p>#発表に利用されたニコ生対応版のスライドは<a href="http://www.slideshare.net/piroyoung/8-38333857">こちら</a>。embedできなかった…</p>
+
+<br/>
+
+
+<h3>■LT 「ベイズ入門の入門」 by @shuyo</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/15098006" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shuyo/ss-15098006" title="ノンパラベイズ入門の入門" target="_blank">ノンパラベイズ入門の入門</a> </strong> from <strong><a href="http://www.slideshare.net/shuyo" target="_blank">Shuyo Nakatani</a></strong> </div></p>
+
+<br/>
+
+
+<p>前回、前々回に味をしめて今回も過去の発表資料で発表してもらうシリーズです。</p>
+
+<p>今回は本勉強会の内容に合わせて、12ページまでの発表でしたが、その後に続くLDAの話もわかりやすいのでおすすめです。</p>
+
+<p>そして @shuyo さんからは同人誌として出されている「PRMLガール」を、この後のじゃんけん大会用に献本までして頂きました。あざす！</p>
+
+<br/>
+
+
+<h3>■「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」争奪じゃんけん大会 by @tetsuroito</h3>
+
+<p>TJOこと尾崎 隆さん著、技術評論社発行の「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」を勉強会に献本頂きましたので、争奪しました！</p>
+
+<p><img src="/images/tjo.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+
+<br/>
+
+
+<p>見事ゲットされたのは @Gin_ito04 さんでしたー。ぱちぱち</p>
+
+<blockquote class="twitter-tweet" lang="ja"><p>じゃんけん大会で『ビジネスに活かすデータマイニング』頂いちゃいました！&#10;ありがとうございます！&#10;最近Rも使っていないし、勉強する。&#10;帰りの電車で３章まで読んだ。 <a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼん</a></p>&mdash; 銀_Ito.E (@Gin_ito04) <a href="https://twitter.com/Gin_ito04/status/504263537015795712">2014, 8月 26</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>自分もこの本を購入しましたが（自腹）、わかりやすくてオススメな一冊です。興味のある方は本屋で立ち読みとかされてみてはいかがでしょーか。</p>
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>またピザを頼みすぎた。</p>
+
+<p>そして怒られた。</p>
+
+<p>そしてこんなやり取り。</p>
+
+<blockquote class="twitter-tweet" lang="ja"><p>最適化が必要なのはピザの発注量ではなくて、お前らの食べる努力だという話をした。</p>&mdash; やまかつ（ピザ発注量最適化厨） (@yamakatu) <a href="https://twitter.com/yamakatu/status/504263761578827776">2014, 8月 26</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+<h3>■次回</h3>
+
+<p><a href="http://connpass.com/event/8324/">次回</a>はまた別の本を献本して頂ける予定です。</p>
+
+<p>また争奪します！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第7回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/08/06/midoribon07/"/>
+    <updated>2014-08-06T07:02:29+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/08/06/midoribon07</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p>今回も＠ドワンゴ様にて。感謝！！</p>
+
+<!-- more -->
+
+
+<h3>■第7章「一般化線形混合モデル(GLMM)」 by 所沢義男</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/37671094" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/TokorosawaYoshio/7-37671094" title="データ解析のための勉強会第7章" target="_blank">データ解析のための勉強会第7章</a> </strong> from <strong><a href="http://www.slideshare.net/TokorosawaYoshio" target="_blank">TokorosawaYoshio</a></strong> </div></p>
+
+<br/>
+
+
+<p>ところさわさん、twitterもFacebookもやってないけどYoはやってるらしい。なんてハイコンテキストなんだ…</p>
+
+<p>「参考にした情報（WEB）」にあるGLMMのアニメーションわかりやすイイイイイイイイイ</p>
+
+<br/>
+
+
+<h3>■LT Rと確率分布 by @tetsuroito</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/31506254" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/tetsuroito/20140222-tokyor-lt-r" title="20140222 tokyo.R LT 「Rと確率分布」" target="_blank">20140222 tokyo.R LT 「Rと確率分布」</a> </strong> from <strong><a href="http://www.slideshare.net/tetsuroito" target="_blank">Tetsuro Ito</a></strong> </div></p>
+
+<br/>
+
+
+<p>前回の大仏様のLTに味をしめて、過去の発表資料でLTしてもらおうシリーズはじめました。</p>
+
+<p>確率分布の関係性を示した図、イイ…</p>
+
+<br/>
+
+
+<h3>■LT データ解析でご飯を食べるという事  by @piroyoung</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/37595542" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/ss-37595542" title="データ解析でご飯を食べるという事" target="_blank">データ解析でご飯を食べるという事</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div></p>
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>前回、懇親会で自己紹介をやろうとおもっていたのだけど忘れてしまったので、今回はやるぞー、と思ってたけどまた忘れた。次から本気だす。</p>
+
+<p>しかしオリーブオイルは購入したことは忘れずに無事に投入。評判はイマイチ。</p>
+
+<p>ピザの注文量が多くてかなり余ってしまい、軽く糾弾されるなど。</p>
+
+<br/>
+
+
+<h3>■次回</h3>
+
+<p>3週間後の9/26に開催。またまたドワンゴ様にて。</p>
+
+<p>毎回懇親会は盛り上がるが、勉強会はアウェー感満載。よって次回は懇親会を先にやることを検討中。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第6回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/08/06/midoribon06/"/>
+    <updated>2014-08-06T06:35:25+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/08/06/midoribon06</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p>今回も＠ドワンゴ様にて。感謝！！</p>
+
+<!-- more -->
+
+
+<br/>
+
+
+<h3>■第6章「GLMの応用範囲をひろげる」前半 by @gepuro</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/37454546" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/gepuro/ss-37454546" title="第六回「データ解析のための統計モデリング入門」前半" target="_blank">第六回「データ解析のための統計モデリング入門」前半</a> </strong> from <strong><a href="http://www.slideshare.net/gepuro" target="_blank">Atsushi Hayakawa</a></strong> </div></p>
+
+<br/>
+
+
+<p>おまけでGLMを使わずに推定！</p>
+
+<p>本をなぞるだけでなく、こんな感じで本にない情報を盛り込むんでくれる発表、priceless。</p>
+
+<br/>
+
+
+<h3>■第6章「GLMの応用範囲をひろげる」後半 by @0kayu</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/37454378" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yurieoka37/65-37454378" title="データ解析のための統計モデリング入門 6.5章 後半" target="_blank">データ解析のための統計モデリング入門 6.5章 後半</a> </strong> from <strong><a href="http://www.slideshare.net/yurieoka37" target="_blank">Yurie Oka</a></strong> </div></p>
+
+<br/>
+
+
+<p>遂にR女子登場。</p>
+
+<p>Japan.Rが12月6日に!!!</p>
+
+<br/>
+
+
+<h3>■LT x2 by @teramonagi</h3>
+
+<p>LT枠が埋まらないので誰かLTしてくれないかなー（チラッチラッしてたら、大仏様が手を上げてくださいました。ありがたやー</p>
+
+<br/>
+
+
+
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/11296227" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/teramonagi/ss-11296227" title="指数分布とポアソン分布のいけない関係" target="_blank">指数分布とポアソン分布のいけない関係</a> </strong> from <strong><a href="http://www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div></p>
+
+<br/>
+
+
+
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/13117353" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/teramonagi/tokyo-r23-20120526" title="あるおっさんが記録し続けたデータを使えば人生一発逆転か？" target="_blank">あるおっさんが記録し続けたデータを使えば人生一発逆転か？</a> </strong> from <strong><a href="http://www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div></p>
+
+<h3>■懇親会</h3>
+
+<p>寿司だった。</p>
+
+<p>前日、翌日も寿司だった。</p>
+
+<p>そして気がついたら寿司大臣に就任していた。</p>
+
+<blockquote class="twitter-tweet" lang="ja"><p>寿司大臣から招集通知来た</p>&mdash; デトロイトに見えるテツロイト (@tetsuroito) <a href="https://twitter.com/tetsuroito/statuses/492578665582960640">2014, 7月 25</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[第5回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/07/10/midoribon05/"/>
-    <updated>2014-07-10T15:51:16+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/07/10/midoribon05</id>
+    <link href="http://yamakatu.github.io/blog/2014/07/12/midoribon05/"/>
+    <updated>2014-07-12T20:51:16+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/07/12/midoribon05</id>
     <content type="html"><![CDATA[<br/>
 
 
@@ -167,318 +448,6 @@
 
 
 <p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/hcj2014-lt-sparkml" title="SparkとMLlibで実現するかんたん高速機械学習" target="_blank">SparkとMLlibで実現するかんたん高速機械学習</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[AWSでGPUインスタンス起動まで]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/07/05/gpgpu/"/>
-    <updated>2014-07-05T18:20:02+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/07/05/gpgpu</id>
-    <content type="html"><![CDATA[<br/>
-
-
-<p>Twitterで @berobero さん、 @teramonagi さんあたりと、AWSでGPGPUなMCMCについて話をしていた。</p>
-
-<p>そして気がついたら第3回肉ソンが開催されたので、EC2慣れてない人向けに、GPUがつかえるインスタンスの起動（クラスタ組まずに1台構成）まで持って行く方法を、肉を食いながらまとめてみた。</p>
-
-<!-- more -->
-
-
-<h2>前提</h2>
-
-<p>・AWSのアカウントがある</p>
-
-<p>・起動したいRegionでKeyPairを作成している。初めての方は<a href="http://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair">ここら辺</a>を参考に</p>
-
-<h2>インスタンスタイプについて</h2>
-
-<p>AWSにはGPGPU用のインスタンスとして、g2.2xlargeとcg1.4xlargeがある。昔はもう一つあった気がするがどっか行った。</p>
-
-<p>cg1.4xlargeは前世代で、今では使えるリージョンも限られててTokyo Regionで利用できないので、今回はg2.2xlargeを利用する。</p>
-
-<p>g2.2xlargeのGPUは<font size="14">1536コア</font>。ちょっぱやである。</p>
-
-<p>ちなみにg2.2xlargeはTokyo Regionで$0.650 / 1時間なので実際に利用はお財布と相談してください。スポットインスタンスを使うともっと安くなるけど、今回は説明するのがアレなので普通にオンデマンドインスタンスを使う。</p>
-
-<h2>AMIについて</h2>
-
-<p>NVIDIAが提供しているAMIを使うと既にドライバが入っていて楽チンなので、今回はこれを利用することにする。</p>
-
-<p>NVIDIAのGPUインスタンス用AMIは現時点ではWindows ServerとAmazonLinux(CentOSベース)がある。好きな方を選ぶ。</p>
-
-<br/>
-
-
-<p>俺はubuntuがいいんじゃボケが、とかいう人は他のAMIを使う。ただし、g2.2xlargeもcg1.4xlargeも仮想化方式がHVMなので、AMIはHVM対応のものを選ぶ必要があるので注意。</p>
-
-<h2>インスタンス起動</h2>
-
-<p>まず、<a href="https://aws.amazon.com/marketplace/ref=srh_navhdr_header">AWS Marketplace</a>へ行く。ログインしてなかったらする。</p>
-
-<p>検索窓に「NVIDIA GRID GPU Driver」あたりをぶっ込む。検索結果のうち、NVIDIAのアイコンなAMIがそれ。</p>
-
-<p>ちなみにNVIDIA以外のAMIを使いたい場合は左メニューの検索条件のインスタンスタイプでg2.2xlargeを選択して絞ると探し易い。</p>
-
-<p>このうち、使いたいOSのAMIを選択する &amp; continueをクリッククリック。</p>
-
-<br/>
-
-
-<p>起動方法は2種類ある。スポットインスタンスも使いたいとか、ストレージの設定をいじりたい人は「Manual Launch」で起動する。とりあえず起動したいなら、「1-Click Launch」から起動する。</p>
-
-<p>今回は説明がアレなので「1-Click Launch」前提で話を進める。</p>
-
-<br/>
-
-
-<p>「Region」でインスタンスを起動させたいRegionを選択。EC2はリージョン毎に料金が異なる。Oregonあたりが安いけど、RTT高くなって操作がアレになる。Tokyoは逆。</p>
-
-<p>VPC Settingの説明もアレなので、とりあえずそのまま。</p>
-
-<p>Security Groupはとりあえずログインして使うだけならこのままで大丈夫。後でも変えれる。</p>
-
-<p>Key Pairは作っておいたものを指定する。</p>
-
-<p>右側にあるAccept Termsなんちゃらをクリックして起動。</p>
-
-<h2>インスタンスログイン</h2>
-
-<p>「1-Click Launch」で、かつAmazon Linuxを利用する場合、インスタンス起動後の画面にAWSのManagement ConsoleのEC2ページへのリンクがあるのでこれで遷移する。もしくは<a href="https://console.aws.amazon.com/ec2/v2/home">自力で遷移</a>する。</p>
-
-<p>Windows Serverを選んだ場合はこのリンクがないような気がするので、AWSのManagement ConsoleのEC2ページへ<a href="https://console.aws.amazon.com/ec2/v2/home">自力で遷移</a>する。</p>
-
-<p>自力で遷移する場合、起動時に指定したリージョンと画面のリージョンを合わせることを忘れずに。</p>
-
-<br/>
-
-
-<p>インスタンスの一覧画面に遷移できたら、ここから先程起動したインスタンスを選択する。</p>
-
-<p>インスタンスを選択すると、下に詳細情報が表示される。この中からグローバルIP(Public IPってやつ)を特定する。</p>
-
-<p>インスタンスのInstance StateとStatus Checksが大丈夫になるまで待つ。Windows Serverの場合、インスタンスのlaunchにAmazon Linuxよりも時間がかかる気がする。ちなみにこのページのオートリロードは信用ならないので、手動でブラウザリロードするのがおぬぬめ。</p>
-
-<p>ステータスがOKになったら下記手順でログイン。</p>
-
-<br/>
-
-
-<h3>Amazon Linuxの場合</h3>
-
-<p>さきほど特定したIPに対して、起動時に指定したKeyPairを利用してSSHでログインできる。ちなみにAmazon Linuxはログインユーザにec2-userを使う。ログイン後にsudo -iでrootになれる。</p>
-
-<p><code>sh
-$ssh -i .ssh/指定したKeyPairファイル ec2-user@上で特定したPublicIP
-</code></p>
-
-<br/>
-
-
-<h3>Windows Serverの場合</h3>
-
-<p>リモートデスクトップでAdministratorユーザで接続する。</p>
-
-<p>ここで利用するパスワードは、Management ConsoleのEC2ページで該当インスタンスを右クリック、「Get Windows Password」を選択して、インスタンス起動時に指定したKey Pairをぶっこむ。そうするとパスワードが表示されるはず。</p>
-
-<br/>
-
-
-<p>以上でログイン完了。</p>
-
-<h1>最後に必ず確認すること</h1>
-
-<p>EC2は時間課金なので、<font size="12">インスタンスの停止を忘れると破産します。</font></p>
-
-<p>特にGPU系のインスタンスは比較的高価なので、終わったらインスタンスは忘れずに停止させる。</p>
-
-<p>あとめんどくさかったので書かなかったけど、ストレージ(EBS)料金、ストレージ(EBS)へのI/O、アウトバウンドなトラフィック、固定IPでもインスタンス料金ほどではないけど課金されるので注意する。</p>
-
-<p>なのでインスタンスをTerminate(削除)せずに、stop(停止)するだけだと、ストレージ(EBS)の料金がかかってしまうので注意。</p>
-
-<p>また、インスタンスを削除しても、オプションでストレージ(EBS)を残す指定をしていたり(デフォルトではインスタンス削除時に自動で削除されるので今回の手順であれば大丈夫なはず)、</p>
-
-<p>固定IPをリリースせずにいたりすると（デフォルトでは固定IPじゃないので今回の手順だと大丈夫なはず）、</p>
-
-<p>ストレージ料金や固定IP費はかかり続けるのでこれも注意が必要。</p>
-
-<h3>個人的意見</h3>
-
-<p>開発->テスト->修正->テストというルーチンをまわす作業は時間を食いがちなので、企業ならともかく個人利用の場合、時間課金であるEC2は開発環境とかにはあまり向かないと思います。</p>
-
-<p>個人的には手元にGPGPUが使える手頃なマシンを用意して、そこで開発。そして、いざ計算！という段階でEC2の高性能なGPUを振り回す、というアプローチが個人的にはいい気がします。</p>
-
-<p>気が向いたら、MCMCとかDeepLearning動かす話をいつか書きます。</p>
-
-<p><font size="14">Have a nice GPGPU !!!</font></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[第4回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/06/27/midoribon04/"/>
-    <updated>2014-06-27T23:50:14+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/06/27/midoribon04</id>
-    <content type="html"><![CDATA[<br/>
-
-
-<p>今回も前々回、前回に引き続きドワンゴ様に会場を提供して頂きました。</p>
-
-<p>また、今回から仕事等で参加できない方や、遠方の方でも閲覧できるように、ニコニコ生放送による中継を行いましたが、こちらに関しても放送枠の用意、機材の手配、配信の担当まで、なにもかもやってくださいました。感謝すぐる！</p>
-
-<!-- more -->
-
-
-<p><img src="/images/kansya2.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
-
-<br/>
-
-
-<h3>■4章「GLMのモデル選択」 by @mtknnktm</h3>
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/36246351" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/MasanoriTakano1/4-36246351" title="みどりぼん読書会 第4章" target="_blank">みどりぼん読書会 第4章</a> </strong> from <strong><a href="http://www.slideshare.net/MasanoriTakano1" target="_blank">m tkn</a></strong> </div></p>
-
-<br/>
-
-
-<p>本来はもう一人の方と、4章を半分ずつ担当して頂く予定でしたが、もう一人の方が仕事で参加できないということになってしまい…どうする！？と焦りましたが、快くお一人ですべて対応して頂きました…</p>
-
-<p><img src="/images/sasugadio.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
-
-<br/>
-
-
-<p>発表の方は、自分は懇親会のピザの注文で手一杯であまり聞けませんでした（白目</p>
-
-<br/>
-
-
-<h3>■懇親会</h3>
-
-<p>ここ最近の懸念であった、「イマイチ質疑が盛り上がらない」という点を解消すべく、今回は懇親会を開催。</p>
-
-<p>個人的にはまあまあ盛り上がれたかな、と思ってます。</p>
-
-<p>30人近く参加して頂けましたが、そのうち3〜4割ぐらいの方はこれまでの懇親会に参加されてなかった方で、かつ一度もお話したこともない方だったので、そういう方とお話できたのは個人的に特に良かったです。</p>
-
-<p>周囲からもなかなか好評でしたので、次回もやります。</p>
-
-<p>まあ個人的には、勉強会は懇親会がメインだと思っています（おい</p>
-
-<p>しかし、最後に濱田さんに写真を撮ってもらうのを忘れたのが残念だ！</p>
-
-<br/>
-
-
-<h3>■次回</h3>
-
-<p>次回は7/8に同じくドワンゴ様に会場を提供して頂く予定です。ただ、諸事情により20時開始です。</p>
-
-<p>次回もニコニコ生放送による中継を行います。</p>
-
-<p>懇親会もやります。</p>
-
-<p>募集はそのうちかけまする〜</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[第3回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/06/13/midoribon03/"/>
-    <updated>2014-06-13T02:53:23+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/06/13/midoribon03</id>
-    <content type="html"><![CDATA[<br/>
-
-
-<p>第3回「データ解析のための統計モデリング入門」読書会を開催しました。</p>
-
-<p>今回も前回に引き続きドワンゴ様に会場を提供して頂きました。感謝！</p>
-
-<!-- more -->
-
-
-<p><img src="/images/arigatou-golgo.jpeg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
-
-<br/>
-
-
-<p>今回は3章で、これまでよりも少し踏み込んだ内容ということもあり、前回よりもさらに質疑で盛り上がったかなと思います。</p>
-
-<p>#個人的には本を忘れてしまって、質疑に入り辛かったのが残念…</p>
-
-<p>ですが、まだまだですね…もうちょっと仕掛けを考えないといけません。</p>
-
-<p>ということで次回は勉強会終了後に、そのまま会場で懇親会を行います。</p>
-
-<p>これでもう少し議論が盛んになることを期待。</p>
-
-<br/>
-
-
-<p>次回は他にも、UStreamもしくはニコニコ生放送での中継を予定しています。</p>
-
-<p>これで遠方の方も見れるね１１！</p>
-
-<p>わざわざ会場に足を運ばなくても見れるね１１！</p>
-
-<br/>
-
-
-<h3>■オープニングトーク by @yamakatu</h3>
-
-<p>次回は勉強会後に懇親会を予定。</p>
-
-<p>勉強会後に会場でピザ＆アルコール。</p>
-
-<ul>
-<li>社会人：2000円</li>
-<li>学生：500円</li>
-</ul>
-
-
-<br/>
-
-
-<h3>■3章前半 by @siero5335</h3>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/35689851" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/eguchiakifumi/3-35689851" title="みどりぼん3章前半" target="_blank">みどりぼん3章前半</a> </strong> from <strong><a href="http://www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div></p>
-
-<br/>
-
-
-<h3>■3章後半 by @aki_n1wa</h3>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/35720854" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shinyaakiba/3-35720854" title="データ解析のための統計モデリング入門3章後半" target="_blank">データ解析のための統計モデリング入門3章後半</a> </strong> from <strong><a href="http://www.slideshare.net/shinyaakiba" target="_blank">Shinya Akiba</a></strong> </div></p>
-
-<br/>
-
-
-<h3>■LT 猫に教えてもらうルベーグ可測 by @shuyo</h3>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/35785798" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/shuyo/ss-35785798" title="猫に教えてもらうルベーグ可測" target="_blank">猫に教えてもらうルベーグ可測</a> </strong> from <strong><a href="http://www.slideshare.net/shuyo" target="_blank">Shuyo Nakatani</a></strong> </div></p>
-
-<br/>
-
-
-<h3>■おまけ</h3>
-
-<p>勉強会後の懇親会では、この日がみんな大好き @tetsuroito さんの誕生日ということで、皆で誕生日を祝いました。</p>
-
-<p>写真は和民のチーズケーキで祝われるテツローさん</p>
-
-<p><img src="/images/tetsuro.jpeg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
 ]]></content>
   </entry>
   

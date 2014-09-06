@@ -1,0 +1,51 @@
+---
+layout: post
+title: "第7回「データ解析のための統計モデリング入門」読書会を開催しました"
+date: 2014-08-06 07:02:29 +0900
+comments: false
+categories: ml-stats
+---
+<br/>
+
+今回も＠ドワンゴ様にて。感謝！！
+<!-- more -->
+
+###■第7章「一般化線形混合モデル(GLMM)」 by 所沢義男
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/37671094" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/TokorosawaYoshio/7-37671094" title="データ解析のための勉強会第7章" target="_blank">データ解析のための勉強会第7章</a> </strong> from <strong><a href="http://www.slideshare.net/TokorosawaYoshio" target="_blank">TokorosawaYoshio</a></strong> </div>
+<br/>
+
+ところさわさん、twitterもFacebookもやってないけどYoはやってるらしい。なんてハイコンテキストなんだ…
+
+「参考にした情報（WEB）」にあるGLMMのアニメーションわかりやすイイイイイイイイイ
+<br/>
+
+###■LT Rと確率分布 by @tetsuroito
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/31506254" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/tetsuroito/20140222-tokyor-lt-r" title="20140222 tokyo.R LT 「Rと確率分布」" target="_blank">20140222 tokyo.R LT 「Rと確率分布」</a> </strong> from <strong><a href="http://www.slideshare.net/tetsuroito" target="_blank">Tetsuro Ito</a></strong> </div>
+<br/>
+
+前回の大仏様のLTに味をしめて、過去の発表資料でLTしてもらおうシリーズはじめました。
+
+確率分布の関係性を示した図、イイ…
+<br/>
+
+###■LT データ解析でご飯を食べるという事  by @piroyoung
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/37595542" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/ss-37595542" title="データ解析でご飯を食べるという事" target="_blank">データ解析でご飯を食べるという事</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div>
+<br/>
+
+###■懇親会
+
+前回、懇親会で自己紹介をやろうとおもっていたのだけど忘れてしまったので、今回はやるぞー、と思ってたけどまた忘れた。次から本気だす。
+
+しかしオリーブオイルは購入したことは忘れずに無事に投入。評判はイマイチ。
+
+ピザの注文量が多くてかなり余ってしまい、軽く糾弾されるなど。
+<br/>
+
+###■次回
+
+3週間後の9/26に開催。またまたドワンゴ様にて。
+
+毎回懇親会は盛り上がるが、勉強会はアウェー感満載。よって次回は懇親会を先にやることを検討中。

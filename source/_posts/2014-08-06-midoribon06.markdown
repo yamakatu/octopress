@@ -1,0 +1,54 @@
+---
+layout: post
+title: "第6回「データ解析のための統計モデリング入門」読書会を開催しました"
+date: 2014-08-06 06:35:25 +0900
+comments: false
+categories: ml-stats
+---
+<br/>
+今回も＠ドワンゴ様にて。感謝！！
+<!-- more -->
+<br/>
+
+###■第6章「GLMの応用範囲をひろげる」前半 by @gepuro
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/37454546" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/gepuro/ss-37454546" title="第六回「データ解析のための統計モデリング入門」前半" target="_blank">第六回「データ解析のための統計モデリング入門」前半</a> </strong> from <strong><a href="http://www.slideshare.net/gepuro" target="_blank">Atsushi Hayakawa</a></strong> </div>
+<br/>
+
+おまけでGLMを使わずに推定！
+
+本をなぞるだけでなく、こんな感じで本にない情報を盛り込むんでくれる発表、priceless。
+<br/>
+
+###■第6章「GLMの応用範囲をひろげる」後半 by @0kayu
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/37454378" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yurieoka37/65-37454378" title="データ解析のための統計モデリング入門 6.5章 後半" target="_blank">データ解析のための統計モデリング入門 6.5章 後半</a> </strong> from <strong><a href="http://www.slideshare.net/yurieoka37" target="_blank">Yurie Oka</a></strong> </div>
+<br/>
+
+遂にR女子登場。
+
+Japan.Rが12月6日に!!!
+<br/>
+
+###■LT x2 by @teramonagi
+
+LT枠が埋まらないので誰かLTしてくれないかなー（チラッチラッしてたら、大仏様が手を上げてくださいました。ありがたやー
+<br/>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/11296227" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/teramonagi/ss-11296227" title="指数分布とポアソン分布のいけない関係" target="_blank">指数分布とポアソン分布のいけない関係</a> </strong> from <strong><a href="http://www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div>
+<br/>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/13117353" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/teramonagi/tokyo-r23-20120526" title="あるおっさんが記録し続けたデータを使えば人生一発逆転か？" target="_blank">あるおっさんが記録し続けたデータを使えば人生一発逆転か？</a> </strong> from <strong><a href="http://www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div>
+
+###■懇親会
+寿司だった。
+
+前日、翌日も寿司だった。
+
+そして気がついたら寿司大臣に就任していた。
+
+<blockquote class="twitter-tweet" lang="ja"><p>寿司大臣から招集通知来た</p>&mdash; デトロイトに見えるテツロイト (@tetsuroito) <a href="https://twitter.com/tetsuroito/statuses/492578665582960640">2014, 7月 25</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
