@@ -4,7 +4,7 @@
   <title><![CDATA[Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-09-06T17:57:55+09:00</updated>
+  <updated>2014-10-30T18:02:17+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -14,6 +14,470 @@
 
   
   <entry>
+    <title type="html"><![CDATA[「データ解析のための統計モデリング入門」読書会 最終回 あの日作ったモデルの名前を僕達はまだ知らない を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/10/30/midoribon11/"/>
+    <updated>2014-10-30T16:41:13+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/10/30/midoribon11</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p>遂に迎えた最終回。張り切ってサブタイトルつけてみました。</p>
+
+<!-- more -->
+
+
+<p>もちろん<a target="_blank" href="http://connpass.com/event/8991/">今回</a>も＠ドワンゴ様にて開催させて頂きました。あざっす！！</p>
+
+<h3>■第11章「空間構造のある階層ベイズモデル」前半 by @gepuro</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/40727722" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/gepuro/midori11a" title="みどりぼん第11回 前半" target="_blank">みどりぼん第11回 前半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/gepuro" target="_blank">Atsushi Hayakawa</a></strong> </div></p>
+
+<br/>
+
+
+<p>げぷろ氏、写真をパクった疑惑</p>
+
+<blockquote class="twitter-tweet" lang="ja"><p>あれ、俺の写真やw　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼん</a></p>&mdash; 社食・それは夢と希望と現実 (@tetsuroito) <a href="https://twitter.com/tetsuroito/status/524508537532055552">2014, 10月 21</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+<p>教科書の写真撮って貼り付けるんじゃなくて、自分でちゃんとplotしようね情報です。ご確認ください。</p>
+
+<p><a href="http://d.hatena.ne.jp/n_shuyo/20141022/model" target="_blank">「とりあえず plot だけでもしてみるのススメ」</a></p>
+
+<p>(ちなみに自分のアカウントはyamakatsuじゃなくてyamakatuだったりします…)</p>
+
+<br/>
+
+
+<h3>■第11章「空間構造のある階層ベイズモデル」後半 by @yamakatu</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/40668859" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/yamakatu/11-40668859" title="#みどりぼん 11章「空間構造のある階層ベイズモデル」後半" target="_blank">#みどりぼん 11章「空間構造のある階層ベイズモデル」後半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+
+<br/>
+
+
+<p>1章を担当させていただいたので、最初と最後を締めようかと思い、僭越ながら11章後半を担当させて頂きました。</p>
+
+<p>しかし、この後にLTがあるのでこの発表が大トリにはならないことを、この時のやまかつは知る由もないのであった…</p>
+
+<br/>
+
+
+<p>以下、頂きました苦情です。</p>
+
+<br/>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>数式がちっちゃい　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼん</a></p>&mdash; >社食・それは夢と希望と現実 (@tetsuroito) <a href="https://twitter.com/tetsuroito/status/524512986455490560">2014, 10月 21</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>文字の色が薄くて目が悪い俺には辛い　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼ>ん</a></p>&mdash; wwacky (@wwacky) <a href="https://twitter.com/wwacky/status/524513801748508672">2014, 10月 21</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>おいいいいいいいぱくってんじゃねえぞ！！！！！！！！</p>&mdash; DJchikada (@dichika) <a href="https://twitter.com/dichika/status/524513508407267329">2014, 10月 21</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+<p>キエエエエエエエエエエエ（数式の表記を修正してからスライド上げました。後の苦情はスルー）</p>
+
+<br/>
+
+
+<h3>■LT データ解析で割安賃貸物件を探せ！（山手線沿線編） by @berobero11</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/40565180" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/berobero11/lt-40565180" title="データ解析で割安賃貸物件を探せ！（山手線沿線編） LT" target="_blank">データ解析で割安賃貸物件を探せ！（山手線沿線編） LT</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/berobero11" target="_blank">berobero11</a></strong> </div></p>
+
+<br/>
+
+
+<p>べろべろさんの安定したしゃべり。いつまでたっても発表が上手にならない自分としては本当に羨ましいです。</p>
+
+<p>身近な話題について実際のデータを使っていて、とても面白い発表でした。</p>
+
+<p>それを象徴してか、前二つの発表には質疑がゼロでしたが、べろべろさんのこの発表には特にニコ生から質疑が殺到していました(嫉妬</p>
+
+<br/>
+
+
+<h3>■LT 分布から見た線形モデル・GLM・GLMM  by @berobero11</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/36809949" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/berobero11/glmglmm-36809949" title="分布から見た線形モデル・GLM・GLMM" target="_blank">分布から見た線形モデル・GLM・GLMM</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/berobero11" target="_blank">berobero11</a></strong> </div></p>
+
+<br/>
+
+
+<p>べろべろ祭り第2弾。</p>
+
+<br/>
+
+
+<h3>■LT  by @baibaiibaiba</h3>
+
+<p>スライドはまだ上がってないようです。</p>
+
+<p>ニコ生のビデオは後日まとめてyoutubeにアップ予定ですので、最悪そちらでも確認できます。</p>
+
+<br/>
+
+
+<h3>■クロージングトーク by @yamakatu</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/40670027" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/yamakatu/midoribon-closing" title="「データ解析のための統計モデリング入門」読書会 最終回 クロージング" target="_blank">「データ解析のための統計モデリング入門」読書会 最終回 クロージング</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+
+<br/>
+
+
+<p>大トリが自分の発表にならないことに気づいて入れてみました。</p>
+
+<p>ドワンゴ様、@siero5335 さんを始め、運営にご協力くださった皆さんに感謝。</p>
+
+<p>参加してくださったみなさん、お疲れさまでした。</p>
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>ピザは余らなかった。</p>
+
+<br/>
+
+
+<h3>■お知らせ</h3>
+
+<p>前述の通り、これまでのニコ生で配信した動画は全てyoutubeにアップ予定です。復習したい方、見逃した回がある方はぜひご利用ください。アップしたらこのブログとかTwitterで告知します。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第10回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/10/06/midoribon10/"/>
+    <updated>2014-10-06T01:41:31+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/10/06/midoribon10</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p><a target="_blank" href="http://connpass.com/event/8637/">今回</a>も＠ドワンゴ様にて開催させて頂きました。あざっす！！</p>
+
+<!-- more -->
+
+
+<h3>■第10章「階層ベイズモデル」前半 by @aki_n1wa</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/39698191" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/shinyaakiba/10-39698191" title="データ解析のための統計モデリング入門10章前半" target="_blank">データ解析のための統計モデリング入門10章前半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/shinyaakiba" target="_blank">Shinya Akiba</a></strong> </div></p>
+
+<br/>
+
+
+<p>スライドかなりわかりやすくまとまってて、お手本かっ！ってぐらいいいスライドでした。参考にしたいです。</p>
+
+<br/>
+
+
+<h3>■第10章「階層ベイズモデル」後半 by @tetsuroito</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/39695155" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/tetsuroito/2014093010" title="20140930 みどりぼん10章後半 階層ベイズモデル -GLMMのベイズモデル化-(後半)" target="_blank">20140930 みどりぼん10章後半 階層ベイズモデル -GLMMのベイズモデル化-(後半)</a> </strong> from <strong><a href="http://www.slideshare.net/tetsuroito" target="_blank">Tetsuro Ito</a></strong> </div></p>
+
+<br/>
+
+
+<p>発表内容とは関係ありませんが、テツローさん、この発表で「julia.tokyo、ジュリアナ東京じゃないですよ」って言ってました。ええ。</p>
+
+<br/>
+
+
+<h3>■LT LaplacesDemonによる ベイズ統計モデリング by @siero5335</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/39312918" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/eguchiakifumi/tokyo-r-43" title="Tokyo r #43" target="_blank">Tokyo r #43</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div></p>
+
+<br/>
+
+
+<p>他の勉強会の発表リサイクルシリーズ。</p>
+
+<p>発表内容とあまり関係ありませんが、<a target="_blnak" href="http://www.zazzle.com/i_fear_no_frequentist_shirts-235660436663144514">こちらでLaplacesDemonグッズが売られてる</a>らしいです。</p>
+
+<br/>
+
+
+<h3>■LT 超要約 Stan Reference by @piroyoung</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/39705421" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/stan-reference" title="超要約 Stan Reference" target="_blank">超要約 Stan Reference</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div></p>
+
+<br/>
+
+
+<p>銀座の夜景…なんて美しいんだ。</p>
+
+<p>尚、publicな場で一部の人にしか分からないネタを仕込むのはやめた方がいいですよ、と懇親会にて苦言をお伝えしておきました（鬼</p>
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>ピザが一切れも余らなかった。</p>
+
+<p>どうやら今回も最適化してしまったようだな…自分が怖い。</p>
+
+<p>とか思ってたら、「一切れも余らないと最適化されたのか、足りないのか判断できない」と @tanimocchi さんに突っ込まれるなど。</p>
+
+<br/>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PyCon JP 2014 で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/09/16/pyconjp2014/"/>
+    <updated>2014-09-16T01:37:37+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/09/16/pyconjp2014</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p><a href="https://pycon.jp/2014/" target="_blank">PyCon JP 2014</a> で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました</p>
+
+<!-- more -->
+
+
+<br/>
+
+
+<h3>■発表について</h3>
+
+<p><a target="_blank" href="http://twitter.com/showyou">@showyou</a> さんが <a target="_blank" href="http://mlct.connpass.com/event/6275/">MLCT #1</a> にて「お前らPyConで機械学習ネタしゃべろや」と言っていたのを思い出して、まさか通ると思わずに応募したら通っちゃったので発表してきました。</p>
+
+<br/>
+
+
+<p>笑いが結構とれていたこともあり、調子にのって余計なことを喋りすぎてしまい、時間不足で途中で終わる、という失態を犯しました。みなさん、本当に申し訳ありません…</p>
+
+<p>当初、ライブコーディング形式にしようか迷っていたのですが、scikit-learnはあまりにも簡単すぎて、ライブコーディングだとマジで数分で終わってしまうので、機械学習、スパムフィルタ、NaiveBayesの理論的なところも話していたら肝心のscikit-learnの話はちょっとしかできないという…</p>
+
+<p>PyCon JPは1万円ほどの金額を支払って皆さん参加しているので、時間内に発表が終わらなかったのは本当に申し訳ないです。</p>
+
+<p>来年は借りを返したいと思います（懲りてない</p>
+
+<br/>
+
+
+<h3>■PyConについて</h3>
+
+<p>チケットは早割7500円で通常1万円と、決して安くはない価格設定でしたが、約500枚のチケットが完売したということで、Python熱を感じる結果でした。もっと枚数があればもっと売れたかもですね。</p>
+
+<p>個人的にはこのチケット代は学生さんにはちょっと高いな、という印象があったので、Patronスポンサーをやらせて頂きました。これによってわずかですが、学生さんが参加して頂けたのなら嬉しいです。</p>
+
+<br/>
+
+
+<p>今回のPyConの一番の思い出は、<a href="https://pycon.jp/2014/schedule/" target="_blnak">プログラム</a>に記載されてる発表者の皆さんのお名前が、ほとんどアルファベット表記だった中、自分はひらがなだったという点でした。</p>
+
+<br/>
+
+
+<h3>■ビデオ</h3>
+
+<p>当日のスライドとコードはちょっといじりたいところあるので、修正してから上げます。</p>
+
+<p>とりあえずビデオ。（最初の数分は発表開始時間を待ってるだけなので、発表直前から再生してます）</p>
+
+<br/>
+
+
+
+
+<iframe width="560" height="315" src="http://yamakatu.github.io//www.youtube.com/embed/yp6LIjcZgoQ?list=UUxNoKygeZIE1AwZ_NdUCkhQt=3m50s" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<br/>
+
+
+<br/>
+
+
+<h3>■謝辞</h3>
+
+<p>スタッフの皆さん本当にお疲れさまでした。また来年も楽しみにしてます！</p>
+
+<p>（特にMacのACアダプタを貸してくれたスタッフの方、ありがとうございました！）</p>
+
+<br/>
+
+
+<h3>■関連</h3>
+
+<p><a href="https://pycon.jp/2014/">PyCon jp 2014</a></p>
+
+<p><a href="http://togetter.com/li/719865">togetter まとめ</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第9回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/09/10/midoribon09/"/>
+    <updated>2014-09-10T21:59:20+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/09/10/midoribon09</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p><a target="_blank" href="http://connpass.com/event/8324/">今回も＠ドワンゴ様にて開催しました。</a></p>
+
+<!-- more -->
+
+
+<h3>■第9章「GLMのベイズモデル化と事後分布の推定」前半 by @siero5353</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/38813142" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/eguchiakifumi/9-38813142" title="みどりぼん9章前半" target="_blank">みどりぼん9章前半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div></p>
+
+<br/>
+
+
+<p>発表内容と全く関係ないですが、スペインに行ってこられたとのことで、お土産にスペインワインを頂きました。</p>
+
+<p>懇親会でみんなで美味しく頂きました。ありがとうございました。</p>
+
+<br/>
+
+
+<h3>■第9章「GLMのベイズモデル化と事後分布の推定」後半 by @wwacky</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/38868144" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/moa108/9-38868144" title="データ解析のための統計モデリング入門9章後半" target="_blank">データ解析のための統計モデリング入門9章後半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/moa108" target="_blank">Motoya Wakiyama</a></strong> </div></p>
+
+<br/>
+
+
+<p>質疑でちょっと斬新な質問が飛んで来たのが印象強すぎてそれ以外覚えてない…</p>
+
+<p>ニコ生は顔が出ないこともあり、思い切った質問が飛んできてなかなか面白いです。</p>
+
+<br/>
+
+
+<h3>■LT マルコフ連鎖モンテカルロ法入門 1 by @teramonagi</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/5190440" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/teramonagi/ss-5190440" title="マルコフ連鎖モンテカルロ法入門-１" target="_blank">マルコフ連鎖モンテカルロ法入門-１</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div></p>
+
+<br/>
+
+
+<p>またもや過去の資料でLTしてもらおうシリーズ。</p>
+
+<p>MCMCの説明で、これがもっとも解りやすいのではないだろうか…さすがや。</p>
+
+<p>その2もslideshareに上がっているので、興味のある人は是非。</p>
+
+<br/>
+
+
+<h3>■LT 可視化で理解するマルコフ連鎖モンテカルロ法 by @hoxo_m</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/38848635" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/hoxo_m/ss-38848635" title="可視化で理解するマルコフ連鎖モンテカルロ法" target="_blank">可視化で理解するマルコフ連鎖モンテカルロ法</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/hoxo_m" target="_blank">hoxo_m</a></strong> </div></p>
+
+<br/>
+
+
+<p>解り易い！</p>
+
+<p>やっぱ可視化って大事。</p>
+
+<br/>
+
+
+<h3>■「金融データ解析の基礎 (シリーズ Useful R 8) 」争奪じゃんけん大会 by @yamakatu</h3>
+
+<p>今回は前回に引き続き、本勉強会へ献本頂けましたので、争奪じゃんけん大会を行いました。しかも今回は2冊！！！</p>
+
+<p>書籍は共立出版様から発行されている、「金融データ解析の基礎 (シリーズ Useful R 8)」です。</p>
+
+<p>金融データ…クオンツ、もしくはクオンツ目指されている方には必須の一冊でしょうか！？</p>
+
+<p><a target="_blank" href="http://www.amazon.co.jp/%E9%87%91%E8%9E%8D%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90%E3%81%AE%E5%9F%BA%E7%A4%8E-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-Useful-R-8/dp/4320123719"><img src="http://yamakatu.github.io/images/kinyudata.jpg"  ></a></p>
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>ピザが一切れしか余らなかった。ピザ発注量の最適化に成功した。</p>
+
+<br/>
+
+
+<h3>■次回</h3>
+
+<p>次回は久保先生SPです。まだ<a href="http://connpass.com/event/7958/">こちら</a>で募集しておりますのでどぞー</p>
+
+<p>枠は増えるという噂！</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[第8回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
     <link href="http://yamakatu.github.io/blog/2014/09/06/midoribon08/"/>
     <updated>2014-09-06T16:44:43+09:00</updated>
@@ -21,7 +485,7 @@
     <content type="html"><![CDATA[<br/>
 
 
-<p><a href="http://connpass.com/event/8180/">今回も＠ドワンゴ様にて開催しました。</a></p>
+<p><a target="_blank" href="http://connpass.com/event/8180/">今回も＠ドワンゴ様にて開催しました。</a></p>
 
 <!-- more -->
 
@@ -55,7 +519,7 @@
 
 <p>しかし、質疑でぴろやんさんの眼鏡に関する質問が出なかったのが不思議でならない。</p>
 
-<p>#発表に利用されたニコ生対応版のスライドは<a href="http://www.slideshare.net/piroyoung/8-38333857">こちら</a>。embedできなかった…</p>
+<p>#発表に利用されたニコ生対応版のスライドは<a href="http://www.slideshare.net/piroyoung/8-38333857" target="_blank">こちら</a>。embedできなかった…</p>
 
 <br/>
 
@@ -81,9 +545,9 @@
 
 <h3>■「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」争奪じゃんけん大会 by @tetsuroito</h3>
 
-<p>TJOこと尾崎 隆さん著、技術評論社発行の「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」を勉強会に献本頂きましたので、争奪しました！</p>
+<p>TJOこと尾崎 隆さん著、技術評論社発行の「<a href="http://www.amazon.co.jp/%E6%89%8B%E3%82%92%E5%8B%95%E3%81%8B%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AB%E6%B4%BB%E3%81%8B%E3%81%99%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0-%E5%B0%BE%E5%B4%8E-%E9%9A%86/dp/477416674X" target="_blank">手を動かしながら学ぶ　ビジネスに活かすデータマイニング</a>」を勉強会に献本頂きましたので、争奪しました！</p>
 
-<p><img src="http://yamakatu.github.io/images/tjo.jpg"  ></p>
+<p><a href="http://www.amazon.co.jp/%E6%89%8B%E3%82%92%E5%8B%95%E3%81%8B%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AB%E6%B4%BB%E3%81%8B%E3%81%99%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0-%E5%B0%BE%E5%B4%8E-%E9%9A%86/dp/477416674X" target="_blank"><img src="http://yamakatu.github.io/images/tjo.jpg"  ></a></p>
 
 <br/>
 
@@ -120,7 +584,7 @@
 
 <h3>■次回</h3>
 
-<p><a href="http://connpass.com/event/8324/">次回</a>はまた別の本を献本して頂ける予定です。</p>
+<p><a target="_blank" href="http://connpass.com/event/8324/">次回</a>はまた別の本を献本して頂ける予定です。</p>
 
 <p>また争奪します！</p>
 ]]></content>
@@ -1528,460 +1992,6 @@
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/32442430" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[第13回はじめてのパターン認識読書会で発表してきました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/03/05/hajipata10/"/>
-    <updated>2014-03-05T00:43:09+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/03/05/hajipata10</id>
-    <content type="html"><![CDATA[<!-- more -->
-
-
-<br/>
-
-
-<p>発表しました。</p>
-
-<p>担当は10章クラスタリングの前半部分（10.1〜10.3）</p>
-
-<br/>
-
-
-<p>内容よりスケジュール重視で担当を希望したので、それなりに理解できている章の担当になってしまった。</p>
-
-<p>（そのスケジュールも当初の日程からずれてしまったので意味なくなったけど）</p>
-
-<br/>
-
-
-<p>勉強会は自分が発表することで学習する場、ってじっちゃんが言ってたので、どうせなら勉強不足の章をやるべきだったなー、と反省。</p>
-
-<br/>
-
-
-
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/31886423" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/hajipata10" title="はじパタ 10章 クラスタリング 前半" target="_blank">はじパタ 10章 クラスタリング 前半</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ClouderaManager の管理コンソールをとりあえず HTTPS 化する方法（EC2 を使うときは特に使おうね）]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/02/17/clouderamanagertls/"/>
-    <updated>2014-02-17T02:06:25+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/02/17/clouderamanagertls</id>
-    <content type="html"><![CDATA[<!-- more -->
-
-
-<h1>■環境</h1>
-
-<p>ClouderaManager 4.8.1 インストール済み（他のバージョンでもそんなに対して変わらないはず）</p>
-
-<br/>
-
-
-<h1>■何があったか</h1>
-
-<p>Hadoop Advent Calendar 2013で<a href="http://qiita.com/yamakatu/items/495246f98044398ad3d3">こんな記事</a>書いたら、<a href="http://twitter.com/shiumachi">@shiumachi</a>さんに</p>
-
-<h3>そのやり方だとブラウザと管理コンソール間が暗号化されてないから、AWSの鍵をアップロードする際に盗聴されちゃうじゃん。m9ぷぎゃー（かなり意訳</h3>
-
-<br/>
-
-
-<p>と、ご指摘を頂きました。</p>
-
-<p>薄々気づいてたんだけど面倒かったので手を抜いた。今では反省している。</p>
-
-<br/>
-
-
-<h1>■もうちょっとkwsk</h1>
-
-<p>EC2でClouderaManagerを使うと、指定したインスタンスタイプと台数でHadoopクラスタを自動で作成してくれます。すげー便利。</p>
-
-<p>この時ClouderaManagerはAWSのAPIを当然たたくんだけど、この際にはAWSの鍵が必要になります。</p>
-
-<p>そして、この鍵はブラウザでClouderaManagerの管理コンソールからPostしてあげる必要があります。</p>
-
-<p>この時、ClouderaManagerの管理コンソールはデフォだとhttpsに対応しておらず、httpでアクセスすることになるので、ブラウザとClouderaManagerが稼働するサーバ間の経路は暗号化されません。</p>
-
-<p>よって、AWSの鍵が盗聴されちゃうだろ。m9ぷぎゃー。となりました。</p>
-
-<br/>
-
-
-<h1>■どうする？</h1>
-
-<p>ClouderaManagerの管理コンソールをhttps化する方法を書いときます。</p>
-
-<p>今回のようなEC2を使う場面でなくても有用だと思います。たぶん。</p>
-
-<p>設定方法は本家の<a href="http://www.cloudera.com/content/cloudera-content/cloudera-docs/CM4Ent/latest/Cloudera-Manager-Administration-Guide/cmag_config_tls_security.html">ココ</a>に書いてあるんだけど、英語がアレな人もいらっしゃると思いますので、意味があると信じている。</p>
-
-<p>本家サイトにはいくつか方法が記載されていますが、今回はとりあえずhttps化ということで、一番手軽な方法(<a href="http://www.cloudera.com/content/cloudera-content/cloudera-docs/CM4Ent/latest/Cloudera-Manager-Administration-Guide/cmag_config_tls_encr.html?scroll=topic_2__title_4_unique_8">コレ</a>)にしてます。</p>
-
-<br/>
-
-
-<h1>■手順</h1>
-
-<h3>手順1 鍵作成&amp;配置</h3>
-
-<p>まず鍵を作成します。（※注 この鍵はHTTPSで利用する鍵で、AWSの鍵ではありません）</p>
-
-<p>この鍵の作成にはJavaのkeytoolを使います。</p>
-
-<br/>
-
-
-<p>そのため、鍵を作成するマシンにはJavaがインストールされている必要がありますが、ClouderaManagerがインストールされていれば、自ずとJavaがインストールされています。</p>
-
-<p>作成した鍵はいずれにせよClouderaManaerが動作するサーバに設置する必要があるので、ClouderaManagerがインストールされたサーバで鍵を作成するのが一番手っ取り早いです。</p>
-
-<p>よって、<b>今回はClouderaManagerが稼働するサーバ上で鍵を作成します。</b></p>
-
-<br/>
-
-
-<p>以下のコマンドで作成します。名前やら組織はめんどいので入力してませんが、適宜入力しましょう。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ubuntu@ip-10-133-198-199:~$ keytool -validity 180 -keystore cm.key -alias jetty -genkeypair -keyalg RSA
-</span><span class='line'>Enter keystore password:
-</span><span class='line'>Re-enter new password:
-</span><span class='line'>What is your first and last name?
-</span><span class='line'>  [Unknown]:
-</span><span class='line'>What is the name of your organizational unit?
-</span><span class='line'>  [Unknown]:
-</span><span class='line'>What is the name of your organization?
-</span><span class='line'>  [Unknown]:
-</span><span class='line'>What is the name of your City or Locality?
-</span><span class='line'>  [Unknown]:
-</span><span class='line'>What is the name of your State or Province?
-</span><span class='line'>  [Unknown]:
-</span><span class='line'>What is the two-letter country code for this unit?
-</span><span class='line'>  [Unknown]:
-</span><span class='line'>Is CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown correct?
-</span><span class='line'>  [no]:  yes
-</span><span class='line'>
-</span><span class='line'>Enter key password for &lt;jetty&gt;
-</span><span class='line'>  (RETURN if same as keystore password):
-</span><span class='line'>Re-enter new password:</span></code></pre></td></tr></table></div></figure>
-
-
-<p>このままだとClouderaManagerのサーバプロセスがアクセスできないので、権限変えつつ、移動します。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ubuntu@ip-10-133-198-199:~$ sudo mv cm.key /etc/cloudera-scm-server/
-</span><span class='line'>ubuntu@ip-10-133-198-199:~$ sudo chown cloudera-scm:cloudera-scm /etc/cloudera-scm-server/cm.key
-</span><span class='line'>ubuntu@ip-10-133-198-199:~$ sudo chmod 600 /etc/cloudera-scm-server/cm.key</span></code></pre></td></tr></table></div></figure>
-
-
-<p>mv先は上記ディレクトリでなくても、サーバプロセスの起動ユーザ（今回はcloudera-scm）がアクセスできれば問題ないと思います。今回は解りやすそうなところに置いてみました。</p>
-
-<br/>
-
-
-<h3>手順2 ClouderaManager設定</h3>
-
-<p>ClouderaManagerの新規インストール時の場合を例にとります。</p>
-
-<p>クラスタ構築済みの場合でも設定箇所は変わらないので、適宜読み飛ばしてください。</p>
-
-<br/>
-
-
-<p>まず、ブラウザからClouderaManagerにアクセスし、ログインします。（初期状態だとポートは7180、IDとパスワードはadmin/admin）</p>
-
-<br/>
-
-
-<p>ログイン後、以下のように右上のadminからパスワード変更を選択</p>
-
-<p><img src="http://yamakatu.github.io/images/cm-1.png"  ></p>
-
-<br/>
-
-
-<br/>
-
-
-<p>パスワード変更のフォームが出るが無視して、上部メニューの「管理」から「設定」を選択</p>
-
-<p><img src="http://yamakatu.github.io/images/cm-2.png"  ></p>
-
-<br/>
-
-
-<br/>
-
-
-<p>左メニューからセキュリティを選択</p>
-
-<p><img src="http://yamakatu.github.io/images/cm-3.png"  ></p>
-
-<br/>
-
-
-<br/>
-
-
-<p>以下を設定する</p>
-
-<p>「管理コンソールで TLS 暗号化を使用する」にチェック</p>
-
-<p>「TLS Keystore ファイルのパス」に鍵の配置先を指定。上記の例であれば/etc/cloudera-scm-server/cm.key</p>
-
-<p>「Keystore パスワード」に作成時に指定したパスワードを入力</p>
-
-<p><img src="http://yamakatu.github.io/images/cm-4.png"  ></p>
-
-<br/>
-
-
-<p>「変更の保存」ボタンを押す</p>
-
-<br/>
-
-
-<h3>手順3 ClouderaManager再起動</h3>
-
-<p>以下みたいな感じでClouderaManagerを再起動します。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ubuntu@ip-10-133-198-199:~$ sudo /etc/init.d/cloudera-scm-server restart</span></code></pre></td></tr></table></div></figure>
-
-
-<p>httpsでアクセスして確認します。</p>
-
-<h3>httpsの場合のポートは7183です。</h3>
-
-<br/>
-
-
-<p>ただ再起動後すぐにアクセスしても多分無理。ちょっと待つ。</p>
-
-<p>アクセスできればおk。</p>
-
-<p>しらばく待ってもアクセスできなければ、iptablesとかEC2ならセキュリティグループの設定あたりを疑うのが吉かも。</p>
-
-<h1>■まとめ</h1>
-
-<p>・ClouderaManagerはデフォではhttpsが利用できない</p>
-
-<p>・この状況だと何かとまずい（EC2の場合は特に）</p>
-
-<p>・こんな手順でさくっといけるよ</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[【Kibana】Histgramで欠損値に0が自動補完されるのがアレだったので、OFFにする機能を実装してプルリクしてマージしてもらったお話]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/02/09/kibana-pull-req/"/>
-    <updated>2014-02-09T15:40:59+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/02/09/kibana-pull-req</id>
-    <content type="html"><![CDATA[<!-- more -->
-
-
-<h1>■前提</h1>
-
-<p>Kibana &lt;= kibana-3.0.0 milestone4</p>
-
-<br/>
-
-
-<h1>■何が起きたか</h1>
-
-<p>去年の12月ぐらいに、「Elasticsearch + Kibana って、ログの可視化に超便利ジャーン！」という感じでKibanaを利用していたところ、Histgramの描画でちょっと微妙な現象に遭遇。</p>
-
-<br/>
-
-
-<p>例えば、</p>
-
-<br/>
-
-
-<table border=1><tr align="center"><td width="200">Time</td><td width="100">value</td></tr><tr align="center"><td>2014/11/08T09:00:00</td><td>10</td></tr><tr align="center"><td>2014/11/08T09:30:00</td><td>30</td></tr><tr align="center"><td>2014/11/08T10:00:00</td><td>20</td></tr></table>
-
-
-<br/>
-
-
-<p>な感じのデータでHistgramを描画した時、自分はこう描画して欲しかった。</p>
-
-<br/>
-
-
-<p><img src="http://yamakatu.github.io/images/kibana-ok.png"  ></p>
-
-<br/>
-
-
-<p>が、描画されるのは以下のようなグラフ。</p>
-
-<br/>
-
-
-<p><img src="http://yamakatu.github.io/images/kibana-ng.png"  ></p>
-
-<br/>
-
-
-<h1>■どういうことなのか</h1>
-
-<p>この二つのグラフはご覧の通り、Intervalの値が異なる。前者のグラフは30分、後者のグラフは10分。</p>
-
-<p>んで、KibanaはIntervalごとに値を表示しようとする。</p>
-
-<p>しかし、10分ごとの場合、9:10、9:20などには値が欠損している。</p>
-
-<h3>この時Kibanaは勝手に0を補完する。</h3>
-
-<br/>
-
-
-<p>いやー気が利くねー（白目</p>
-
-<br/>
-
-
-<h1>■どう思った？</h1>
-
-<p>確かに0を補完して描画して欲しい場合もあるだろうから、間違ってはいない。</p>
-
-<p>しかし、今回の自分のように、余計なことすんじゃねーよ、という場合も普通にある。</p>
-
-<p>なので、選べるようにした方がよくねー？</p>
-
-<br/>
-
-
-<p>あと前者のグラフのように、データが一定間隔でかつ欠損がなく、Intervalの値をその間隔に設定できる場合、この事象は発生しない。</p>
-
-<p>だけど、こういう場合であろうとなかろうと、発生しないでほしい。。。</p>
-
-<br/>
-
-
-<h1>■それでどうしたのか</h1>
-
-<p>Githubでソース読んでたら、実は既にグラフ描画の仕方が選択できるように実装されてた。<a href="https://github.com/elasticsearch/kibana/blob/master/src/app/panels/histogram/timeSeries.js#L103">ここらへん</a></p>
-
-<p>(ちなみにこの描画方式はコード上ではstrategyと呼ばれているので、以下strategy）</p>
-
-<p>なんだけど、今回のような「値のない時間に0を補完しない」というstrategyは当時はなかった。</p>
-
-<br/>
-
-
-<p>というわけで、実装して、issue作って、プルリク送っときました。<a href="https://github.com/elasticsearch/kibana/pull/742">#742</a></p>
-
-<p>そしたら忘れた頃にマージしてもらえました。</p>
-
-<p><a href="https://github.com/elasticsearch/kibana/blob/master/src/app/panels/histogram/timeSeries.js#L103">上記コード</a>にある_getNoZeroFlotPairsがソレです。</p>
-
-<p>この実装ではIntervalがどんな値だろうが、欠損値に0を補完しなくなります。</p>
-
-<br/>
-
-
-<p>次のリリースでは乗っかると思われます。</p>
-
-<p>ただ、以前コードを見た時は、そもそもstrategyを選択するUIがなかったので、画面からはまだ使えないかもしれん。。。</p>
-
-<br/>
-
-
-<h1>■すぐ使いたければどうすればいいのか</h1>
-
-<p>リリースまで待てない人は上記ソースを参考にして改修すると良いと思います。</p>
-
-<br/>
-
-
-<p>もしくは、とりあえず今すぐちょっと試したい方なんかは、乱暴だけど、</p>
-
-<p>app/panels/histogram/timeSeries.js</p>
-
-<p>の</p>
-
-<p>ts.ZeroFilled.prototype._getMinFlotPairs</p>
-
-<p>を以下のように改修するのが一番手っ取り早いです。</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'>  <span class="nx">ts</span><span class="p">.</span><span class="nx">ZeroFilled</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_getMinFlotPairs</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="nx">time</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">times</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_data</span><span class="p">[</span><span class="nx">time</span><span class="p">]){</span>
-</span><span class='line'>      <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span> <span class="nx">time</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">_data</span><span class="p">[</span><span class="nx">time</span><span class="p">]]);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>#人によっては改修後にブラウザのキャッシュクリアが必要かもしれん</p>
-
-<p>ちなみにコードをいじる場合は、公式サイトからDLしたkibanaだと改修が大変なので、<a href="https://github.com/elasticsearch/kibana/releases">Github内のリリース</a>から落としたコードを利用すると幸せになれると思います。</p>
-
-<br/>
-
-
-<h1>■まとめ</h1>
-
-<ul>
-<li>今のKibanaのHistgramは欠損値に勝手に0を入れる</li>
-<li>それをOFFにするオプションを実装して、プルリク送って、マージされた</li>
-<li>自分でがんばって書き換えればすぐに使えるよ</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ブログつくりました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/02/08/first/"/>
-    <updated>2014-02-08T14:44:09+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/02/08/first</id>
-    <content type="html"><![CDATA[<p>エンジニアっぽくGithub + Octopressでつくってみました。</p>
-
-<br/>
-
-
-<p>技術的なことを気ままに書いていこうと思います。</p>
 ]]></content>
   </entry>
   

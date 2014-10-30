@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>第5回「データ解析のための統計モデリング入門」読書会を開催しました - Yamakatu as a Service</title>
+  <title>PyCon JP 2014 で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました - Yamakatu as a Service</title>
   <meta name="author" content="yamakatu">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yamakatu.github.io/blog/2014/07/12/midoribon05">
+  <link rel="canonical" href="http://yamakatu.github.io/blog/2014/09/16/pyconjp2014">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Yamakatu as a Service" type="application/atom+xml">
 
@@ -110,13 +110,13 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-07-12T20:51:16+09:00" pubdate data-updated="true">2014/07/12 20:51:16</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-09-16T01:37:37+09:00" pubdate data-updated="true">2014/09/16 01:37:37</time>
         
       </p>
     
     
     <h1 class="entry-title">
-        第5回「データ解析のための統計モデリング入門」読書会を開催しました
+        PyCon JP 2014 で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました
         
     </h1>
     
@@ -126,7 +126,7 @@
 <div class="sharing">
   
     
-    <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yamakatu.github.io/blog/2014/07/12/midoribon05/" data-via="" data-counturl="http://yamakatu.github.io/blog/2014/07/12/midoribon05/" >Tweet</a>
+    <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yamakatu.github.io/blog/2014/09/16/pyconjp2014/" data-via="" data-counturl="http://yamakatu.github.io/blog/2014/09/16/pyconjp2014/" >Tweet</a>
     
   
   
@@ -137,88 +137,82 @@
 <div class="entry-content clearfix"><br/>
 
 
-<p>今回もまたもやドワンゴ様に会場を提供して頂き、ニコニコ生放送の配信まで行って頂けました。感謝！</p>
+<p><a href="https://pycon.jp/2014/" target="_blank">PyCon JP 2014</a> で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました</p>
 
 <!-- more -->
 
 
-<p><img src="/images/tanomoshii.jpg"  ></p>
+<br/>
+
+
+<h3>■発表について</h3>
+
+<p><a target="_blank" href="http://twitter.com/showyou">@showyou</a> さんが <a target="_blank" href="http://mlct.connpass.com/event/6275/">MLCT #1</a> にて「お前らPyConで機械学習ネタしゃべろや」と言っていたのを思い出して、まさか通ると思わずに応募したら通っちゃったので発表してきました。</p>
 
 <br/>
 
 
-<p>この日は<a href="http://yamakatu.github.io/blog/2014/07/09/hcj2014/">他のエントリ</a>に書いたHadoop Conference Japanの日だったため、発表準備のために完徹で、眠すぎてあまり記憶がありません。</p>
+<p>笑いが結構とれていたこともあり、調子にのって余計なことを喋りすぎてしまい、時間不足で途中で終わる、という失態を犯しました。みなさん、本当に申し訳ありません…</p>
 
-<p>よって書けることはあまりない。</p>
+<p>当初、ライブコーディング形式にしようか迷っていたのですが、scikit-learnはあまりにも簡単すぎて、ライブコーディングだとマジで数分で終わってしまうので、機械学習、スパムフィルタ、NaiveBayesの理論的なところも話していたら肝心のscikit-learnの話はちょっとしかできないという…</p>
 
-<p>覚えているといったらこれぐらい。</p>
+<p>PyCon JPは1万円ほどの金額を支払って皆さん参加しているので、時間内に発表が終わらなかったのは本当に申し訳ないです。</p>
+
+<p>来年は借りを返したいと思います（懲りてない</p>
+
+<br/>
+
+
+<h3>■PyConについて</h3>
+
+<p>チケットは早割7500円で通常1万円と、決して安くはない価格設定でしたが、約500枚のチケットが完売したということで、Python熱を感じる結果でした。もっと枚数があればもっと売れたかもですね。</p>
+
+<p>個人的にはこのチケット代は学生さんにはちょっと高いな、という印象があったので、Patronスポンサーをやらせて頂きました。これによってわずかですが、学生さんが参加して頂けたのなら嬉しいです。</p>
+
+<br/>
+
+
+<p>今回のPyConの一番の思い出は、<a href="https://pycon.jp/2014/schedule/" target="_blnak">プログラム</a>に記載されてる発表者の皆さんのお名前が、ほとんどアルファベット表記だった中、自分はひらがなだったという点でした。</p>
+
+<br/>
+
+
+<h3>■ビデオ</h3>
+
+<p>当日のスライドとコードはちょっといじりたいところあるので、修正してから上げます。</p>
+
+<p>とりあえずビデオ。（最初の数分は発表開始時間を待ってるだけなので、発表直前から再生してます）</p>
 
 <br/>
 
 
 
 
-<blockquote class="twitter-tweet" lang="ja"><p>みどりぼんの懇親会がピザだからオリーブオイル買おうと思ってたのをギリギリで思い出して、お店なんとか探して買えたんだけど、買ったの忘れて全く使わなかったのが本日のハイライト</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486514247422062592">2014, 7月 8</a></blockquote>
+<iframe width="560" height="315" src="//www.youtube.com/embed/yp6LIjcZgoQ?list=UUxNoKygeZIE1AwZ_NdUCkhQt=3m50s" frameborder="0" allowfullscreen></iframe>
 
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<br/>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>そして、てつろーさんに「俺たち、最近ちょっと一緒にいすぎだな…ちょっと距離を置こうか…」っ言われたのが次点</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486514896956170240">2014, 7月 8</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<br/>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>あとゲプロくんに「やまかつさん、太りましたよね」って言われて、「お、おう…」ってなったのが3位。</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486516294808649728">2014, 7月 8</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<br/>
-
-
-<h3>■5章「GLMの尤度比検定と検定の非対称性」前半 by @tanimocchi</h3>
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/36728742?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/mocchi_/5glm" title="第5章glmの尤度比検定と検定の非対称性 前編" target="_blank">第5章glmの尤度比検定と検定の非対称性 前編</a> </strong> from <strong><a href="http://www.slideshare.net/mocchi_" target="_blank">Tadaaki Tanimoto</a></strong> </div></p>
-
-<br/>
-
-
-<h3>■5章「GLMの尤度比検定と検定の非対称性」後半 by @k66mk2</h3>
-
-<script async class="speakerdeck-embed" data-id="97429920e89e01315640028221fe0025" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 <br/>
 
 
-<h3>■懇親会</h3>
+<br/>
 
-<p>ピザ食った。</p>
 
-<p>次回は寿司がいい、という意見があったので寿司にする予定。</p>
+<h3>■謝辞</h3>
+
+<p>スタッフの皆さん本当にお疲れさまでした。また来年も楽しみにしてます！</p>
+
+<p>（特にMacのACアダプタを貸してくれたスタッフの方、ありがとうございました！）</p>
 
 <br/>
 
 
-<h3>■次回</h3>
+<h3>■関連</h3>
 
-<p>大人の事情でいつもより1週間多く間を開けて、3週間後の7/29です。</p>
+<p><a href="https://pycon.jp/2014/">PyCon jp 2014</a></p>
+
+<p><a href="http://togetter.com/li/719865">togetter まとめ</a></p>
 </div>
 
 
@@ -243,7 +237,7 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-07-12T20:51:16+09:00" pubdate data-updated="true">2014/07/12 20:51:16</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-09-16T01:37:37+09:00" pubdate data-updated="true">2014/09/16 01:37:37</time>
           
 
 <span class="glyphicon glyphicon-tags"></span>&nbsp;
@@ -259,7 +253,7 @@
           <div class="sharing">
   
     
-    <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yamakatu.github.io/blog/2014/07/12/midoribon05/" data-via="" data-counturl="http://yamakatu.github.io/blog/2014/07/12/midoribon05/" >Tweet</a>
+    <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yamakatu.github.io/blog/2014/09/16/pyconjp2014/" data-via="" data-counturl="http://yamakatu.github.io/blog/2014/09/16/pyconjp2014/" >Tweet</a>
     
   
   
@@ -269,10 +263,10 @@
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/blog/2014/07/09/hcj2014/" title="Previous Post: Hadoop Conference Japan 2014でSparkとMLlibについてLTしてきました">&laquo; Hadoop Conference Japan 2014でSparkとMLlibについてLTしてきました</a></li>
+            <li class="previous"><a href="/blog/2014/09/10/midoribon09/" title="Previous Post: 第9回「データ解析のための統計モデリング入門」読書会を開催しました">&laquo; 第9回「データ解析のための統計モデリング入門」読書会を開催しました</a></li>
             
             
-            <li class="next"><a href="/blog/2014/08/06/midoribon06/" title="Next Post: 第6回「データ解析のための統計モデリング入門」読書会を開催しました">第6回「データ解析のための統計モデリング入門」読書会を開催しました &raquo;</a></li>
+            <li class="next"><a href="/blog/2014/10/06/midoribon10/" title="Next Post: 第10回「データ解析のための統計モデリング入門」読書会を開催しました">第10回「データ解析のための統計モデリング入門」読書会を開催しました &raquo;</a></li>
             
           </ul>
         
@@ -302,7 +296,7 @@
     
     <a class="list-group-item " href="/blog/2014/10/06/midoribon10/">第10回「データ解析のための統計モデリング入門」読書会を開催しました</a>
     
-    <a class="list-group-item " href="/blog/2014/09/16/pyconjp2014/">PyCon JP 2014 で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました</a>
+    <a class="list-group-item active" href="/blog/2014/09/16/pyconjp2014/">PyCon JP 2014 で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました</a>
     
     <a class="list-group-item " href="/blog/2014/09/10/midoribon09/">第9回「データ解析のための統計モデリング入門」読書会を開催しました</a>
     

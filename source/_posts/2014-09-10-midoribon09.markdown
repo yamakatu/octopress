@@ -1,0 +1,68 @@
+---
+layout: post
+title: "第9回「データ解析のための統計モデリング入門」読書会を開催しました"
+date: 2014-09-10 21:59:20 +0900
+comments: false
+categories: ml-stats
+---
+
+<br/>
+
+<a target="_blank" href="http://connpass.com/event/8324/">今回も＠ドワンゴ様にて開催しました。</a>
+<!-- more -->
+
+###■第9章「GLMのベイズモデル化と事後分布の推定」前半 by @siero5353
+<iframe src="//www.slideshare.net/slideshow/embed_code/38813142" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/eguchiakifumi/9-38813142" title="みどりぼん9章前半" target="_blank">みどりぼん9章前半</a> </strong> from <strong><a href="//www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div>
+<br/>
+発表内容と全く関係ないですが、スペインに行ってこられたとのことで、お土産にスペインワインを頂きました。
+
+懇親会でみんなで美味しく頂きました。ありがとうございました。
+<br/>
+
+###■第9章「GLMのベイズモデル化と事後分布の推定」後半 by @wwacky
+<iframe src="//www.slideshare.net/slideshow/embed_code/38868144" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/moa108/9-38868144" title="データ解析のための統計モデリング入門9章後半" target="_blank">データ解析のための統計モデリング入門9章後半</a> </strong> from <strong><a href="//www.slideshare.net/moa108" target="_blank">Motoya Wakiyama</a></strong> </div>
+<br/>
+質疑でちょっと斬新な質問が飛んで来たのが印象強すぎてそれ以外覚えてない…
+
+ニコ生は顔が出ないこともあり、思い切った質問が飛んできてなかなか面白いです。
+<br/>
+
+###■LT マルコフ連鎖モンテカルロ法入門 1 by @teramonagi
+<iframe src="//www.slideshare.net/slideshow/embed_code/5190440" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/teramonagi/ss-5190440" title="マルコフ連鎖モンテカルロ法入門-１" target="_blank">マルコフ連鎖モンテカルロ法入門-１</a> </strong> from <strong><a href="//www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div>
+<br/>
+またもや過去の資料でLTしてもらおうシリーズ。
+
+MCMCの説明で、これがもっとも解りやすいのではないだろうか…さすがや。
+
+その2もslideshareに上がっているので、興味のある人は是非。
+<br/>
+
+###■LT 可視化で理解するマルコフ連鎖モンテカルロ法 by @hoxo_m
+<iframe src="//www.slideshare.net/slideshow/embed_code/38848635" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hoxo_m/ss-38848635" title="可視化で理解するマルコフ連鎖モンテカルロ法" target="_blank">可視化で理解するマルコフ連鎖モンテカルロ法</a> </strong> from <strong><a href="//www.slideshare.net/hoxo_m" target="_blank">hoxo_m</a></strong> </div>
+<br/>
+解り易い！
+
+やっぱ可視化って大事。
+<br/>
+
+###■「金融データ解析の基礎 (シリーズ Useful R 8) 」争奪じゃんけん大会 by @yamakatu
+
+今回は前回に引き続き、本勉強会へ献本頂けましたので、争奪じゃんけん大会を行いました。しかも今回は2冊！！！
+
+書籍は共立出版様から発行されている、「金融データ解析の基礎 (シリーズ Useful R 8)」です。
+
+金融データ…クオンツ、もしくはクオンツ目指されている方には必須の一冊でしょうか！？
+
+<a target="_blank" href="http://www.amazon.co.jp/%E9%87%91%E8%9E%8D%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90%E3%81%AE%E5%9F%BA%E7%A4%8E-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-Useful-R-8/dp/4320123719">{% img /images/kinyudata.jpg '' '' %}</a>
+<br/>
+
+###■懇親会
+
+ピザが一切れしか余らなかった。ピザ発注量の最適化に成功した。
+<br/>
+
+###■次回
+次回は久保先生SPです。まだ<a href="http://connpass.com/event/7958/">こちら</a>で募集しておりますのでどぞー
+
+枠は増えるという噂！
+

@@ -1,0 +1,110 @@
+---
+layout: post
+title: "「データ解析のための統計モデリング入門」読書会 最終回 あの日作ったモデルの名前を僕達はまだ知らない を開催しました"
+date: 2014-10-30 16:41:13 +0900
+comments: false
+categories: ml-stats
+---
+
+<br/>
+
+遂に迎えた最終回。張り切ってサブタイトルつけてみました。
+
+<!-- more -->
+
+もちろん<a target="_blank" href="http://connpass.com/event/8991/">今回</a>も＠ドワンゴ様にて開催させて頂きました。あざっす！！
+
+###■第11章「空間構造のある階層ベイズモデル」前半 by @gepuro
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/40727722" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/gepuro/midori11a" title="みどりぼん第11回 前半" target="_blank">みどりぼん第11回 前半</a> </strong> from <strong><a href="//www.slideshare.net/gepuro" target="_blank">Atsushi Hayakawa</a></strong> </div>
+<br/>
+
+げぷろ氏、写真をパクった疑惑
+
+<blockquote class="twitter-tweet" lang="ja"><p>あれ、俺の写真やw　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼん</a></p>&mdash; 社食・それは夢と希望と現実 (@tetsuroito) <a href="https://twitter.com/tetsuroito/status/524508537532055552">2014, 10月 21</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br/>
+
+教科書の写真撮って貼り付けるんじゃなくて、自分でちゃんとplotしようね情報です。ご確認ください。
+
+<a href="http://d.hatena.ne.jp/n_shuyo/20141022/model" target="_blank">「とりあえず plot だけでもしてみるのススメ」</a>
+
+(ちなみに自分のアカウントはyamakatsuじゃなくてyamakatuだったりします…)
+<br/>
+
+###■第11章「空間構造のある階層ベイズモデル」後半 by @yamakatu
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/40668859" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yamakatu/11-40668859" title="#みどりぼん 11章「空間構造のある階層ベイズモデル」後半" target="_blank">#みどりぼん 11章「空間構造のある階層ベイズモデル」後半</a> </strong> from <strong><a href="//www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>
+<br/>
+
+1章を担当させていただいたので、最初と最後を締めようかと思い、僭越ながら11章後半を担当させて頂きました。
+
+しかし、この後にLTがあるのでこの発表が大トリにはならないことを、この時のやまかつは知る由もないのであった…
+<br/>
+
+以下、頂きました苦情です。
+<br/>
+
+<blockquote class="twitter-tweet" lang="ja"><p>数式がちっちゃい　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼん</a></p>&mdash; >社食・それは夢と希望と現実 (@tetsuroito) <a href="https://twitter.com/tetsuroito/status/524512986455490560">2014, 10月 21</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>文字の色が薄くて目が悪い俺には辛い　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼ>ん</a></p>&mdash; wwacky (@wwacky) <a href="https://twitter.com/wwacky/status/524513801748508672">2014, 10月 21</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>おいいいいいいいぱくってんじゃねえぞ！！！！！！！！</p>&mdash; DJchikada (@dichika) <a href="https://twitter.com/dichika/status/524513508407267329">2014, 10月 21</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br/>
+
+キエエエエエエエエエエエ（数式の表記を修正してからスライド上げました。後の苦情はスルー）
+<br/>
+
+###■LT データ解析で割安賃貸物件を探せ！（山手線沿線編） by @berobero11
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/40565180" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/berobero11/lt-40565180" title="データ解析で割安賃貸物件を探せ！（山手線沿線編） LT" target="_blank">データ解析で割安賃貸物件を探せ！（山手線沿線編） LT</a> </strong> from <strong><a href="//www.slideshare.net/berobero11" target="_blank">berobero11</a></strong> </div>
+<br/>
+
+べろべろさんの安定したしゃべり。いつまでたっても発表が上手にならない自分としては本当に羨ましいです。
+
+身近な話題について実際のデータを使っていて、とても面白い発表でした。
+
+それを象徴してか、前二つの発表には質疑がゼロでしたが、べろべろさんのこの発表には特にニコ生から質疑が殺到していました(嫉妬
+<br/>
+
+###■LT 分布から見た線形モデル・GLM・GLMM  by @berobero11
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/36809949" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/berobero11/glmglmm-36809949" title="分布から見た線形モデル・GLM・GLMM" target="_blank">分布から見た線形モデル・GLM・GLMM</a> </strong> from <strong><a href="//www.slideshare.net/berobero11" target="_blank">berobero11</a></strong> </div>
+<br/>
+
+べろべろ祭り第2弾。
+<br/>
+
+###■LT  by @baibaiibaiba
+
+スライドはまだ上がってないようです。
+
+ニコ生のビデオは後日まとめてyoutubeにアップ予定ですので、最悪そちらでも確認できます。
+<br/>
+
+###■クロージングトーク by @yamakatu 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/40670027" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yamakatu/midoribon-closing" title="「データ解析のための統計モデリング入門」読書会 最終回 クロージング" target="_blank">「データ解析のための統計モデリング入門」読書会 最終回 クロージング</a> </strong> from <strong><a href="//www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div>
+<br/>
+
+大トリが自分の発表にならないことに気づいて入れてみました。
+
+ドワンゴ様、@siero5335 さんを始め、運営にご協力くださった皆さんに感謝。
+
+参加してくださったみなさん、お疲れさまでした。
+<br/>
+
+###■懇親会
+
+ピザは余らなかった。
+<br/>
+
+###■お知らせ
+
+前述の通り、これまでのニコ生で配信した動画は全てyoutubeにアップ予定です。復習したい方、見逃した回がある方はぜひご利用ください。アップしたらこのブログとかTwitterで告知します。
+
+
+

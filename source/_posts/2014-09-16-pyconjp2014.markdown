@@ -1,0 +1,57 @@
+---
+layout: post
+title: "PyCon JP 2014 で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました"
+date: 2014-09-16 1:37:37 +0900
+comments: false
+categories: ml-stats
+---
+
+<br/>
+
+<a href="https://pycon.jp/2014/" target="_blank">PyCon JP 2014</a> で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました
+<!-- more -->
+<br/>
+
+###■発表について
+<a target="_blank" href="http://twitter.com/showyou">@showyou</a> さんが <a target="_blank" href="http://mlct.connpass.com/event/6275/">MLCT #1</a> にて「お前らPyConで機械学習ネタしゃべろや」と言っていたのを思い出して、まさか通ると思わずに応募したら通っちゃったので発表してきました。
+<br/>
+
+笑いが結構とれていたこともあり、調子にのって余計なことを喋りすぎてしまい、時間不足で途中で終わる、という失態を犯しました。みなさん、本当に申し訳ありません…
+
+当初、ライブコーディング形式にしようか迷っていたのですが、scikit-learnはあまりにも簡単すぎて、ライブコーディングだとマジで数分で終わってしまうので、機械学習、スパムフィルタ、NaiveBayesの理論的なところも話していたら肝心のscikit-learnの話はちょっとしかできないという…
+
+PyCon JPは1万円ほどの金額を支払って皆さん参加しているので、時間内に発表が終わらなかったのは本当に申し訳ないです。
+
+来年は借りを返したいと思います（懲りてない
+<br/>
+
+###■PyConについて
+チケットは早割7500円で通常1万円と、決して安くはない価格設定でしたが、約500枚のチケットが完売したということで、Python熱を感じる結果でした。もっと枚数があればもっと売れたかもですね。
+
+個人的にはこのチケット代は学生さんにはちょっと高いな、という印象があったので、Patronスポンサーをやらせて頂きました。これによってわずかですが、学生さんが参加して頂けたのなら嬉しいです。
+<br/>
+
+今回のPyConの一番の思い出は、<a href="https://pycon.jp/2014/schedule/" target="_blnak">プログラム</a>に記載されてる発表者の皆さんのお名前が、ほとんどアルファベット表記だった中、自分はひらがなだったという点でした。
+<br/>
+
+###■ビデオ
+当日のスライドとコードはちょっといじりたいところあるので、修正してから上げます。
+
+とりあえずビデオ。（最初の数分は発表開始時間を待ってるだけなので、発表直前から再生してます）
+<br/>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/yp6LIjcZgoQ?list=UUxNoKygeZIE1AwZ_NdUCkhQt=3m50s" frameborder="0" allowfullscreen></iframe>
+
+<br/>
+<br/>
+
+###■謝辞
+スタッフの皆さん本当にお疲れさまでした。また来年も楽しみにしてます！
+
+（特にMacのACアダプタを貸してくれたスタッフの方、ありがとうございました！）
+<br/>
+
+###■関連
+<a href="https://pycon.jp/2014/">PyCon jp 2014</a>
+
+<a href="http://togetter.com/li/719865">togetter まとめ</a>

@@ -1,0 +1,59 @@
+---
+layout: post
+title: "第10回「データ解析のための統計モデリング入門」読書会を開催しました"
+date: 2014-10-06 1:41:31 +0900
+comments: true
+categories: ml-stats
+---
+
+<br/>
+
+<a target="_blank" href="http://connpass.com/event/8637/">今回</a>も＠ドワンゴ様にて開催させて頂きました。あざっす！！
+<!-- more -->
+
+###■第10章「階層ベイズモデル」前半 by @aki_n1wa
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/39698191" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shinyaakiba/10-39698191" title="データ解析のための統計モデリング入門10章前半" target="_blank">データ解析のための統計モデリング入門10章前半</a> </strong> from <strong><a href="//www.slideshare.net/shinyaakiba" target="_blank">Shinya Akiba</a></strong> </div>
+<br/>
+
+スライドかなりわかりやすくまとまってて、お手本かっ！ってぐらいいいスライドでした。参考にしたいです。
+<br/>
+
+###■第10章「階層ベイズモデル」後半 by @tetsuroito
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/39695155" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/tetsuroito/2014093010" title="20140930 みどりぼん10章後半 階層ベイズモデル -GLMMのベイズモデル化-(後半)" target="_blank">20140930 みどりぼん10章後半 階層ベイズモデル -GLMMのベイズモデル化-(後半)</a> </strong> from <strong><a href="http://www.slideshare.net/tetsuroito" target="_blank">Tetsuro Ito</a></strong> </div>
+<br/>
+
+発表内容とは関係ありませんが、テツローさん、この発表で「julia.tokyo、ジュリアナ東京じゃないですよ」って言ってました。ええ。
+<br/>
+
+###■LT LaplacesDemonによる ベイズ統計モデリング by @siero5335
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/39312918" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/eguchiakifumi/tokyo-r-43" title="Tokyo r #43" target="_blank">Tokyo r #43</a> </strong> from <strong><a href="//www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div>
+<br/>
+
+他の勉強会の発表リサイクルシリーズ。
+
+発表内容とあまり関係ありませんが、<a target="_blnak" href="http://www.zazzle.com/i_fear_no_frequentist_shirts-235660436663144514">こちらでLaplacesDemonグッズが売られてる</a>らしいです。
+<br/>
+
+###■LT 超要約 Stan Reference by @piroyoung
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/39705421" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/stan-reference" title="超要約 Stan Reference" target="_blank">超要約 Stan Reference</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div>
+<br/>
+
+銀座の夜景…なんて美しいんだ。
+
+尚、publicな場で一部の人にしか分からないネタを仕込むのはやめた方がいいですよ、と懇親会にて苦言をお伝えしておきました（鬼
+<br/>
+
+###■懇親会
+
+ピザが一切れも余らなかった。
+
+どうやら今回も最適化してしまったようだな…自分が怖い。
+
+とか思ってたら、「一切れも余らないと最適化されたのか、足りないのか判断できない」と @tanimocchi さんに突っ込まれるなど。
+<br/>
+
+

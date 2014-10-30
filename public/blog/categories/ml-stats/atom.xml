@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ml-stats | Yamakatu as a Service]]></title>
   <link href="http://yamakatu.github.io/blog/categories/ml-stats/atom.xml" rel="self"/>
   <link href="http://yamakatu.github.io/"/>
-  <updated>2014-09-06T17:57:55+09:00</updated>
+  <updated>2014-10-30T18:02:17+09:00</updated>
   <id>http://yamakatu.github.io/</id>
   <author>
     <name><![CDATA[yamakatu]]></name>
@@ -14,6 +14,470 @@
 
   
   <entry>
+    <title type="html"><![CDATA[「データ解析のための統計モデリング入門」読書会 最終回 あの日作ったモデルの名前を僕達はまだ知らない を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/10/30/midoribon11/"/>
+    <updated>2014-10-30T16:41:13+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/10/30/midoribon11</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p>遂に迎えた最終回。張り切ってサブタイトルつけてみました。</p>
+
+<!-- more -->
+
+
+<p>もちろん<a target="_blank" href="http://connpass.com/event/8991/">今回</a>も＠ドワンゴ様にて開催させて頂きました。あざっす！！</p>
+
+<h3>■第11章「空間構造のある階層ベイズモデル」前半 by @gepuro</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/40727722" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/gepuro/midori11a" title="みどりぼん第11回 前半" target="_blank">みどりぼん第11回 前半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/gepuro" target="_blank">Atsushi Hayakawa</a></strong> </div></p>
+
+<br/>
+
+
+<p>げぷろ氏、写真をパクった疑惑</p>
+
+<blockquote class="twitter-tweet" lang="ja"><p>あれ、俺の写真やw　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼん</a></p>&mdash; 社食・それは夢と希望と現実 (@tetsuroito) <a href="https://twitter.com/tetsuroito/status/524508537532055552">2014, 10月 21</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+<p>教科書の写真撮って貼り付けるんじゃなくて、自分でちゃんとplotしようね情報です。ご確認ください。</p>
+
+<p><a href="http://d.hatena.ne.jp/n_shuyo/20141022/model" target="_blank">「とりあえず plot だけでもしてみるのススメ」</a></p>
+
+<p>(ちなみに自分のアカウントはyamakatsuじゃなくてyamakatuだったりします…)</p>
+
+<br/>
+
+
+<h3>■第11章「空間構造のある階層ベイズモデル」後半 by @yamakatu</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/40668859" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/yamakatu/11-40668859" title="#みどりぼん 11章「空間構造のある階層ベイズモデル」後半" target="_blank">#みどりぼん 11章「空間構造のある階層ベイズモデル」後半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+
+<br/>
+
+
+<p>1章を担当させていただいたので、最初と最後を締めようかと思い、僭越ながら11章後半を担当させて頂きました。</p>
+
+<p>しかし、この後にLTがあるのでこの発表が大トリにはならないことを、この時のやまかつは知る由もないのであった…</p>
+
+<br/>
+
+
+<p>以下、頂きました苦情です。</p>
+
+<br/>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>数式がちっちゃい　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼん</a></p>&mdash; >社食・それは夢と希望と現実 (@tetsuroito) <a href="https://twitter.com/tetsuroito/status/524512986455490560">2014, 10月 21</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>文字の色が薄くて目が悪い俺には辛い　<a href="https://twitter.com/hashtag/%E3%81%BF%E3%81%A9%E3%82%8A%E3%81%BC%E3%82%93?src=hash">#みどりぼ>ん</a></p>&mdash; wwacky (@wwacky) <a href="https://twitter.com/wwacky/status/524513801748508672">2014, 10月 21</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>おいいいいいいいぱくってんじゃねえぞ！！！！！！！！</p>&mdash; DJchikada (@dichika) <a href="https://twitter.com/dichika/status/524513508407267329">2014, 10月 21</a></blockquote>
+
+
+<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br/>
+
+
+<p>キエエエエエエエエエエエ（数式の表記を修正してからスライド上げました。後の苦情はスルー）</p>
+
+<br/>
+
+
+<h3>■LT データ解析で割安賃貸物件を探せ！（山手線沿線編） by @berobero11</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/40565180" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/berobero11/lt-40565180" title="データ解析で割安賃貸物件を探せ！（山手線沿線編） LT" target="_blank">データ解析で割安賃貸物件を探せ！（山手線沿線編） LT</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/berobero11" target="_blank">berobero11</a></strong> </div></p>
+
+<br/>
+
+
+<p>べろべろさんの安定したしゃべり。いつまでたっても発表が上手にならない自分としては本当に羨ましいです。</p>
+
+<p>身近な話題について実際のデータを使っていて、とても面白い発表でした。</p>
+
+<p>それを象徴してか、前二つの発表には質疑がゼロでしたが、べろべろさんのこの発表には特にニコ生から質疑が殺到していました(嫉妬</p>
+
+<br/>
+
+
+<h3>■LT 分布から見た線形モデル・GLM・GLMM  by @berobero11</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/36809949" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/berobero11/glmglmm-36809949" title="分布から見た線形モデル・GLM・GLMM" target="_blank">分布から見た線形モデル・GLM・GLMM</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/berobero11" target="_blank">berobero11</a></strong> </div></p>
+
+<br/>
+
+
+<p>べろべろ祭り第2弾。</p>
+
+<br/>
+
+
+<h3>■LT  by @baibaiibaiba</h3>
+
+<p>スライドはまだ上がってないようです。</p>
+
+<p>ニコ生のビデオは後日まとめてyoutubeにアップ予定ですので、最悪そちらでも確認できます。</p>
+
+<br/>
+
+
+<h3>■クロージングトーク by @yamakatu</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/40670027" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/yamakatu/midoribon-closing" title="「データ解析のための統計モデリング入門」読書会 最終回 クロージング" target="_blank">「データ解析のための統計モデリング入門」読書会 最終回 クロージング</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
+
+<br/>
+
+
+<p>大トリが自分の発表にならないことに気づいて入れてみました。</p>
+
+<p>ドワンゴ様、@siero5335 さんを始め、運営にご協力くださった皆さんに感謝。</p>
+
+<p>参加してくださったみなさん、お疲れさまでした。</p>
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>ピザは余らなかった。</p>
+
+<br/>
+
+
+<h3>■お知らせ</h3>
+
+<p>前述の通り、これまでのニコ生で配信した動画は全てyoutubeにアップ予定です。復習したい方、見逃した回がある方はぜひご利用ください。アップしたらこのブログとかTwitterで告知します。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第10回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/10/06/midoribon10/"/>
+    <updated>2014-10-06T01:41:31+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/10/06/midoribon10</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p><a target="_blank" href="http://connpass.com/event/8637/">今回</a>も＠ドワンゴ様にて開催させて頂きました。あざっす！！</p>
+
+<!-- more -->
+
+
+<h3>■第10章「階層ベイズモデル」前半 by @aki_n1wa</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/39698191" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/shinyaakiba/10-39698191" title="データ解析のための統計モデリング入門10章前半" target="_blank">データ解析のための統計モデリング入門10章前半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/shinyaakiba" target="_blank">Shinya Akiba</a></strong> </div></p>
+
+<br/>
+
+
+<p>スライドかなりわかりやすくまとまってて、お手本かっ！ってぐらいいいスライドでした。参考にしたいです。</p>
+
+<br/>
+
+
+<h3>■第10章「階層ベイズモデル」後半 by @tetsuroito</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/39695155" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/tetsuroito/2014093010" title="20140930 みどりぼん10章後半 階層ベイズモデル -GLMMのベイズモデル化-(後半)" target="_blank">20140930 みどりぼん10章後半 階層ベイズモデル -GLMMのベイズモデル化-(後半)</a> </strong> from <strong><a href="http://www.slideshare.net/tetsuroito" target="_blank">Tetsuro Ito</a></strong> </div></p>
+
+<br/>
+
+
+<p>発表内容とは関係ありませんが、テツローさん、この発表で「julia.tokyo、ジュリアナ東京じゃないですよ」って言ってました。ええ。</p>
+
+<br/>
+
+
+<h3>■LT LaplacesDemonによる ベイズ統計モデリング by @siero5335</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/39312918" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/eguchiakifumi/tokyo-r-43" title="Tokyo r #43" target="_blank">Tokyo r #43</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div></p>
+
+<br/>
+
+
+<p>他の勉強会の発表リサイクルシリーズ。</p>
+
+<p>発表内容とあまり関係ありませんが、<a target="_blnak" href="http://www.zazzle.com/i_fear_no_frequentist_shirts-235660436663144514">こちらでLaplacesDemonグッズが売られてる</a>らしいです。</p>
+
+<br/>
+
+
+<h3>■LT 超要約 Stan Reference by @piroyoung</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/39705421" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/stan-reference" title="超要約 Stan Reference" target="_blank">超要約 Stan Reference</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div></p>
+
+<br/>
+
+
+<p>銀座の夜景…なんて美しいんだ。</p>
+
+<p>尚、publicな場で一部の人にしか分からないネタを仕込むのはやめた方がいいですよ、と懇親会にて苦言をお伝えしておきました（鬼</p>
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>ピザが一切れも余らなかった。</p>
+
+<p>どうやら今回も最適化してしまったようだな…自分が怖い。</p>
+
+<p>とか思ってたら、「一切れも余らないと最適化されたのか、足りないのか判断できない」と @tanimocchi さんに突っ込まれるなど。</p>
+
+<br/>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PyCon JP 2014 で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/09/16/pyconjp2014/"/>
+    <updated>2014-09-16T01:37:37+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/09/16/pyconjp2014</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p><a href="https://pycon.jp/2014/" target="_blank">PyCon JP 2014</a> で「Pythonとscikit-learnではじめる機械学習」と題して発表してきました</p>
+
+<!-- more -->
+
+
+<br/>
+
+
+<h3>■発表について</h3>
+
+<p><a target="_blank" href="http://twitter.com/showyou">@showyou</a> さんが <a target="_blank" href="http://mlct.connpass.com/event/6275/">MLCT #1</a> にて「お前らPyConで機械学習ネタしゃべろや」と言っていたのを思い出して、まさか通ると思わずに応募したら通っちゃったので発表してきました。</p>
+
+<br/>
+
+
+<p>笑いが結構とれていたこともあり、調子にのって余計なことを喋りすぎてしまい、時間不足で途中で終わる、という失態を犯しました。みなさん、本当に申し訳ありません…</p>
+
+<p>当初、ライブコーディング形式にしようか迷っていたのですが、scikit-learnはあまりにも簡単すぎて、ライブコーディングだとマジで数分で終わってしまうので、機械学習、スパムフィルタ、NaiveBayesの理論的なところも話していたら肝心のscikit-learnの話はちょっとしかできないという…</p>
+
+<p>PyCon JPは1万円ほどの金額を支払って皆さん参加しているので、時間内に発表が終わらなかったのは本当に申し訳ないです。</p>
+
+<p>来年は借りを返したいと思います（懲りてない</p>
+
+<br/>
+
+
+<h3>■PyConについて</h3>
+
+<p>チケットは早割7500円で通常1万円と、決して安くはない価格設定でしたが、約500枚のチケットが完売したということで、Python熱を感じる結果でした。もっと枚数があればもっと売れたかもですね。</p>
+
+<p>個人的にはこのチケット代は学生さんにはちょっと高いな、という印象があったので、Patronスポンサーをやらせて頂きました。これによってわずかですが、学生さんが参加して頂けたのなら嬉しいです。</p>
+
+<br/>
+
+
+<p>今回のPyConの一番の思い出は、<a href="https://pycon.jp/2014/schedule/" target="_blnak">プログラム</a>に記載されてる発表者の皆さんのお名前が、ほとんどアルファベット表記だった中、自分はひらがなだったという点でした。</p>
+
+<br/>
+
+
+<h3>■ビデオ</h3>
+
+<p>当日のスライドとコードはちょっといじりたいところあるので、修正してから上げます。</p>
+
+<p>とりあえずビデオ。（最初の数分は発表開始時間を待ってるだけなので、発表直前から再生してます）</p>
+
+<br/>
+
+
+
+
+<iframe width="560" height="315" src="http://yamakatu.github.io//www.youtube.com/embed/yp6LIjcZgoQ?list=UUxNoKygeZIE1AwZ_NdUCkhQt=3m50s" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<br/>
+
+
+<br/>
+
+
+<h3>■謝辞</h3>
+
+<p>スタッフの皆さん本当にお疲れさまでした。また来年も楽しみにしてます！</p>
+
+<p>（特にMacのACアダプタを貸してくれたスタッフの方、ありがとうございました！）</p>
+
+<br/>
+
+
+<h3>■関連</h3>
+
+<p><a href="https://pycon.jp/2014/">PyCon jp 2014</a></p>
+
+<p><a href="http://togetter.com/li/719865">togetter まとめ</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第9回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
+    <link href="http://yamakatu.github.io/blog/2014/09/10/midoribon09/"/>
+    <updated>2014-09-10T21:59:20+09:00</updated>
+    <id>http://yamakatu.github.io/blog/2014/09/10/midoribon09</id>
+    <content type="html"><![CDATA[<br/>
+
+
+<p><a target="_blank" href="http://connpass.com/event/8324/">今回も＠ドワンゴ様にて開催しました。</a></p>
+
+<!-- more -->
+
+
+<h3>■第9章「GLMのベイズモデル化と事後分布の推定」前半 by @siero5353</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/38813142" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/eguchiakifumi/9-38813142" title="みどりぼん9章前半" target="_blank">みどりぼん9章前半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/eguchiakifumi" target="_blank">Akifumi Eguchi</a></strong> </div></p>
+
+<br/>
+
+
+<p>発表内容と全く関係ないですが、スペインに行ってこられたとのことで、お土産にスペインワインを頂きました。</p>
+
+<p>懇親会でみんなで美味しく頂きました。ありがとうございました。</p>
+
+<br/>
+
+
+<h3>■第9章「GLMのベイズモデル化と事後分布の推定」後半 by @wwacky</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/38868144" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/moa108/9-38868144" title="データ解析のための統計モデリング入門9章後半" target="_blank">データ解析のための統計モデリング入門9章後半</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/moa108" target="_blank">Motoya Wakiyama</a></strong> </div></p>
+
+<br/>
+
+
+<p>質疑でちょっと斬新な質問が飛んで来たのが印象強すぎてそれ以外覚えてない…</p>
+
+<p>ニコ生は顔が出ないこともあり、思い切った質問が飛んできてなかなか面白いです。</p>
+
+<br/>
+
+
+<h3>■LT マルコフ連鎖モンテカルロ法入門 1 by @teramonagi</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/5190440" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/teramonagi/ss-5190440" title="マルコフ連鎖モンテカルロ法入門-１" target="_blank">マルコフ連鎖モンテカルロ法入門-１</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div></p>
+
+<br/>
+
+
+<p>またもや過去の資料でLTしてもらおうシリーズ。</p>
+
+<p>MCMCの説明で、これがもっとも解りやすいのではないだろうか…さすがや。</p>
+
+<p>その2もslideshareに上がっているので、興味のある人は是非。</p>
+
+<br/>
+
+
+<h3>■LT 可視化で理解するマルコフ連鎖モンテカルロ法 by @hoxo_m</h3>
+
+<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/38848635" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://yamakatu.github.io//www.slideshare.net/hoxo_m/ss-38848635" title="可視化で理解するマルコフ連鎖モンテカルロ法" target="_blank">可視化で理解するマルコフ連鎖モンテカルロ法</a> </strong> from <strong><a href="http://yamakatu.github.io//www.slideshare.net/hoxo_m" target="_blank">hoxo_m</a></strong> </div></p>
+
+<br/>
+
+
+<p>解り易い！</p>
+
+<p>やっぱ可視化って大事。</p>
+
+<br/>
+
+
+<h3>■「金融データ解析の基礎 (シリーズ Useful R 8) 」争奪じゃんけん大会 by @yamakatu</h3>
+
+<p>今回は前回に引き続き、本勉強会へ献本頂けましたので、争奪じゃんけん大会を行いました。しかも今回は2冊！！！</p>
+
+<p>書籍は共立出版様から発行されている、「金融データ解析の基礎 (シリーズ Useful R 8)」です。</p>
+
+<p>金融データ…クオンツ、もしくはクオンツ目指されている方には必須の一冊でしょうか！？</p>
+
+<p><a target="_blank" href="http://www.amazon.co.jp/%E9%87%91%E8%9E%8D%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90%E3%81%AE%E5%9F%BA%E7%A4%8E-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-Useful-R-8/dp/4320123719"><img src="/images/kinyudata.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></a></p>
+
+<br/>
+
+
+<h3>■懇親会</h3>
+
+<p>ピザが一切れしか余らなかった。ピザ発注量の最適化に成功した。</p>
+
+<br/>
+
+
+<h3>■次回</h3>
+
+<p>次回は久保先生SPです。まだ<a href="http://connpass.com/event/7958/">こちら</a>で募集しておりますのでどぞー</p>
+
+<p>枠は増えるという噂！</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[第8回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
     <link href="http://yamakatu.github.io/blog/2014/09/06/midoribon08/"/>
     <updated>2014-09-06T16:44:43+09:00</updated>
@@ -21,7 +485,7 @@
     <content type="html"><![CDATA[<br/>
 
 
-<p><a href="http://connpass.com/event/8180/">今回も＠ドワンゴ様にて開催しました。</a></p>
+<p><a target="_blank" href="http://connpass.com/event/8180/">今回も＠ドワンゴ様にて開催しました。</a></p>
 
 <!-- more -->
 
@@ -55,7 +519,7 @@
 
 <p>しかし、質疑でぴろやんさんの眼鏡に関する質問が出なかったのが不思議でならない。</p>
 
-<p>#発表に利用されたニコ生対応版のスライドは<a href="http://www.slideshare.net/piroyoung/8-38333857">こちら</a>。embedできなかった…</p>
+<p>#発表に利用されたニコ生対応版のスライドは<a href="http://www.slideshare.net/piroyoung/8-38333857" target="_blank">こちら</a>。embedできなかった…</p>
 
 <br/>
 
@@ -81,9 +545,9 @@
 
 <h3>■「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」争奪じゃんけん大会 by @tetsuroito</h3>
 
-<p>TJOこと尾崎 隆さん著、技術評論社発行の「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」を勉強会に献本頂きましたので、争奪しました！</p>
+<p>TJOこと尾崎 隆さん著、技術評論社発行の「<a href="http://www.amazon.co.jp/%E6%89%8B%E3%82%92%E5%8B%95%E3%81%8B%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AB%E6%B4%BB%E3%81%8B%E3%81%99%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0-%E5%B0%BE%E5%B4%8E-%E9%9A%86/dp/477416674X" target="_blank">手を動かしながら学ぶ　ビジネスに活かすデータマイニング</a>」を勉強会に献本頂きましたので、争奪しました！</p>
 
-<p><img src="/images/tjo.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
+<p><a href="http://www.amazon.co.jp/%E6%89%8B%E3%82%92%E5%8B%95%E3%81%8B%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AB%E6%B4%BB%E3%81%8B%E3%81%99%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0-%E5%B0%BE%E5%B4%8E-%E9%9A%86/dp/477416674X" target="_blank"><img src="/images/tjo.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></a></p>
 
 <br/>
 
@@ -120,334 +584,9 @@
 
 <h3>■次回</h3>
 
-<p><a href="http://connpass.com/event/8324/">次回</a>はまた別の本を献本して頂ける予定です。</p>
+<p><a target="_blank" href="http://connpass.com/event/8324/">次回</a>はまた別の本を献本して頂ける予定です。</p>
 
 <p>また争奪します！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[第7回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/08/06/midoribon07/"/>
-    <updated>2014-08-06T07:02:29+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/08/06/midoribon07</id>
-    <content type="html"><![CDATA[<br/>
-
-
-<p>今回も＠ドワンゴ様にて。感謝！！</p>
-
-<!-- more -->
-
-
-<h3>■第7章「一般化線形混合モデル(GLMM)」 by 所沢義男</h3>
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/37671094" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/TokorosawaYoshio/7-37671094" title="データ解析のための勉強会第7章" target="_blank">データ解析のための勉強会第7章</a> </strong> from <strong><a href="http://www.slideshare.net/TokorosawaYoshio" target="_blank">TokorosawaYoshio</a></strong> </div></p>
-
-<br/>
-
-
-<p>ところさわさん、twitterもFacebookもやってないけどYoはやってるらしい。なんてハイコンテキストなんだ…</p>
-
-<p>「参考にした情報（WEB）」にあるGLMMのアニメーションわかりやすイイイイイイイイイ</p>
-
-<br/>
-
-
-<h3>■LT Rと確率分布 by @tetsuroito</h3>
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/31506254" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/tetsuroito/20140222-tokyor-lt-r" title="20140222 tokyo.R LT 「Rと確率分布」" target="_blank">20140222 tokyo.R LT 「Rと確率分布」</a> </strong> from <strong><a href="http://www.slideshare.net/tetsuroito" target="_blank">Tetsuro Ito</a></strong> </div></p>
-
-<br/>
-
-
-<p>前回の大仏様のLTに味をしめて、過去の発表資料でLTしてもらおうシリーズはじめました。</p>
-
-<p>確率分布の関係性を示した図、イイ…</p>
-
-<br/>
-
-
-<h3>■LT データ解析でご飯を食べるという事  by @piroyoung</h3>
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/37595542" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/piroyoung/ss-37595542" title="データ解析でご飯を食べるという事" target="_blank">データ解析でご飯を食べるという事</a> </strong> from <strong><a href="http://www.slideshare.net/piroyoung" target="_blank">Hiroki Mizukami</a></strong> </div></p>
-
-<br/>
-
-
-<h3>■懇親会</h3>
-
-<p>前回、懇親会で自己紹介をやろうとおもっていたのだけど忘れてしまったので、今回はやるぞー、と思ってたけどまた忘れた。次から本気だす。</p>
-
-<p>しかしオリーブオイルは購入したことは忘れずに無事に投入。評判はイマイチ。</p>
-
-<p>ピザの注文量が多くてかなり余ってしまい、軽く糾弾されるなど。</p>
-
-<br/>
-
-
-<h3>■次回</h3>
-
-<p>3週間後の9/26に開催。またまたドワンゴ様にて。</p>
-
-<p>毎回懇親会は盛り上がるが、勉強会はアウェー感満載。よって次回は懇親会を先にやることを検討中。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[第6回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/08/06/midoribon06/"/>
-    <updated>2014-08-06T06:35:25+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/08/06/midoribon06</id>
-    <content type="html"><![CDATA[<br/>
-
-
-<p>今回も＠ドワンゴ様にて。感謝！！</p>
-
-<!-- more -->
-
-
-<br/>
-
-
-<h3>■第6章「GLMの応用範囲をひろげる」前半 by @gepuro</h3>
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/37454546" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/gepuro/ss-37454546" title="第六回「データ解析のための統計モデリング入門」前半" target="_blank">第六回「データ解析のための統計モデリング入門」前半</a> </strong> from <strong><a href="http://www.slideshare.net/gepuro" target="_blank">Atsushi Hayakawa</a></strong> </div></p>
-
-<br/>
-
-
-<p>おまけでGLMを使わずに推定！</p>
-
-<p>本をなぞるだけでなく、こんな感じで本にない情報を盛り込むんでくれる発表、priceless。</p>
-
-<br/>
-
-
-<h3>■第6章「GLMの応用範囲をひろげる」後半 by @0kayu</h3>
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/37454378" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yurieoka37/65-37454378" title="データ解析のための統計モデリング入門 6.5章 後半" target="_blank">データ解析のための統計モデリング入門 6.5章 後半</a> </strong> from <strong><a href="http://www.slideshare.net/yurieoka37" target="_blank">Yurie Oka</a></strong> </div></p>
-
-<br/>
-
-
-<p>遂にR女子登場。</p>
-
-<p>Japan.Rが12月6日に!!!</p>
-
-<br/>
-
-
-<h3>■LT x2 by @teramonagi</h3>
-
-<p>LT枠が埋まらないので誰かLTしてくれないかなー（チラッチラッしてたら、大仏様が手を上げてくださいました。ありがたやー</p>
-
-<br/>
-
-
-
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/11296227" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/teramonagi/ss-11296227" title="指数分布とポアソン分布のいけない関係" target="_blank">指数分布とポアソン分布のいけない関係</a> </strong> from <strong><a href="http://www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div></p>
-
-<br/>
-
-
-
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/13117353" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/teramonagi/tokyo-r23-20120526" title="あるおっさんが記録し続けたデータを使えば人生一発逆転か？" target="_blank">あるおっさんが記録し続けたデータを使えば人生一発逆転か？</a> </strong> from <strong><a href="http://www.slideshare.net/teramonagi" target="_blank">tera monagi</a></strong> </div></p>
-
-<h3>■懇親会</h3>
-
-<p>寿司だった。</p>
-
-<p>前日、翌日も寿司だった。</p>
-
-<p>そして気がついたら寿司大臣に就任していた。</p>
-
-<blockquote class="twitter-tweet" lang="ja"><p>寿司大臣から招集通知来た</p>&mdash; デトロイトに見えるテツロイト (@tetsuroito) <a href="https://twitter.com/tetsuroito/statuses/492578665582960640">2014, 7月 25</a></blockquote>
-
-
-<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[第5回「データ解析のための統計モデリング入門」読書会を開催しました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/07/12/midoribon05/"/>
-    <updated>2014-07-12T20:51:16+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/07/12/midoribon05</id>
-    <content type="html"><![CDATA[<br/>
-
-
-<p>今回もまたもやドワンゴ様に会場を提供して頂き、ニコニコ生放送の配信まで行って頂けました。感謝！</p>
-
-<!-- more -->
-
-
-<p><img src="/images/tanomoshii.jpg" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
-
-<br/>
-
-
-<p>この日は<a href="http://yamakatu.github.io/blog/2014/07/09/hcj2014/">他のエントリ</a>に書いたHadoop Conference Japanの日だったため、発表準備のために完徹で、眠すぎてあまり記憶がありません。</p>
-
-<p>よって書けることはあまりない。</p>
-
-<p>覚えているといったらこれぐらい。</p>
-
-<br/>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>みどりぼんの懇親会がピザだからオリーブオイル買おうと思ってたのをギリギリで思い出して、お店なんとか探して買えたんだけど、買ったの忘れて全く使わなかったのが本日のハイライト</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486514247422062592">2014, 7月 8</a></blockquote>
-
-
-<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<br/>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>そして、てつろーさんに「俺たち、最近ちょっと一緒にいすぎだな…ちょっと距離を置こうか…」っ言われたのが次点</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486514896956170240">2014, 7月 8</a></blockquote>
-
-
-<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<br/>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>あとゲプロくんに「やまかつさん、太りましたよね」って言われて、「お、おう…」ってなったのが3位。</p>&mdash; やまかつ (@yamakatu) <a href="https://twitter.com/yamakatu/statuses/486516294808649728">2014, 7月 8</a></blockquote>
-
-
-<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<br/>
-
-
-<h3>■5章「GLMの尤度比検定と検定の非対称性」前半 by @tanimocchi</h3>
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/36728742?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/mocchi_/5glm" title="第5章glmの尤度比検定と検定の非対称性 前編" target="_blank">第5章glmの尤度比検定と検定の非対称性 前編</a> </strong> from <strong><a href="http://www.slideshare.net/mocchi_" target="_blank">Tadaaki Tanimoto</a></strong> </div></p>
-
-<br/>
-
-
-<h3>■5章「GLMの尤度比検定と検定の非対称性」後半 by @k66mk2</h3>
-
-<script async class="speakerdeck-embed" data-id="97429920e89e01315640028221fe0025" data-ratio="1.33333333333333" src="http://yamakatu.github.io//speakerdeck.com/assets/embed.js"></script>
-
-
-<br/>
-
-
-<h3>■懇親会</h3>
-
-<p>ピザ食った。</p>
-
-<p>次回は寿司がいい、という意見があったので寿司にする予定。</p>
-
-<br/>
-
-
-<h3>■次回</h3>
-
-<p>大人の事情でいつもより1週間多く間を開けて、3週間後の7/29です。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hadoop Conference Japan 2014でSparkとMLlibについてLTしてきました]]></title>
-    <link href="http://yamakatu.github.io/blog/2014/07/09/hcj2014/"/>
-    <updated>2014-07-09T17:50:45+09:00</updated>
-    <id>http://yamakatu.github.io/blog/2014/07/09/hcj2014</id>
-    <content type="html"><![CDATA[<br/>
-
-
-<p>昨日行われた Hadoop Conferenece Japan 2014 でLTさせて頂きました。</p>
-
-<!-- more -->
-
-
-<p>持ち時間は5分と聞いていたので、先日別の場のLTで18分も喋ってしまった資料を、徹夜で5分に削って参加。</p>
-
-<p>前日に余裕ぶっこいて飲み会に参加していた自分をグーで殴りたい。</p>
-
-<br/>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>今回の飲み会 <a href="https://twitter.com/chezou">@chezou</a> さんが <a href="https://twitter.com/tokoroten">@tokoroten</a> さんに「お前本当にやれんのか？」と煽っていたことと， <a href="https://twitter.com/yamakatu">@yamakatu</a> さんが「明日の <a href="https://twitter.com/hashtag/HCJ2014?src=hash">#HCJ2014</a> は全員笑い殺してやるわ！」と息巻いてたことしか記憶にない</p>&mdash; Mr. Fiber (@repeatedly) <a href="https://twitter.com/repeatedly/statuses/486162395656491008">2014, 7月 7</a></blockquote>
-
-
-<script async src="http://yamakatu.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<br/>
-
-
-<br/>
-
-
-<p>発表直前に持ち時間が5分ではなく8分と判明し、がんばって削ったスライドを泣きそうになりつつ戻して発表。なにやってんだ…</p>
-
-<p>自分の前のClouderaの嶋内さんのLT時に、聴いてくださってる方たちを軽く数えると300人ぐらいいたので、自分の時もそれくらい聞いてくれていたのかな。</p>
-
-<p>発表はそこそこ笑いがとれたかなー、と思ってます。それだけでボクは満足です。</p>
-
-<p>PyCon JPでも発表するという噂があるので、そのときはもっと笑いを取りたい。</p>
-
-<br/>
-
-
-<p>「良かったら会社名書いてください☆」って言われたので、自分の名前を書いて撤収。</p>
-
-<p><img src="/images/hcj-whiteboard.JPG" title="&lsquo;&rsquo; &lsquo;&rsquo;" ></p>
-
-<br/>
-
-
-<p>スライドはこちら。</p>
-
-<br/>
-
-
-<iframe src="http://yamakatu.github.io//www.slideshare.net/slideshow/embed_code/36737860?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/yamakatu/hcj2014-lt-sparkml" title="SparkとMLlibで実現するかんたん高速機械学習" target="_blank">SparkとMLlibで実現するかんたん高速機械学習</a> </strong> from <strong><a href="http://www.slideshare.net/yamakatu" target="_blank">Katsushi Yamashita</a></strong> </div></p>
 ]]></content>
   </entry>
   

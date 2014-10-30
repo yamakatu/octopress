@@ -8,7 +8,7 @@ categories: ml-stats
 
 <br/>
 
-<a href="http://connpass.com/event/8180/">今回も＠ドワンゴ様にて開催しました。</a>
+<a target="_blank" href="http://connpass.com/event/8180/">今回も＠ドワンゴ様にて開催しました。</a>
 <!-- more -->
 
 今回のニコ生では中継用の機材にドワンゴ様の新機材が投入されたとのことで、いつもより画質が鮮明だった気がします。
@@ -33,7 +33,7 @@ categories: ml-stats
 
 しかし、質疑でぴろやんさんの眼鏡に関する質問が出なかったのが不思議でならない。
 
-\#発表に利用されたニコ生対応版のスライドは<a href="http://www.slideshare.net/piroyoung/8-38333857">こちら</a>。embedできなかった…
+\#発表に利用されたニコ生対応版のスライドは<a href="http://www.slideshare.net/piroyoung/8-38333857" target="_blank">こちら</a>。embedできなかった…
 <br/>
 
 ###■LT 「ベイズ入門の入門」 by @shuyo
@@ -50,9 +50,9 @@ categories: ml-stats
 
 ###■「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」争奪じゃんけん大会 by @tetsuroito
 
-TJOこと尾崎 隆さん著、技術評論社発行の「手を動かしながら学ぶ　ビジネスに活かすデータマイニング」を勉強会に献本頂きましたので、争奪しました！
+TJOこと尾崎 隆さん著、技術評論社発行の「<a href="http://www.amazon.co.jp/%E6%89%8B%E3%82%92%E5%8B%95%E3%81%8B%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AB%E6%B4%BB%E3%81%8B%E3%81%99%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0-%E5%B0%BE%E5%B4%8E-%E9%9A%86/dp/477416674X" target="_blank">手を動かしながら学ぶ　ビジネスに活かすデータマイニング</a>」を勉強会に献本頂きましたので、争奪しました！
 
-{% img /images/tjo.jpg '' '' %}
+<a href="http://www.amazon.co.jp/%E6%89%8B%E3%82%92%E5%8B%95%E3%81%8B%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AB%E6%B4%BB%E3%81%8B%E3%81%99%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0-%E5%B0%BE%E5%B4%8E-%E9%9A%86/dp/477416674X" target="_blank">{% img /images/tjo.jpg '' '' %}</a>
 <br/>
 
 見事ゲットされたのは @Gin_ito04 さんでしたー。ぱちぱち
@@ -77,7 +77,7 @@ TJOこと尾崎 隆さん著、技術評論社発行の「手を動かしなが�
 
 ###■次回
 
-<a href="http://connpass.com/event/8324/">次回</a>はまた別の本を献本して頂ける予定です。
+<a target="_blank" href="http://connpass.com/event/8324/">次回</a>はまた別の本を献本して頂ける予定です。
 
 また争奪します！
 
